@@ -1,0 +1,32 @@
+[0.577s] Invoking command in '/home/theo/ros2_workspace/build/ros2_serial_interface': CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/ros2_workspace/install/test_package:/home/theo/ros2_workspace/install/diffdrive_arduino:/home/theo/ros2_workspace/install/my_package:/home/theo/ros2_workspace/install/articubot_one:/home/theo/ros2_workspace/install/arduino_pck PYTHONPATH=/home/theo/ros2_workspace/build/ros2_serial_interface/prefix_override:/home/theo/ros2_workspace/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/ros2_serial_interface/build --no-deps install_data
+[0.776s] running develop
+[0.900s] running egg_info
+[0.900s] creating ros2_serial_interface.egg-info
+[0.901s] writing ros2_serial_interface.egg-info/PKG-INFO
+[0.901s] writing dependency_links to ros2_serial_interface.egg-info/dependency_links.txt
+[0.901s] writing entry points to ros2_serial_interface.egg-info/entry_points.txt
+[0.901s] writing requirements to ros2_serial_interface.egg-info/requires.txt
+[0.901s] writing top-level names to ros2_serial_interface.egg-info/top_level.txt
+[0.902s] writing manifest file 'ros2_serial_interface.egg-info/SOURCES.txt'
+[0.927s] reading manifest file 'ros2_serial_interface.egg-info/SOURCES.txt'
+[0.928s] writing manifest file 'ros2_serial_interface.egg-info/SOURCES.txt'
+[0.956s] running build_ext
+[0.956s] Creating /home/theo/ros2_workspace/install/ros2_serial_interface/lib/python3.8/site-packages/site.py
+[0.958s] Creating /home/theo/ros2_workspace/install/ros2_serial_interface/lib/python3.8/site-packages/ros2-serial-interface.egg-link (link to .)
+[0.959s] Installing predef_timed_pub script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[0.959s] Installing pynput_key_pub script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[0.959s] Installing serial_server script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[0.959s] Installing terminal_key_pub script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[0.959s] Installing virtual_serial_client script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[0.959s] Installing virtual_serial_server script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[0.959s] Installing virtual_serial_setup script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[0.959s] 
+[0.960s] Installed /home/theo/ros2_workspace/build/ros2_serial_interface
+[0.960s] running install_data
+[0.960s] creating /home/theo/ros2_workspace/install/ros2_serial_interface/share/ament_index
+[0.960s] creating /home/theo/ros2_workspace/install/ros2_serial_interface/share/ament_index/resource_index
+[0.960s] creating /home/theo/ros2_workspace/install/ros2_serial_interface/share/ament_index/resource_index/packages
+[0.960s] copying resource/ros2_serial_interface -> /home/theo/ros2_workspace/install/ros2_serial_interface/share/ament_index/resource_index/packages
+[0.960s] copying package.xml -> /home/theo/ros2_workspace/install/ros2_serial_interface/share/ros2_serial_interface
+[0.960s] copying launch/serial_server_launch.py -> /home/theo/ros2_workspace/install/ros2_serial_interface/share/ros2_serial_interface
+[0.982s] Invoked command in '/home/theo/ros2_workspace/build/ros2_serial_interface' returned '0': CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/ros2_workspace/install/test_package:/home/theo/ros2_workspace/install/diffdrive_arduino:/home/theo/ros2_workspace/install/my_package:/home/theo/ros2_workspace/install/articubot_one:/home/theo/ros2_workspace/install/arduino_pck PYTHONPATH=/home/theo/ros2_workspace/build/ros2_serial_interface/prefix_override:/home/theo/ros2_workspace/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/ros2_serial_interface/build --no-deps install_data

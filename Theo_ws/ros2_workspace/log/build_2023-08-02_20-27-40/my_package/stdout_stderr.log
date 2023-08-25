@@ -1,0 +1,13 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/arduino_publisher.dir/src/arduino_publisher.cpp.o[0m
+[01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:3:1:[m[K [01;31m[Kerror: [m[K‘[01m[KCSerialPort[m[K’ does not name a type
+    3 | [01;31m[KCSerialPort[m[K _serial;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:5:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+    5 | [01;31m[Kif[m[K(_serial.OpenPort(L"COM4"))   // 실제 사용될 COM Port 를 넣어야합니다.
+      | [01;31m[K^~[m[K
+[01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:29:1:[m[K [01;31m[Kerror: [m[K‘[01m[K_serial[m[K’ does not name a type
+   29 | [01;31m[K_serial[m[K.ClosePort();
+      | [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/arduino_publisher.dir/build.make:63: CMakeFiles/arduino_publisher.dir/src/arduino_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/arduino_publisher.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

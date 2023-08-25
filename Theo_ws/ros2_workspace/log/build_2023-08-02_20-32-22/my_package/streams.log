@@ -1,0 +1,5 @@
+[0.041s] Invoking command in '/home/theo/ros2_workspace/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/my_package -- -j12 -l12
+[0.084s] make[2]: *** No rule to make target '/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp', needed by 'CMakeFiles/arduino_publisher.dir/src/arduino_publisher.cpp.o'.  Stop.
+[0.084s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/arduino_publisher.dir/all] Error 2
+[0.084s] make: *** [Makefile:141: all] Error 2
+[0.086s] Invoked command in '/home/theo/ros2_workspace/build/my_package' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/my_package -- -j12 -l12

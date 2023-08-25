@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating my_arduino.egg-info
+writing my_arduino.egg-info/PKG-INFO
+writing dependency_links to my_arduino.egg-info/dependency_links.txt
+writing entry points to my_arduino.egg-info/entry_points.txt
+writing requirements to my_arduino.egg-info/requires.txt
+writing top-level names to my_arduino.egg-info/top_level.txt
+writing manifest file 'my_arduino.egg-info/SOURCES.txt'
+reading manifest file 'my_arduino.egg-info/SOURCES.txt'
+writing manifest file 'my_arduino.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/theo/ros2_workspace/install/my_arduino/lib/python3.8/site-packages/site.py
+Creating /home/theo/ros2_workspace/install/my_arduino/lib/python3.8/site-packages/my-arduino.egg-link (link to .)
+
+Installed /home/theo/ros2_workspace/build/my_arduino
+running install_data
+creating /home/theo/ros2_workspace/install/my_arduino/share/ament_index
+creating /home/theo/ros2_workspace/install/my_arduino/share/ament_index/resource_index
+creating /home/theo/ros2_workspace/install/my_arduino/share/ament_index/resource_index/packages
+copying resource/my_arduino -> /home/theo/ros2_workspace/install/my_arduino/share/ament_index/resource_index/packages
+copying package.xml -> /home/theo/ros2_workspace/install/my_arduino/share/my_arduino

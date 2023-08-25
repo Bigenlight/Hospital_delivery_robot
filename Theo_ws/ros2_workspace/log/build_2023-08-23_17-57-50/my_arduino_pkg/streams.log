@@ -1,0 +1,21 @@
+[0.108s] Invoking command in '/home/theo/ros2_workspace/build/my_arduino_pkg': AMENT_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy LD_LIBRARY_PATH=/home/theo/ros2_workspace/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/theo/ros2_workspace/build/my_arduino_pkg -- -j12 -l12
+[0.364s] Invoked command in '/home/theo/ros2_workspace/build/my_arduino_pkg' returned '0': AMENT_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy LD_LIBRARY_PATH=/home/theo/ros2_workspace/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/theo/ros2_workspace/build/my_arduino_pkg -- -j12 -l12
+[0.383s] Invoking command in '/home/theo/ros2_workspace/build/my_arduino_pkg': AMENT_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy LD_LIBRARY_PATH=/home/theo/ros2_workspace/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/theo/ros2_workspace/build/my_arduino_pkg
+[0.399s] -- Install configuration: ""
+[0.408s] -- Execute custom install script
+[0.408s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/ament_index/resource_index/package_run_dependencies/my_arduino_pkg
+[0.408s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/ament_index/resource_index/parent_prefix_path/my_arduino_pkg
+[0.409s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/environment/ament_prefix_path.sh
+[0.409s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/environment/ament_prefix_path.dsv
+[0.409s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/environment/path.sh
+[0.409s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/environment/path.dsv
+[0.410s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/local_setup.bash
+[0.410s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/local_setup.sh
+[0.410s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/local_setup.zsh
+[0.410s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/local_setup.dsv
+[0.411s] -- Symlinking: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.dsv
+[0.419s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/ament_index/resource_index/packages/my_arduino_pkg
+[0.419s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/cmake/my_arduino_pkgConfig.cmake
+[0.419s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/cmake/my_arduino_pkgConfig-version.cmake
+[0.420s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.xml
+[0.426s] Invoked command in '/home/theo/ros2_workspace/build/my_arduino_pkg' returned '0': AMENT_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy LD_LIBRARY_PATH=/home/theo/ros2_workspace/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/theo/ros2_workspace/build/my_arduino_pkg

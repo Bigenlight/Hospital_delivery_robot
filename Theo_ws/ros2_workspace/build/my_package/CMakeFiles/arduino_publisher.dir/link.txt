@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/arduino_publisher.dir/src/arduino_publisher.cpp.o  -o arduino_publisher 

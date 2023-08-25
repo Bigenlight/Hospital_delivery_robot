@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+my_arduino/__init__.py
+my_arduino.egg-info/PKG-INFO
+my_arduino.egg-info/SOURCES.txt
+my_arduino.egg-info/dependency_links.txt
+my_arduino.egg-info/entry_points.txt
+my_arduino.egg-info/requires.txt
+my_arduino.egg-info/top_level.txt
+my_arduino.egg-info/zip-safe
+resource/my_arduino

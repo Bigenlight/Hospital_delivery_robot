@@ -1,0 +1,25 @@
+[2.446s] Invoking command in '/home/theo/ros2_workspace/build/py_arduino_pub': PYTHONPATH=/home/theo/ros2_workspace/build/py_arduino_pub/prefix_override:/home/theo/ros2_workspace/install/py_arduino_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/py_arduino_pub/build --no-deps install_data
+[2.671s] running develop
+[2.811s] running egg_info
+[2.811s] creating py_arduino_pub.egg-info
+[2.811s] writing py_arduino_pub.egg-info/PKG-INFO
+[2.811s] writing dependency_links to py_arduino_pub.egg-info/dependency_links.txt
+[2.811s] writing entry points to py_arduino_pub.egg-info/entry_points.txt
+[2.812s] writing requirements to py_arduino_pub.egg-info/requires.txt
+[2.812s] writing top-level names to py_arduino_pub.egg-info/top_level.txt
+[2.812s] writing manifest file 'py_arduino_pub.egg-info/SOURCES.txt'
+[2.848s] reading manifest file 'py_arduino_pub.egg-info/SOURCES.txt'
+[2.848s] writing manifest file 'py_arduino_pub.egg-info/SOURCES.txt'
+[2.880s] running build_ext
+[2.897s] Creating /home/theo/ros2_workspace/install/py_arduino_pub/lib/python3.8/site-packages/site.py
+[2.900s] Creating /home/theo/ros2_workspace/install/py_arduino_pub/lib/python3.8/site-packages/py-arduino-pub.egg-link (link to .)
+[2.901s] Installing Sending_py_order script to /home/theo/ros2_workspace/install/py_arduino_pub/lib/py_arduino_pub
+[2.901s] 
+[2.901s] Installed /home/theo/ros2_workspace/build/py_arduino_pub
+[2.902s] running install_data
+[2.902s] creating /home/theo/ros2_workspace/install/py_arduino_pub/share/ament_index
+[2.902s] creating /home/theo/ros2_workspace/install/py_arduino_pub/share/ament_index/resource_index
+[2.902s] creating /home/theo/ros2_workspace/install/py_arduino_pub/share/ament_index/resource_index/packages
+[2.902s] copying resource/py_arduino_pub -> /home/theo/ros2_workspace/install/py_arduino_pub/share/ament_index/resource_index/packages
+[2.902s] copying package.xml -> /home/theo/ros2_workspace/install/py_arduino_pub/share/py_arduino_pub
+[2.952s] Invoked command in '/home/theo/ros2_workspace/build/py_arduino_pub' returned '0': PYTHONPATH=/home/theo/ros2_workspace/build/py_arduino_pub/prefix_override:/home/theo/ros2_workspace/install/py_arduino_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/py_arduino_pub/build --no-deps install_data

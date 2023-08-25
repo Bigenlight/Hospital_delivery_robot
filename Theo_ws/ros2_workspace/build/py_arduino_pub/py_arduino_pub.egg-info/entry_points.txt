@@ -1,0 +1,3 @@
+[console_scripts]
+Sending_py_order = py_arduino_pub.publisher_member_function:main
+

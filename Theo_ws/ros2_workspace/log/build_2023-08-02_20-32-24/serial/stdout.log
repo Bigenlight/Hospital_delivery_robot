@@ -1,0 +1,6 @@
+[ 14%] Built target gtest
+[ 28%] Built target gtest_main
+[ 57%] Built target serial
+[ 71%] Built target serial-test-timer
+[ 85%] Built target serial_example
+[100%] Built target serial-test

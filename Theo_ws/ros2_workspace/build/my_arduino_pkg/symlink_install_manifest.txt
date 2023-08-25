@@ -1,0 +1,15 @@
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/ament_index/resource_index/package_run_dependencies/my_arduino_pkg
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/ament_index/resource_index/parent_prefix_path/my_arduino_pkg
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/environment/ament_prefix_path.sh
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/environment/ament_prefix_path.dsv
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/environment/path.sh
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/environment/path.dsv
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/local_setup.bash
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/local_setup.sh
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/local_setup.zsh
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/local_setup.dsv
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.dsv
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/ament_index/resource_index/packages/my_arduino_pkg
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/cmake/my_arduino_pkgConfig.cmake
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/cmake/my_arduino_pkgConfig-version.cmake
+/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.xml

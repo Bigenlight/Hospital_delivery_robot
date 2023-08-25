@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+pubsub_py/__init__.py
+pubsub_py.egg-info/PKG-INFO
+pubsub_py.egg-info/SOURCES.txt
+pubsub_py.egg-info/dependency_links.txt
+pubsub_py.egg-info/entry_points.txt
+pubsub_py.egg-info/requires.txt
+pubsub_py.egg-info/top_level.txt
+pubsub_py.egg-info/zip-safe
+resource/pubsub_py

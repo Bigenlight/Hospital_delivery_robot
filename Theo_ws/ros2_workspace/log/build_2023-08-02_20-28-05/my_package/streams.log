@@ -1,0 +1,193 @@
+[0.053s] Invoking command in '/home/theo/ros2_workspace/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/my_package -- -j12 -l12
+[0.113s] [ 50%] [32mBuilding CXX object CMakeFiles/arduino_publisher.dir/src/arduino_publisher.cpp.o[0m
+[0.123s] In file included from [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:1[m[K:
+[0.123s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:8:5:[m[K [01;31m[Kerror: [m[K‘[01m[KHANDLE[m[K’ does not name a type
+[0.123s]     8 |     [01;31m[KHANDLE[m[K  m_hComm;
+[0.123s]       |     [01;31m[K^~~~~~[m[K
+[0.124s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:9:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDCB[m[K’ does not name a type
+[0.124s]     9 |     [01;31m[KDCB[m[K     m_dcb;
+[0.124s]       |     [01;31m[K^~~[m[K
+[0.124s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:10:5:[m[K [01;31m[Kerror: [m[K‘[01m[KCOMMTIMEOUTS[m[K’ does not name a type
+[0.124s]    10 |     [01;31m[KCOMMTIMEOUTS[m[K m_CommTimeouts;
+[0.124s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[0.124s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ does not name a type
+[0.124s]    14 |     [01;31m[KDWORD[m[K   m_iBytesWritten;
+[0.124s]       |     [01;31m[K^~~~~[m[K
+[0.124s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:15:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ does not name a type
+[0.124s]    15 |     [01;31m[KDWORD[m[K   m_iBytesRead;
+[0.124s]       |     [01;31m[K^~~~~[m[K
+[0.125s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:16:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ does not name a type
+[0.125s]    16 |     [01;31m[KDWORD[m[K   m_dwBytesRead;
+[0.125s]       |     [01;31m[K^~~~~[m[K
+[0.125s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:20:19:[m[K [01;31m[Kerror: [m[K‘[01m[KBYTE[m[K’ has not been declared
+[0.125s]    20 |     bool ReadByte([01;31m[KBYTE[m[K &resp);
+[0.125s]       |                   [01;31m[K^~~~[m[K
+[0.125s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:21:19:[m[K [01;31m[Kerror: [m[K‘[01m[KBYTE[m[K’ has not been declared
+[0.125s]    21 |     bool ReadByte([01;31m[KBYTE[m[K* &resp, UINT size);
+[0.125s]       |                   [01;31m[K^~~~[m[K
+[0.126s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:21:32:[m[K [01;31m[Kerror: [m[K‘[01m[KUINT[m[K’ has not been declared
+[0.126s]    21 |     bool ReadByte(BYTE* &resp, [01;31m[KUINT[m[K size);
+[0.126s]       |                                [01;31m[K^~~~[m[K
+[0.126s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:22:20:[m[K [01;31m[Kerror: [m[K‘[01m[KBYTE[m[K’ has not been declared
+[0.127s]    22 |     bool WriteByte([01;31m[KBYTE[m[K bybyte);
+[0.127s]       |                    [01;31m[K^~~~[m[K
+[0.127s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:23:19:[m[K [01;31m[Kerror: [m[K‘[01m[KCString[m[K’ has not been declared
+[0.127s]    23 |     bool OpenPort([01;31m[KCString[m[K portname);
+[0.127s]       |                   [01;31m[K^~~~~~~[m[K
+[0.127s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:24:35:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ has not been declared
+[0.127s]    24 |   bool SetCommunicationTimeouts([01;31m[KDWORD[m[K ReadIntervalTimeout,
+[0.128s]       |                                 [01;31m[K^~~~~[m[K
+[0.128s] 
+[0.128s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:25:9:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ has not been declared
+[0.128s]    25 |         [01;31m[KDWORD[m[K ReadTotalTimeoutMultiplier, DWORD ReadTotalTimeoutConstant,
+[0.128s]       |         [01;31m[K^~~~~[m[K
+[0.128s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:25:43:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ has not been declared
+[0.128s]    25 | ORD ReadTotalTimeoutMultiplier, [01;31m[KDWORD[m[K ReadTotalTimeoutConstant,
+[0.128s]       |                                 [01;31m[K^~~~~[m[K
+[0.128s] 
+[0.129s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ has not been declared
+[0.129s]    26 |         [01;31m[KDWORD[m[K WriteTotalTimeoutMultiplier,DWORD WriteTotalTimeoutConstant);
+[0.129s]       |         [01;31m[K^~~~~[m[K
+[0.129s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:26:43:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ has not been declared
+[0.129s]    26 | ORD WriteTotalTimeoutMultiplier,[01;31m[KDWORD[m[K WriteTotalTimeoutConstant);
+[0.129s]       |                                 [01;31m[K^~~~~[m[K
+[0.129s] 
+[0.130s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:27:24:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ has not been declared
+[0.130s]    27 |     bool ConfigurePort([01;31m[KDWORD[m[K BaudRate, BYTE ByteSize, DWORD fParity,
+[0.130s]       |                        [01;31m[K^~~~~[m[K
+[0.130s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:27:40:[m[K [01;31m[Kerror: [m[K‘[01m[KBYTE[m[K’ has not been declared
+[0.130s]    27 | l ConfigurePort(DWORD BaudRate, [01;31m[KBYTE[m[K ByteSize, DWORD fParity,
+[0.130s]       |                                 [01;31m[K^~~~[m[K
+[0.130s] 
+[0.130s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:27:55:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ has not been declared
+[0.130s]    27 | t(DWORD BaudRate, BYTE ByteSize, [01;31m[KDWORD[m[K fParity,
+[0.130s]       |                                  [01;31m[K^~~~~[m[K
+[0.130s] 
+[0.130s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:28:9:[m[K [01;31m[Kerror: [m[K‘[01m[KBYTE[m[K’ has not been declared
+[0.130s]    28 |         [01;31m[KBYTE[m[K  Parity,BYTE StopBits);
+[0.130s]       |         [01;31m[K^~~~[m[K
+[0.130s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:28:22:[m[K [01;31m[Kerror: [m[K‘[01m[KBYTE[m[K’ has not been declared
+[0.130s]    28 |         BYTE  Parity,[01;31m[KBYTE[m[K StopBits);
+[0.131s]       |                      [01;31m[K^~~~[m[K
+[0.131s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:1:1:[m[K [01;31m[Kerror: [m[Knew types may not be defined in a return type
+[0.131s]     1 | [01;31m[Kclass[m[K CSerialPort
+[0.131s]       | [01;31m[K^~~~~[m[K
+[0.131s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:1:1:[m[K [01;36m[Knote: [m[K(perhaps a semicolon is missing after the definition of ‘[01m[KCSerialPort[m[K’)
+[0.131s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:3:26:[m[K [01;31m[Kerror: [m[Kreturn type specification for constructor invalid
+[0.131s]     3 | CSerialPort::CSerialPort([01;31m[K)[m[K
+[0.131s]       |                          [01;31m[K^[m[K
+[0.132s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:11:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool CSerialPort::OpenPort[m[K’ is not a static data member of ‘[01m[Kclass CSerialPort[m[K’
+[0.132s]    11 | bool [01;31m[KCSerialPort[m[K::OpenPort(CString portname)
+[0.132s]       |      [01;31m[K^~~~~~~~~~~[m[K
+[0.132s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:11:28:[m[K [01;31m[Kerror: [m[K‘[01m[KCString[m[K’ was not declared in this scope
+[0.133s]    11 | bool CSerialPort::OpenPort([01;31m[KCString[m[K portname)
+[0.133s]       |                            [01;31m[K^~~~~~~[m[K
+[0.136s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:28:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool CSerialPort::ConfigurePort[m[K’ is not a static data member of ‘[01m[Kclass CSerialPort[m[K’
+[0.136s]    28 | bool [01;31m[KCSerialPort[m[K::ConfigurePort(DWORD BaudRate, BYTE ByteSize, DWORD fParity,
+[0.136s]       |      [01;31m[K^~~~~~~~~~~[m[K
+[0.137s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:28:33:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ was not declared in this scope
+[0.138s]    28 | bool CSerialPort::ConfigurePort([01;31m[KDWORD[m[K BaudRate, BYTE ByteSize, DWORD fParity,
+[0.138s]       |                                 [01;31m[K^~~~~[m[K
+[0.139s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:28:49:[m[K [01;31m[Kerror: [m[K‘[01m[KBYTE[m[K’ was not declared in this scope
+[0.141s]    28 | ::ConfigurePort(DWORD BaudRate, [01;31m[KBYTE[m[K ByteSize, DWORD fParity,
+[0.142s]       |                                 [01;31m[K^~~~[m[K
+[0.142s] 
+[0.142s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:28:64:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ was not declared in this scope
+[0.144s]    28 | t(DWORD BaudRate, BYTE ByteSize, [01;31m[KDWORD[m[K fParity,
+[0.145s]       |                                  [01;31m[K^~~~~[m[K
+[0.149s] 
+[0.150s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:29:9:[m[K [01;31m[Kerror: [m[K‘[01m[KBYTE[m[K’ was not declared in this scope
+[0.153s]    29 |         [01;31m[KBYTE[m[K Parity, BYTE StopBits)
+[0.153s]       |         [01;31m[K^~~~[m[K
+[0.155s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:29:22:[m[K [01;31m[Kerror: [m[K‘[01m[KBYTE[m[K’ was not declared in this scope
+[0.156s]    29 |         BYTE Parity, [01;31m[KBYTE[m[K StopBits)
+[0.157s]       |                      [01;31m[K^~~~[m[K
+[0.157s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:29:35:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K-fpermissive[m[K]
+[0.160s]    29 |         BYTE Parity, BYTE StopBits[01;31m[K)[m[K
+[0.160s]       |                                   [01;31m[K^[m[K
+[0.160s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:69:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool CSerialPort::SetCommunicationTimeouts[m[K’ is not a static data member of ‘[01m[Kclass CSerialPort[m[K’
+[0.160s]    69 | bool [01;31m[KCSerialPort[m[K::SetCommunicationTimeouts(DWORD ReadIntervalTimeout,
+[0.160s]       |      [01;31m[K^~~~~~~~~~~[m[K
+[0.161s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:69:44:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ was not declared in this scope
+[0.161s]    69 | lPort::SetCommunicationTimeouts([01;31m[KDWORD[m[K ReadIntervalTimeout,
+[0.161s]       |                                 [01;31m[K^~~~~[m[K
+[0.163s] 
+[0.163s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:70:9:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ was not declared in this scope
+[0.164s]    70 |         [01;31m[KDWORD[m[K ReadTotalTimeoutMultiplier, DWORD ReadTotalTimeoutConstant,
+[0.164s]       |         [01;31m[K^~~~~[m[K
+[0.164s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:70:43:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ was not declared in this scope
+[0.164s]    70 | ORD ReadTotalTimeoutMultiplier, [01;31m[KDWORD[m[K ReadTotalTimeoutConstant,
+[0.164s]       |                                 [01;31m[K^~~~~[m[K
+[0.164s] 
+[0.166s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:71:9:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ was not declared in this scope
+[0.167s]    71 |         [01;31m[KDWORD[m[K WriteTotalTimeoutMultiplier, DWORD WriteTotalTimeoutConstant)
+[0.170s]       |         [01;31m[K^~~~~[m[K
+[0.170s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:71:44:[m[K [01;31m[Kerror: [m[K‘[01m[KDWORD[m[K’ was not declared in this scope
+[0.171s]    71 | RD WriteTotalTimeoutMultiplier, [01;31m[KDWORD[m[K WriteTotalTimeoutConstant)
+[0.172s]       |                                 [01;31m[K^~~~~[m[K
+[0.173s] 
+[0.173s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:71:75:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K-fpermissive[m[K]
+[0.173s]    71 |  DWORD WriteTotalTimeoutConstant[01;31m[K)[m[K
+[0.174s]       |                                 [01;31m[K^[m[K
+[0.174s] 
+[0.174s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:94:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool CSerialPort::WriteByte[m[K’ is not a static data member of ‘[01m[Kclass CSerialPort[m[K’
+[0.174s]    94 | bool [01;31m[KCSerialPort[m[K::WriteByte(BYTE bybyte)
+[0.174s]       |      [01;31m[K^~~~~~~~~~~[m[K
+[0.175s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:94:29:[m[K [01;31m[Kerror: [m[K‘[01m[KBYTE[m[K’ was not declared in this scope
+[0.175s]    94 | bool CSerialPort::WriteByte([01;31m[KBYTE[m[K bybyte)
+[0.175s]       |                             [01;31m[K^~~~[m[K
+[0.175s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:103:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool CSerialPort::ReadByte[m[K’ is not a static data member of ‘[01m[Kclass CSerialPort[m[K’
+[0.175s]   103 | bool [01;31m[KCSerialPort[m[K::ReadByte(BYTE &resp)
+[0.175s]       |      [01;31m[K^~~~~~~~~~~[m[K
+[0.176s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:103:28:[m[K [01;31m[Kerror: [m[K‘[01m[KBYTE[m[K’ was not declared in this scope
+[0.176s]   103 | bool CSerialPort::ReadByte([01;31m[KBYTE[m[K &resp)
+[0.176s]       |                            [01;31m[K^~~~[m[K
+[0.176s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:103:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kresp[m[K’ was not declared in this scope
+[0.181s]   103 | bool CSerialPort::ReadByte(BYTE &[01;31m[Kresp[m[K)
+[0.182s]       |                                  [01;31m[K^~~~[m[K
+[0.182s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:122:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool CSerialPort::ReadByte[m[K’ is not a static data member of ‘[01m[Kclass CSerialPort[m[K’
+[0.182s]   122 | bool [01;31m[KCSerialPort[m[K::ReadByte(BYTE* &resp, UINT size)
+[0.182s]       |      [01;31m[K^~~~~~~~~~~[m[K
+[0.182s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:122:28:[m[K [01;31m[Kerror: [m[K‘[01m[KBYTE[m[K’ was not declared in this scope
+[0.183s]   122 | bool CSerialPort::ReadByte([01;31m[KBYTE[m[K* &resp, UINT size)
+[0.183s]       |                            [01;31m[K^~~~[m[K
+[0.183s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:122:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kresp[m[K’ was not declared in this scope
+[0.183s]   122 | ol CSerialPort::ReadByte(BYTE* &[01;31m[Kresp[m[K, UINT size)
+[0.187s]       |                                 [01;31m[K^~~~[m[K
+[0.187s] 
+[0.188s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:122:41:[m[K [01;31m[Kerror: [m[K‘[01m[KUINT[m[K’ was not declared in this scope
+[0.188s]   122 | ol CSerialPort::ReadByte(BYTE* &resp, [01;31m[KUINT[m[K size)
+[0.188s]       |                                       [01;31m[K^~~~[m[K
+[0.189s] 
+[0.189s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:122:50:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K-fpermissive[m[K]
+[0.189s]   122 | :ReadByte(BYTE* &resp, UINT size[01;31m[K)[m[K
+[0.189s]       |                                 [01;31m[K^[m[K
+[0.190s] 
+[0.190s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:[m[K In member function ‘[01m[Kvoid CSerialPort::ClosePort()[m[K’:
+[0.190s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:137:17:[m[K [01;31m[Kerror: [m[K‘[01m[Km_hComm[m[K’ was not declared in this scope
+[0.191s]   137 |     CloseHandle([01;31m[Km_hComm[m[K);
+[0.191s]       |                 [01;31m[K^~~~~~~[m[K
+[0.191s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:137:5:[m[K [01;31m[Kerror: [m[K‘[01m[KCloseHandle[m[K’ was not declared in this scope
+[0.192s]   137 |     [01;31m[KCloseHandle[m[K(m_hComm);
+[0.193s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[0.193s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:[m[K At global scope:
+[0.193s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:141:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass CSerialPort[m[K’
+[0.194s]   141 | class [01;31m[KCSerialPort[m[K
+[0.194s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[0.202s] In file included from [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:1[m[K:
+[0.202s] [01m[K/home/theo/ros2_workspace/src/my_package/src/SerialPort.h:1:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass CSerialPort[m[K’
+[0.203s]     1 | class [01;36m[KCSerialPort[m[K
+[0.203s]       |       [01;36m[K^~~~~~~~~~~[m[K
+[0.203s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:172:13:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K_serial[m[K’
+[0.203s]   172 | CSerialPort [01;31m[K_serial[m[K;
+[0.203s]       |             [01;31m[K^~~~~~~[m[K
+[0.203s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:174:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[0.203s]   174 | [01;31m[Kif[m[K(_serial.OpenPort(L"COM4"))   // 실제 사용될 COM Port 를 넣어야합니다.
+[0.203s]       | [01;31m[K^~[m[K
+[0.204s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:198:1:[m[K [01;31m[Kerror: [m[K‘[01m[K_serial[m[K’ does not name a type
+[0.204s]   198 | [01;31m[K_serial[m[K.ClosePort();
+[0.204s]       | [01;31m[K^~~~~~~[m[K
+[0.204s] make[2]: *** [CMakeFiles/arduino_publisher.dir/build.make:63: CMakeFiles/arduino_publisher.dir/src/arduino_publisher.cpp.o] Error 1
+[0.207s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/arduino_publisher.dir/all] Error 2
+[0.207s] make: *** [Makefile:141: all] Error 2
+[0.209s] Invoked command in '/home/theo/ros2_workspace/build/my_package' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/my_package -- -j12 -l12

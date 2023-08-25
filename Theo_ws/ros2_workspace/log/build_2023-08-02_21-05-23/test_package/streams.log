@@ -1,0 +1,1 @@
+[0.248s] Invoking command in '/home/theo/ros2_workspace/build/test_package': CMAKE_PREFIX_PATH=/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/test_package -- -j12 -l12

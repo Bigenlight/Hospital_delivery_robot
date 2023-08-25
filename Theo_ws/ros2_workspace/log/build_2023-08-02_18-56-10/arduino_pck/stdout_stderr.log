@@ -1,0 +1,29 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/theo/ros2_workspace/build/arduino_pck
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/ament_index/resource_index/package_run_dependencies/arduino_pck
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/ament_index/resource_index/parent_prefix_path/arduino_pck
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/ament_prefix_path.sh
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/ament_prefix_path.dsv
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/path.sh
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/path.dsv
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.bash
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.sh
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.zsh
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.dsv
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.dsv
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/ament_index/resource_index/packages/arduino_pck
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/cmake/arduino_pckConfig.cmake
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/cmake/arduino_pckConfig-version.cmake
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.xml

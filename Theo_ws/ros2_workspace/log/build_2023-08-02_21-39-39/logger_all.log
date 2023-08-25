@@ -1,0 +1,570 @@
+[0.290s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.290s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7eff8ba8c310>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7eff8ba8c310>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7eff8ba8c850>)
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.320s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/theo/ros2_workspace'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_pck) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_pck) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_pck) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_pck) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_pck) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_pck) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_pck) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_pck) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_pck) by extension 'ros'
+[0.333s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arduino_pck' with type 'ros.ament_cmake' and name 'arduino_pck'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ignore_ament_install'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['colcon_pkg']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'colcon_pkg'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['colcon_meta']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ros'
+[0.334s] DEBUG:colcon.colcon_core.package_identification:Package 'src/articubot_one' with type 'ros.ament_cmake' and name 'articubot_one'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ros'
+[0.335s] DEBUG:colcon.colcon_core.package_identification:Package 'src/diffdrive_arduino' with type 'ros.ament_cmake' and name 'diffdrive_arduino'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_arduino_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_arduino_pkg) by extension 'ignore'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_arduino_pkg) by extension 'ignore_ament_install'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_arduino_pkg) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_arduino_pkg) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_arduino_pkg) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_arduino_pkg) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_arduino_pkg) by extensions ['ros']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_arduino_pkg) by extension 'ros'
+[0.336s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_arduino_pkg' with type 'ros.ament_cmake' and name 'my_arduino_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_interface) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_interface) by extension 'ignore_ament_install'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_interface) by extensions ['colcon_pkg']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_interface) by extension 'colcon_pkg'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_interface) by extensions ['colcon_meta']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_interface) by extension 'colcon_meta'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_interface) by extensions ['ros']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_interface) by extension 'ros'
+[0.337s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_serial_interface' with type 'ros.ament_python' and name 'ros2_serial_interface'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ros'
+[0.338s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial' with type 'ros.ament_cmake' and name 'serial'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_arduino_python_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_arduino_python_pkg) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_arduino_python_pkg) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_arduino_python_pkg) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_arduino_python_pkg) by extension 'colcon_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_arduino_python_pkg) by extensions ['colcon_meta']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_arduino_python_pkg) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_arduino_python_pkg) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_arduino_python_pkg) by extension 'ros'
+[0.339s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_arduino_python_pkg' with type 'ros.ament_python' and name 'serial_arduino_python_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extensions ['colcon_pkg']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'colcon_pkg'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extensions ['colcon_meta']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'colcon_meta'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extensions ['ros']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'ros'
+[0.340s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_package' with type 'ros.ament_cmake' and name 'test_package'
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.363s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/theo/ros2_workspace/install
+[0.365s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/theo/colcon_ws/install
+[0.367s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 345 installed packages in /opt/ros/foxy
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'arduino_pck' build argument 'cmake_args' from command line to 'None'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'arduino_pck' build argument 'cmake_target' from command line to 'None'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'arduino_pck' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'arduino_pck' build argument 'cmake_clean_cache' from command line to 'False'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'arduino_pck' build argument 'cmake_clean_first' from command line to 'False'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'arduino_pck' build argument 'cmake_force_configure' from command line to 'False'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'arduino_pck' build argument 'ament_cmake_args' from command line to 'None'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'arduino_pck' build argument 'catkin_cmake_args' from command line to 'None'
+[0.440s] Level 5:colcon.colcon_core.verb:set package 'arduino_pck' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.440s] DEBUG:colcon.colcon_core.verb:Building package 'arduino_pck' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/theo/ros2_workspace/build/arduino_pck', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/theo/ros2_workspace/install/arduino_pck', 'merge_install': False, 'path': '/home/theo/ros2_workspace/src/arduino_pck', 'symlink_install': True, 'test_result_base': None}
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_args' from command line to 'None'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_target' from command line to 'None'
+[0.441s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_clean_cache' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_clean_first' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_force_configure' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'ament_cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'catkin_cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.442s] DEBUG:colcon.colcon_core.verb:Building package 'articubot_one' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/theo/ros2_workspace/build/articubot_one', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/theo/ros2_workspace/install/articubot_one', 'merge_install': False, 'path': '/home/theo/ros2_workspace/src/articubot_one', 'symlink_install': True, 'test_result_base': None}
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.443s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/theo/ros2_workspace/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/theo/ros2_workspace/install/serial', 'merge_install': False, 'path': '/home/theo/ros2_workspace/src/serial', 'symlink_install': True, 'test_result_base': None}
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'serial_arduino_python_pkg' build argument 'cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'serial_arduino_python_pkg' build argument 'cmake_target' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'serial_arduino_python_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'serial_arduino_python_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'serial_arduino_python_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'serial_arduino_python_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'serial_arduino_python_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'serial_arduino_python_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'serial_arduino_python_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.445s] DEBUG:colcon.colcon_core.verb:Building package 'serial_arduino_python_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/theo/ros2_workspace/build/serial_arduino_python_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/theo/ros2_workspace/install/serial_arduino_python_pkg', 'merge_install': False, 'path': '/home/theo/ros2_workspace/src/serial_arduino_python_pkg', 'symlink_install': True, 'test_result_base': None}
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_target' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.446s] DEBUG:colcon.colcon_core.verb:Building package 'test_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/theo/ros2_workspace/build/test_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/theo/ros2_workspace/install/test_package', 'merge_install': False, 'path': '/home/theo/ros2_workspace/src/test_package', 'symlink_install': True, 'test_result_base': None}
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_cache' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_first' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_force_configure' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'ament_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.447s] DEBUG:colcon.colcon_core.verb:Building package 'diffdrive_arduino' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/theo/ros2_workspace/build/diffdrive_arduino', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/theo/ros2_workspace/install/diffdrive_arduino', 'merge_install': False, 'path': '/home/theo/ros2_workspace/src/diffdrive_arduino', 'symlink_install': True, 'test_result_base': None}
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'my_arduino_pkg' build argument 'cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'my_arduino_pkg' build argument 'cmake_target' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'my_arduino_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'my_arduino_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'my_arduino_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'my_arduino_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'my_arduino_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'my_arduino_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'my_arduino_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.449s] DEBUG:colcon.colcon_core.verb:Building package 'my_arduino_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/theo/ros2_workspace/build/my_arduino_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/theo/ros2_workspace/install/my_arduino_pkg', 'merge_install': False, 'path': '/home/theo/ros2_workspace/src/my_arduino_pkg', 'symlink_install': True, 'test_result_base': None}
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_interface' build argument 'cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_interface' build argument 'cmake_target' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.450s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_serial_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/theo/ros2_workspace/build/ros2_serial_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/theo/ros2_workspace/install/ros2_serial_interface', 'merge_install': False, 'path': '/home/theo/ros2_workspace/src/ros2_serial_interface', 'symlink_install': True, 'test_result_base': None}
+[0.451s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.456s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.456s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/theo/ros2_workspace/src/serial' with build type 'ament_cmake'
+[0.456s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/theo/ros2_workspace/src/serial'
+[0.462s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.462s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.462s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.470s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/theo/ros2_workspace/src/arduino_pck' with build type 'ament_cmake'
+[0.470s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/theo/ros2_workspace/src/arduino_pck'
+[0.473s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.473s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.482s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/theo/ros2_workspace/src/articubot_one' with build type 'ament_cmake'
+[0.482s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/theo/ros2_workspace/src/articubot_one'
+[0.485s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.485s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.495s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/theo/ros2_workspace/src/serial_arduino_python_pkg' with build type 'ament_python'
+[0.496s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_arduino_python_pkg', 'ament_prefix_path')
+[0.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/serial_arduino_python_pkg/hook/ament_prefix_path.ps1'
+[0.499s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/serial_arduino_python_pkg/hook/ament_prefix_path.dsv'
+[0.500s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/serial_arduino_python_pkg/hook/ament_prefix_path.sh'
+[0.502s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.502s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.510s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/theo/ros2_workspace/src/test_package' with build type 'ament_cmake'
+[0.510s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/theo/ros2_workspace/src/test_package'
+[0.513s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.513s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/serial -- -j12 -l12
+[0.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/arduino_pck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/arduino_pck -- -j12 -l12
+[0.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/articubot_one -- -j12 -l12
+[0.746s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/theo/ros2_workspace/src/serial_arduino_python_pkg'
+[0.749s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.749s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/test_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/test_package -- -j12 -l12
+[0.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/serial -- -j12 -l12
+[0.769s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/arduino_pck' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/arduino_pck -- -j12 -l12
+[0.772s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/articubot_one -- -j12 -l12
+[0.804s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/arduino_pck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/arduino_pck
+[0.809s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/articubot_one
+[0.812s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/serial
+[0.819s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/test_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/test_package -- -j12 -l12
+[0.828s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduino_pck)
+[0.836s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/arduino_pck' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/arduino_pck
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/arduino_pck' for CMake module files
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/arduino_pck' for CMake config files
+[0.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_pck', 'cmake_prefix_path')
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/hook/cmake_prefix_path.ps1'
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/hook/cmake_prefix_path.dsv'
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/hook/cmake_prefix_path.sh'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/arduino_pck/bin'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/arduino_pck/lib/pkgconfig/arduino_pck.pc'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/arduino_pck/lib/python3.8/site-packages'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/arduino_pck/bin'
+[0.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.ps1'
+[0.850s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.dsv'
+[0.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.sh'
+[0.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.bash'
+[0.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.zsh'
+[0.852s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/arduino_pck/share/colcon-core/packages/arduino_pck)
+[0.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/test_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/test_package
+[0.859s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(articubot_one)
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/articubot_one' for CMake module files
+[0.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/articubot_one
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/articubot_one' for CMake config files
+[0.865s] Level 1:colcon.colcon_core.shell:create_environment_hook('articubot_one', 'cmake_prefix_path')
+[0.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.ps1'
+[0.870s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.dsv'
+[0.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.sh'
+[0.873s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/articubot_one/bin'
+[0.873s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/articubot_one/lib/pkgconfig/articubot_one.pc'
+[0.873s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/articubot_one/lib/python3.8/site-packages'
+[0.874s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/articubot_one/bin'
+[0.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/package.ps1'
+[0.879s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/package.dsv'
+[0.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/package.sh'
+[0.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/package.bash'
+[0.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/package.zsh'
+[0.881s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/articubot_one/share/colcon-core/packages/articubot_one)
+[0.885s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.890s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial' for CMake module files
+[0.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/serial
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial' for CMake config files
+[0.891s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.896s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial/lib'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial/bin'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial/lib/pkgconfig/serial.pc'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial/lib/python3.8/site-packages'
+[0.898s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial/bin'
+[0.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/serial/share/serial/package.ps1'
+[0.902s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/serial/share/serial/package.dsv'
+[0.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/serial/share/serial/package.sh'
+[0.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/serial/share/serial/package.bash'
+[0.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/serial/share/serial/package.zsh'
+[0.903s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/serial/share/colcon-core/packages/serial)
+[0.910s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduino_pck)
+[0.914s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/arduino_pck' for CMake module files
+[0.914s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/arduino_pck' for CMake config files
+[0.915s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_pck', 'cmake_prefix_path')
+[0.918s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/hook/cmake_prefix_path.ps1'
+[0.918s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/hook/cmake_prefix_path.dsv'
+[0.919s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/hook/cmake_prefix_path.sh'
+[0.919s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/arduino_pck/bin'
+[0.919s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/arduino_pck/lib/pkgconfig/arduino_pck.pc'
+[0.920s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/arduino_pck/lib/python3.8/site-packages'
+[0.920s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/arduino_pck/bin'
+[0.923s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.ps1'
+[0.924s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.dsv'
+[0.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.sh'
+[0.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.bash'
+[0.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.zsh'
+[0.927s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/arduino_pck/share/colcon-core/packages/arduino_pck)
+[0.930s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(articubot_one)
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/articubot_one' for CMake module files
+[0.936s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/articubot_one' for CMake config files
+[0.936s] Level 1:colcon.colcon_core.shell:create_environment_hook('articubot_one', 'cmake_prefix_path')
+[0.939s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.ps1'
+[0.940s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.dsv'
+[0.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.sh'
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/articubot_one/bin'
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/articubot_one/lib/pkgconfig/articubot_one.pc'
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/articubot_one/lib/python3.8/site-packages'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/articubot_one/bin'
+[0.945s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/package.ps1'
+[0.945s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/package.dsv'
+[0.946s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/package.sh'
+[0.946s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/package.bash'
+[0.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/articubot_one/share/articubot_one/package.zsh'
+[0.947s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/articubot_one/share/colcon-core/packages/articubot_one)
+[0.948s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_package)
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/test_package' for CMake module files
+[0.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/test_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/test_package
+[0.953s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/test_package' for CMake config files
+[0.953s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_package', 'cmake_prefix_path')
+[0.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/test_package/share/test_package/hook/cmake_prefix_path.ps1'
+[0.958s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/test_package/share/test_package/hook/cmake_prefix_path.dsv'
+[0.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/test_package/share/test_package/hook/cmake_prefix_path.sh'
+[0.959s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/test_package/bin'
+[0.959s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/test_package/lib/pkgconfig/test_package.pc'
+[0.960s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/test_package/lib/python3.8/site-packages'
+[0.960s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/test_package/bin'
+[0.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/test_package/share/test_package/package.ps1'
+[0.963s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/test_package/share/test_package/package.dsv'
+[0.963s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/test_package/share/test_package/package.sh'
+[0.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/test_package/share/test_package/package.bash'
+[0.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/test_package/share/test_package/package.zsh'
+[0.965s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/test_package/share/colcon-core/packages/test_package)
+[0.972s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.977s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial' for CMake module files
+[0.978s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial' for CMake config files
+[0.978s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.982s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.982s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial/lib'
+[0.982s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial/bin'
+[0.982s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial/lib/pkgconfig/serial.pc'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial/lib/python3.8/site-packages'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial/bin'
+[0.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/serial/share/serial/package.ps1'
+[0.986s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/serial/share/serial/package.dsv'
+[0.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/serial/share/serial/package.sh'
+[0.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/serial/share/serial/package.bash'
+[0.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/serial/share/serial/package.zsh'
+[0.987s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/serial/share/colcon-core/packages/serial)
+[0.987s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/theo/ros2_workspace/src/diffdrive_arduino' with build type 'ament_cmake'
+[0.988s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/theo/ros2_workspace/src/diffdrive_arduino'
+[0.992s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.992s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.001s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/theo/ros2_workspace/src/my_arduino_pkg' with build type 'ament_cmake'
+[1.002s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/theo/ros2_workspace/src/my_arduino_pkg'
+[1.005s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.005s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.019s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/theo/ros2_workspace/src/ros2_serial_interface' with build type 'ament_python'
+[1.020s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_serial_interface', 'ament_prefix_path')
+[1.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/ros2_serial_interface/share/ros2_serial_interface/hook/ament_prefix_path.ps1'
+[1.023s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/ros2_serial_interface/share/ros2_serial_interface/hook/ament_prefix_path.dsv'
+[1.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/ros2_serial_interface/share/ros2_serial_interface/hook/ament_prefix_path.sh'
+[1.027s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.027s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.043s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_package)
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/test_package' for CMake module files
+[1.050s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/test_package' for CMake config files
+[1.051s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_package', 'cmake_prefix_path')
+[1.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/test_package/share/test_package/hook/cmake_prefix_path.ps1'
+[1.054s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/test_package/share/test_package/hook/cmake_prefix_path.dsv'
+[1.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/test_package/share/test_package/hook/cmake_prefix_path.sh'
+[1.055s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/test_package/bin'
+[1.055s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/test_package/lib/pkgconfig/test_package.pc'
+[1.055s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/test_package/lib/python3.8/site-packages'
+[1.055s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/test_package/bin'
+[1.058s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/test_package/share/test_package/package.ps1'
+[1.058s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/test_package/share/test_package/package.dsv'
+[1.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/test_package/share/test_package/package.sh'
+[1.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/test_package/share/test_package/package.bash'
+[1.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/test_package/share/test_package/package.zsh'
+[1.060s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/test_package/share/colcon-core/packages/test_package)
+[1.067s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/ros2_workspace/install/test_package:/home/theo/ros2_workspace/install/diffdrive_arduino:/home/theo/ros2_workspace/install/my_package:/home/theo/ros2_workspace/install/my_arduino_pkg:/home/theo/ros2_workspace/install/my_arduino_Cmakeversion:/home/theo/ros2_workspace/install/articubot_one:/home/theo/ros2_workspace/install/arduino_pck:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/diffdrive_arduino -- -j12 -l12
+[1.074s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/my_arduino_pkg': CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/ros2_workspace/install/test_package:/home/theo/ros2_workspace/install/diffdrive_arduino:/home/theo/ros2_workspace/install/my_package:/home/theo/ros2_workspace/install/my_arduino_pkg:/home/theo/ros2_workspace/install/my_arduino_Cmakeversion:/home/theo/ros2_workspace/install/articubot_one:/home/theo/ros2_workspace/install/arduino_pck:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/my_arduino_pkg -- -j12 -l12
+[1.281s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/theo/ros2_workspace/src/ros2_serial_interface'
+[1.284s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.284s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/ros2_workspace/install/test_package:/home/theo/ros2_workspace/install/diffdrive_arduino:/home/theo/ros2_workspace/install/my_package:/home/theo/ros2_workspace/install/my_arduino_pkg:/home/theo/ros2_workspace/install/my_arduino_Cmakeversion:/home/theo/ros2_workspace/install/articubot_one:/home/theo/ros2_workspace/install/arduino_pck:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/diffdrive_arduino -- -j12 -l12
+[1.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/serial_arduino_python_pkg': PYTHONPATH=/home/theo/ros2_workspace/build/serial_arduino_python_pkg/prefix_override:/home/theo/ros2_workspace/install/serial_arduino_python_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/serial_arduino_python_pkg/build --no-deps install_data
+[1.305s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/my_arduino_pkg' returned '0': CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/ros2_workspace/install/test_package:/home/theo/ros2_workspace/install/diffdrive_arduino:/home/theo/ros2_workspace/install/my_package:/home/theo/ros2_workspace/install/my_arduino_pkg:/home/theo/ros2_workspace/install/my_arduino_Cmakeversion:/home/theo/ros2_workspace/install/articubot_one:/home/theo/ros2_workspace/install/arduino_pck:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/my_arduino_pkg -- -j12 -l12
+[1.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/my_arduino_pkg': CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/ros2_workspace/install/test_package:/home/theo/ros2_workspace/install/diffdrive_arduino:/home/theo/ros2_workspace/install/my_package:/home/theo/ros2_workspace/install/my_arduino_pkg:/home/theo/ros2_workspace/install/my_arduino_Cmakeversion:/home/theo/ros2_workspace/install/articubot_one:/home/theo/ros2_workspace/install/arduino_pck:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/my_arduino_pkg
+[1.334s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/ros2_workspace/install/test_package:/home/theo/ros2_workspace/install/diffdrive_arduino:/home/theo/ros2_workspace/install/my_package:/home/theo/ros2_workspace/install/my_arduino_pkg:/home/theo/ros2_workspace/install/my_arduino_Cmakeversion:/home/theo/ros2_workspace/install/articubot_one:/home/theo/ros2_workspace/install/arduino_pck:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/diffdrive_arduino
+[1.353s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_arduino_pkg)
+[1.357s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/my_arduino_pkg' for CMake module files
+[1.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/my_arduino_pkg' returned '0': CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/ros2_workspace/install/test_package:/home/theo/ros2_workspace/install/diffdrive_arduino:/home/theo/ros2_workspace/install/my_package:/home/theo/ros2_workspace/install/my_arduino_pkg:/home/theo/ros2_workspace/install/my_arduino_Cmakeversion:/home/theo/ros2_workspace/install/articubot_one:/home/theo/ros2_workspace/install/arduino_pck:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/my_arduino_pkg
+[1.359s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/my_arduino_pkg' for CMake config files
+[1.359s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_arduino_pkg', 'cmake_prefix_path')
+[1.362s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/hook/cmake_prefix_path.ps1'
+[1.362s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/hook/cmake_prefix_path.dsv'
+[1.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/hook/cmake_prefix_path.sh'
+[1.363s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/my_arduino_pkg/bin'
+[1.363s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/my_arduino_pkg/lib/pkgconfig/my_arduino_pkg.pc'
+[1.364s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/my_arduino_pkg/lib/python3.8/site-packages'
+[1.364s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/my_arduino_pkg/bin'
+[1.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.ps1'
+[1.367s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.dsv'
+[1.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.sh'
+[1.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.bash'
+[1.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.zsh'
+[1.368s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/my_arduino_pkg/share/colcon-core/packages/my_arduino_pkg)
+[1.371s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[1.375s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino' for CMake module files
+[1.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/ros2_workspace/install/test_package:/home/theo/ros2_workspace/install/diffdrive_arduino:/home/theo/ros2_workspace/install/my_package:/home/theo/ros2_workspace/install/my_arduino_pkg:/home/theo/ros2_workspace/install/my_arduino_Cmakeversion:/home/theo/ros2_workspace/install/articubot_one:/home/theo/ros2_workspace/install/arduino_pck:/home/theo/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/ros2_workspace/install/ros2_serial_interface:/home/theo/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/diffdrive_arduino
+[1.377s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino' for CMake config files
+[1.377s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[1.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[1.380s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[1.380s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[1.380s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino/lib'
+[1.380s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[1.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[1.383s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[1.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[1.384s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino/bin'
+[1.384s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[1.384s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino/lib/python3.8/site-packages'
+[1.384s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino/bin'
+[1.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[1.387s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[1.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[1.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[1.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[1.389s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[1.395s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_arduino_pkg)
+[1.398s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/my_arduino_pkg' for CMake module files
+[1.399s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/my_arduino_pkg' for CMake config files
+[1.399s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_arduino_pkg', 'cmake_prefix_path')
+[1.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/hook/cmake_prefix_path.ps1'
+[1.402s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/hook/cmake_prefix_path.dsv'
+[1.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/hook/cmake_prefix_path.sh'
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/my_arduino_pkg/bin'
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/my_arduino_pkg/lib/pkgconfig/my_arduino_pkg.pc'
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/my_arduino_pkg/lib/python3.8/site-packages'
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/my_arduino_pkg/bin'
+[1.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.ps1'
+[1.406s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.dsv'
+[1.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.sh'
+[1.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.bash'
+[1.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.zsh'
+[1.408s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/my_arduino_pkg/share/colcon-core/packages/my_arduino_pkg)
+[1.419s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[1.422s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino' for CMake module files
+[1.423s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino' for CMake config files
+[1.423s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[1.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[1.426s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[1.426s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[1.426s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino/lib'
+[1.426s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[1.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[1.429s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[1.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[1.429s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino/bin'
+[1.429s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[1.430s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino/lib/python3.8/site-packages'
+[1.430s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/diffdrive_arduino/bin'
+[1.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[1.433s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[1.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[1.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[1.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[1.435s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[1.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/ros2_workspace/build/ros2_serial_interface': CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/ros2_workspace/install/test_package:/home/theo/ros2_workspace/install/diffdrive_arduino:/home/theo/ros2_workspace/install/my_package:/home/theo/ros2_workspace/install/my_arduino_pkg:/home/theo/ros2_workspace/install/my_arduino_Cmakeversion:/home/theo/ros2_workspace/install/articubot_one:/home/theo/ros2_workspace/install/arduino_pck PYTHONPATH=/home/theo/ros2_workspace/build/ros2_serial_interface/prefix_override:/home/theo/ros2_workspace/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/ros2_serial_interface/build --no-deps install_data
+[1.753s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_arduino_python_pkg', 'pythonpath_develop')
+[1.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/build/serial_arduino_python_pkg/share/serial_arduino_python_pkg/hook/pythonpath_develop.ps1'
+[1.756s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/serial_arduino_python_pkg' returned '0': PYTHONPATH=/home/theo/ros2_workspace/build/serial_arduino_python_pkg/prefix_override:/home/theo/ros2_workspace/install/serial_arduino_python_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/serial_arduino_python_pkg/build --no-deps install_data
+[1.757s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/build/serial_arduino_python_pkg/share/serial_arduino_python_pkg/hook/pythonpath_develop.dsv'
+[1.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/build/serial_arduino_python_pkg/share/serial_arduino_python_pkg/hook/pythonpath_develop.sh'
+[1.761s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial_arduino_python_pkg' for CMake module files
+[1.761s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial_arduino_python_pkg' for CMake config files
+[1.762s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/lib'
+[1.762s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/bin'
+[1.762s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/lib/pkgconfig/serial_arduino_python_pkg.pc'
+[1.762s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/lib/python3.8/site-packages'
+[1.763s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_arduino_python_pkg', 'pythonpath')
+[1.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/serial_arduino_python_pkg/hook/pythonpath.ps1'
+[1.767s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/serial_arduino_python_pkg/hook/pythonpath.dsv'
+[1.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/serial_arduino_python_pkg/hook/pythonpath.sh'
+[1.768s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/bin'
+[1.768s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_arduino_python_pkg)
+[1.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/serial_arduino_python_pkg/package.ps1'
+[1.771s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/serial_arduino_python_pkg/package.dsv'
+[1.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/serial_arduino_python_pkg/package.sh'
+[1.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/serial_arduino_python_pkg/package.bash'
+[1.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/serial_arduino_python_pkg/package.zsh'
+[1.772s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/colcon-core/packages/serial_arduino_python_pkg)
+[2.110s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_serial_interface', 'pythonpath_develop')
+[2.113s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/build/ros2_serial_interface/share/ros2_serial_interface/hook/pythonpath_develop.ps1'
+[2.113s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/ros2_workspace/build/ros2_serial_interface' returned '0': CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:/home/theo/ros2_workspace/install/test_package:/home/theo/ros2_workspace/install/diffdrive_arduino:/home/theo/ros2_workspace/install/my_package:/home/theo/ros2_workspace/install/my_arduino_pkg:/home/theo/ros2_workspace/install/my_arduino_Cmakeversion:/home/theo/ros2_workspace/install/articubot_one:/home/theo/ros2_workspace/install/arduino_pck PYTHONPATH=/home/theo/ros2_workspace/build/ros2_serial_interface/prefix_override:/home/theo/ros2_workspace/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/ros2_serial_interface/build --no-deps install_data
+[2.113s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/build/ros2_serial_interface/share/ros2_serial_interface/hook/pythonpath_develop.dsv'
+[2.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/build/ros2_serial_interface/share/ros2_serial_interface/hook/pythonpath_develop.sh'
+[2.117s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/ros2_serial_interface' for CMake module files
+[2.117s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/ros2_serial_interface' for CMake config files
+[2.117s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/ros2_serial_interface/lib'
+[2.118s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/ros2_serial_interface/bin'
+[2.118s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/ros2_serial_interface/lib/pkgconfig/ros2_serial_interface.pc'
+[2.118s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/ros2_serial_interface/lib/python3.8/site-packages'
+[2.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_serial_interface', 'pythonpath')
+[2.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/ros2_serial_interface/share/ros2_serial_interface/hook/pythonpath.ps1'
+[2.120s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/ros2_workspace/install/ros2_serial_interface/share/ros2_serial_interface/hook/pythonpath.dsv'
+[2.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/ros2_workspace/install/ros2_serial_interface/share/ros2_serial_interface/hook/pythonpath.sh'
+[2.121s] Level 1:colcon.colcon_core.environment:checking '/home/theo/ros2_workspace/install/ros2_serial_interface/bin'
+[2.121s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_serial_interface)
+[2.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/ros2_serial_interface/share/ros2_serial_interface/package.ps1'
+[2.123s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/ros2_workspace/install/ros2_serial_interface/share/ros2_serial_interface/package.dsv'
+[2.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/ros2_serial_interface/share/ros2_serial_interface/package.sh'
+[2.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/ros2_serial_interface/share/ros2_serial_interface/package.bash'
+[2.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/ros2_workspace/install/ros2_serial_interface/share/ros2_serial_interface/package.zsh'
+[2.124s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/ros2_workspace/install/ros2_serial_interface/share/colcon-core/packages/ros2_serial_interface)
+[2.125s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.125s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.125s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.125s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.130s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.130s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.130s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.140s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.142s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/theo/ros2_workspace/install/local_setup.ps1'
+[2.143s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/theo/ros2_workspace/install/_local_setup_util_ps1.py'
+[2.144s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/theo/ros2_workspace/install/setup.ps1'
+[2.146s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/theo/ros2_workspace/install/local_setup.sh'
+[2.146s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/theo/ros2_workspace/install/_local_setup_util_sh.py'
+[2.146s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/theo/ros2_workspace/install/setup.sh'
+[2.148s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/theo/ros2_workspace/install/local_setup.bash'
+[2.149s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/theo/ros2_workspace/install/setup.bash'
+[2.150s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/theo/ros2_workspace/install/local_setup.zsh'
+[2.151s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/theo/ros2_workspace/install/setup.zsh'

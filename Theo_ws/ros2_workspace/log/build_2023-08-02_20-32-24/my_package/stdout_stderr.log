@@ -1,0 +1,3 @@
+make[2]: *** No rule to make target '/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp', needed by 'CMakeFiles/arduino_publisher.dir/src/arduino_publisher.cpp.o'.  Stop.
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/arduino_publisher.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

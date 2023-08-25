@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/theo/ros2_workspace/install/serial/include/**",
+        "/opt/ros/foxy/include/**",
+        "/home/theo/ros2_workspace/src/arduino_pck/include/**",
+        "/home/theo/ros2_workspace/src/diffdrive_arduino/include/**",
+        "/home/theo/ros2_workspace/src/my_arduino_pkg/include/**",
+        "/home/theo/ros2_workspace/src/serial/include/**",
+        "/home/theo/ros2_workspace/src/test_package/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

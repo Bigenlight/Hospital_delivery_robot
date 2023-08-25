@@ -1,0 +1,7 @@
+[0.072s] Invoking command in '/home/theo/ros2_workspace/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/serial -- -j12 -l12
+[0.128s] [ 14%] Built target gtest_main
+[0.133s] [ 28%] Built target gtest
+[0.133s] [ 57%] Built target serial
+[0.157s] [ 85%] Built target serial-test-timer
+[0.157s] [ 85%] Built target serial-test
+[0.157s] [100%] Built target serial_example

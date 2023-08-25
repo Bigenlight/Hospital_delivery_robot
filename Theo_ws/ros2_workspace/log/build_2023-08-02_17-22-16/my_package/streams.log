@@ -1,0 +1,58 @@
+[0.066s] Invoking command in '/home/theo/ros2_workspace/build/my_package': CMAKE_PREFIX_PATH=/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake /home/theo/ros2_workspace/src/my_package -DCMAKE_INSTALL_PREFIX=/home/theo/ros2_workspace/install/my_package
+[1.208s] -- The C compiler identification is GNU 9.4.0
+[1.591s] -- The CXX compiler identification is GNU 9.4.0
+[1.614s] -- Check for working C compiler: /usr/bin/cc
+[1.712s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.715s] -- Detecting C compiler ABI info
+[1.790s] -- Detecting C compiler ABI info - done
+[1.801s] -- Detecting C compile features
+[1.801s] -- Detecting C compile features - done
+[1.805s] -- Check for working CXX compiler: /usr/bin/c++
+[1.874s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.875s] -- Detecting CXX compiler ABI info
+[1.947s] -- Detecting CXX compiler ABI info - done
+[1.965s] -- Detecting CXX compile features
+[1.966s] -- Detecting CXX compile features - done
+[2.157s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.273s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.274s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.591s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.903s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.905s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.905s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/theo/ros2_workspace/src/my_package/include>
+[2.905s] -- Configured cppcheck exclude dirs and/or files: 
+[2.920s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.920s] -- Configured cpplint exclude dirs and/or files: 
+[2.930s] -- Added test 'lint_cmake' to check CMake code style
+[2.954s] -- Added test 'uncrustify' to check C / C++ code style
+[2.954s] -- Configured uncrustify additional arguments: 
+[2.954s] -- Added test 'xmllint' to check XML markup files
+[2.958s] -- Configuring done
+[2.962s] -- Generating done
+[2.964s] -- Build files have been written to: /home/theo/ros2_workspace/build/my_package
+[2.973s] Invoked command in '/home/theo/ros2_workspace/build/my_package' returned '0': CMAKE_PREFIX_PATH=/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake /home/theo/ros2_workspace/src/my_package -DCMAKE_INSTALL_PREFIX=/home/theo/ros2_workspace/install/my_package
+[2.975s] Invoking command in '/home/theo/ros2_workspace/build/my_package': CMAKE_PREFIX_PATH=/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/my_package -- -j12 -l12
+[3.013s] [35m[1mScanning dependencies of target arduino_publisher[0m
+[3.024s] [ 50%] [32mBuilding CXX object CMakeFiles/arduino_publisher.dir/src/arduino_publisher.cpp.o[0m
+[3.436s] [100%] [32m[1mLinking CXX executable arduino_publisher[0m
+[3.490s] [100%] Built target arduino_publisher
+[3.500s] Invoked command in '/home/theo/ros2_workspace/build/my_package' returned '0': CMAKE_PREFIX_PATH=/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/my_package -- -j12 -l12
+[3.522s] Invoking command in '/home/theo/ros2_workspace/build/my_package': CMAKE_PREFIX_PATH=/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/my_package
+[3.529s] -- Install configuration: ""
+[3.529s] -- Installing: /home/theo/ros2_workspace/install/my_package/lib/my_package/arduino_publisher
+[3.529s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+[3.530s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+[3.530s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/my_package/environment/ament_prefix_path.sh
+[3.530s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+[3.530s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/my_package/environment/path.sh
+[3.530s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/my_package/environment/path.dsv
+[3.530s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/my_package/local_setup.bash
+[3.531s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/my_package/local_setup.sh
+[3.531s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/my_package/local_setup.zsh
+[3.531s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/my_package/local_setup.dsv
+[3.531s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/my_package/package.dsv
+[3.531s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/ament_index/resource_index/packages/my_package
+[3.532s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+[3.532s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+[3.532s] -- Installing: /home/theo/ros2_workspace/install/my_package/share/my_package/package.xml
+[3.540s] Invoked command in '/home/theo/ros2_workspace/build/my_package' returned '0': CMAKE_PREFIX_PATH=/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/my_package

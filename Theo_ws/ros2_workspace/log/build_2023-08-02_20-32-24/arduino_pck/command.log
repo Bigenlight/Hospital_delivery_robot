@@ -1,0 +1,3 @@
+Invoking command in '/home/theo/ros2_workspace/build/arduino_pck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/arduino_pck -- -j12 -l12
+Invoked command in '/home/theo/ros2_workspace/build/arduino_pck' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/arduino_pck -- -j12 -l12
+Invoking command in '/home/theo/ros2_workspace/build/arduino_pck': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/arduino_pck

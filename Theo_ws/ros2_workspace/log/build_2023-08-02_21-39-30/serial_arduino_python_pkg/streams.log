@@ -1,0 +1,24 @@
+[0.959s] Invoking command in '/home/theo/ros2_workspace/build/serial_arduino_python_pkg': PYTHONPATH=/home/theo/ros2_workspace/build/serial_arduino_python_pkg/prefix_override:/home/theo/ros2_workspace/install/serial_arduino_python_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/serial_arduino_python_pkg/build --no-deps install_data
+[1.193s] running develop
+[1.329s] running egg_info
+[1.329s] creating serial_arduino_python_pkg.egg-info
+[1.329s] writing serial_arduino_python_pkg.egg-info/PKG-INFO
+[1.329s] writing dependency_links to serial_arduino_python_pkg.egg-info/dependency_links.txt
+[1.330s] writing entry points to serial_arduino_python_pkg.egg-info/entry_points.txt
+[1.330s] writing requirements to serial_arduino_python_pkg.egg-info/requires.txt
+[1.330s] writing top-level names to serial_arduino_python_pkg.egg-info/top_level.txt
+[1.331s] writing manifest file 'serial_arduino_python_pkg.egg-info/SOURCES.txt'
+[1.357s] reading manifest file 'serial_arduino_python_pkg.egg-info/SOURCES.txt'
+[1.358s] writing manifest file 'serial_arduino_python_pkg.egg-info/SOURCES.txt'
+[1.387s] running build_ext
+[1.387s] Creating /home/theo/ros2_workspace/install/serial_arduino_python_pkg/lib/python3.8/site-packages/site.py
+[1.389s] Creating /home/theo/ros2_workspace/install/serial_arduino_python_pkg/lib/python3.8/site-packages/serial-arduino-python-pkg.egg-link (link to .)
+[1.389s] 
+[1.390s] Installed /home/theo/ros2_workspace/build/serial_arduino_python_pkg
+[1.390s] running install_data
+[1.390s] creating /home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/ament_index
+[1.390s] creating /home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/ament_index/resource_index
+[1.390s] creating /home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/ament_index/resource_index/packages
+[1.390s] copying resource/serial_arduino_python_pkg -> /home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/ament_index/resource_index/packages
+[1.390s] copying package.xml -> /home/theo/ros2_workspace/install/serial_arduino_python_pkg/share/serial_arduino_python_pkg
+[1.414s] Invoked command in '/home/theo/ros2_workspace/build/serial_arduino_python_pkg' returned '0': PYTHONPATH=/home/theo/ros2_workspace/build/serial_arduino_python_pkg/prefix_override:/home/theo/ros2_workspace/install/serial_arduino_python_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/serial_arduino_python_pkg/build --no-deps install_data

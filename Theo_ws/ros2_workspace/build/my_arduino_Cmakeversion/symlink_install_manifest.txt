@@ -1,0 +1,15 @@
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/ament_index/resource_index/package_run_dependencies/my_arduino_Cmakeversion
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/ament_index/resource_index/parent_prefix_path/my_arduino_Cmakeversion
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/my_arduino_Cmakeversion/environment/ament_prefix_path.sh
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/my_arduino_Cmakeversion/environment/ament_prefix_path.dsv
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/my_arduino_Cmakeversion/environment/path.sh
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/my_arduino_Cmakeversion/environment/path.dsv
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/my_arduino_Cmakeversion/local_setup.bash
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/my_arduino_Cmakeversion/local_setup.sh
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/my_arduino_Cmakeversion/local_setup.zsh
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/my_arduino_Cmakeversion/local_setup.dsv
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/my_arduino_Cmakeversion/package.dsv
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/ament_index/resource_index/packages/my_arduino_Cmakeversion
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/my_arduino_Cmakeversion/cmake/my_arduino_CmakeversionConfig.cmake
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/my_arduino_Cmakeversion/cmake/my_arduino_CmakeversionConfig-version.cmake
+/home/theo/ros2_workspace/install/my_arduino_Cmakeversion/share/my_arduino_Cmakeversion/package.xml

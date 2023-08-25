@@ -1,0 +1,17 @@
+[1.362s] Invoking command in '/home/theo/ros2_workspace/build/py_arduino_pub': PYTHONPATH=/home/theo/ros2_workspace/build/py_arduino_pub/prefix_override:/home/theo/ros2_workspace/install/py_arduino_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/py_arduino_pub/build --no-deps install_data
+[1.619s] running develop
+[1.816s] running egg_info
+[1.816s] writing py_arduino_pub.egg-info/PKG-INFO
+[1.816s] writing dependency_links to py_arduino_pub.egg-info/dependency_links.txt
+[1.817s] writing entry points to py_arduino_pub.egg-info/entry_points.txt
+[1.817s] writing requirements to py_arduino_pub.egg-info/requires.txt
+[1.817s] writing top-level names to py_arduino_pub.egg-info/top_level.txt
+[1.851s] reading manifest file 'py_arduino_pub.egg-info/SOURCES.txt'
+[1.852s] writing manifest file 'py_arduino_pub.egg-info/SOURCES.txt'
+[1.893s] running build_ext
+[1.894s] Creating /home/theo/ros2_workspace/install/py_arduino_pub/lib/python3.8/site-packages/py-arduino-pub.egg-link (link to .)
+[1.894s] Installing Sending_py_order script to /home/theo/ros2_workspace/install/py_arduino_pub/lib/py_arduino_pub
+[1.895s] 
+[1.895s] Installed /home/theo/ros2_workspace/build/py_arduino_pub
+[1.895s] running install_data
+[1.954s] Invoked command in '/home/theo/ros2_workspace/build/py_arduino_pub' returned '0': PYTHONPATH=/home/theo/ros2_workspace/build/py_arduino_pub/prefix_override:/home/theo/ros2_workspace/install/py_arduino_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/py_arduino_pub/build --no-deps install_data

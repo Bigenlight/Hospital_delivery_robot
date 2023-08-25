@@ -1,0 +1,23 @@
+[0.676s] Invoking command in '/home/theo/ros2_workspace/build/ros2_serial_interface': AMENT_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial LD_LIBRARY_PATH=/home/theo/ros2_workspace/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/theo/ros2_workspace/build/ros2_serial_interface/prefix_override:/home/theo/ros2_workspace/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/ros2_serial_interface/build --no-deps install_data
+[0.896s] running develop
+[1.026s] running egg_info
+[1.026s] writing ros2_serial_interface.egg-info/PKG-INFO
+[1.026s] writing dependency_links to ros2_serial_interface.egg-info/dependency_links.txt
+[1.026s] writing entry points to ros2_serial_interface.egg-info/entry_points.txt
+[1.026s] writing requirements to ros2_serial_interface.egg-info/requires.txt
+[1.026s] writing top-level names to ros2_serial_interface.egg-info/top_level.txt
+[1.052s] reading manifest file 'ros2_serial_interface.egg-info/SOURCES.txt'
+[1.053s] writing manifest file 'ros2_serial_interface.egg-info/SOURCES.txt'
+[1.080s] running build_ext
+[1.080s] Creating /home/theo/ros2_workspace/install/ros2_serial_interface/lib/python3.8/site-packages/ros2-serial-interface.egg-link (link to .)
+[1.081s] Installing predef_timed_pub script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.081s] Installing pynput_key_pub script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.081s] Installing serial_server script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.081s] Installing terminal_key_pub script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.082s] Installing virtual_serial_client script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.082s] Installing virtual_serial_server script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.082s] Installing virtual_serial_setup script to /home/theo/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.082s] 
+[1.082s] Installed /home/theo/ros2_workspace/build/ros2_serial_interface
+[1.082s] running install_data
+[1.104s] Invoked command in '/home/theo/ros2_workspace/build/ros2_serial_interface' returned '0': AMENT_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/theo/ros2_workspace/install/serial LD_LIBRARY_PATH=/home/theo/ros2_workspace/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/theo/ros2_workspace/build/ros2_serial_interface/prefix_override:/home/theo/ros2_workspace/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/ros2_workspace/build/ros2_serial_interface/build --no-deps install_data

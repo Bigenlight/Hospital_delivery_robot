@@ -1,0 +1,21 @@
+[0.081s] Invoking command in '/home/theo/ros2_workspace/build/arduino_pck': CMAKE_PREFIX_PATH=/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/arduino_pck -- -j12 -l12
+[0.543s] Invoked command in '/home/theo/ros2_workspace/build/arduino_pck' returned '0': CMAKE_PREFIX_PATH=/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/arduino_pck -- -j12 -l12
+[0.576s] Invoking command in '/home/theo/ros2_workspace/build/arduino_pck': CMAKE_PREFIX_PATH=/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/arduino_pck
+[0.586s] -- Install configuration: ""
+[0.588s] -- Execute custom install script
+[0.590s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/ament_index/resource_index/package_run_dependencies/arduino_pck
+[0.591s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/ament_index/resource_index/parent_prefix_path/arduino_pck
+[0.591s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/ament_prefix_path.sh
+[0.592s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/ament_prefix_path.dsv
+[0.592s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/path.sh
+[0.593s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/path.dsv
+[0.593s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.bash
+[0.593s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.sh
+[0.593s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.zsh
+[0.593s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.dsv
+[0.593s] -- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.dsv
+[0.601s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/ament_index/resource_index/packages/arduino_pck
+[0.601s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/cmake/arduino_pckConfig.cmake
+[0.601s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/cmake/arduino_pckConfig-version.cmake
+[0.602s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.xml
+[0.607s] Invoked command in '/home/theo/ros2_workspace/build/arduino_pck' returned '0': CMAKE_PREFIX_PATH=/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/ros2_workspace/build/arduino_pck

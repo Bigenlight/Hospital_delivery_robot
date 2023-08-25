@@ -1,0 +1,15 @@
+/home/theo/ros2_workspace/install/arduino_pck/share/ament_index/resource_index/package_run_dependencies/arduino_pck
+/home/theo/ros2_workspace/install/arduino_pck/share/ament_index/resource_index/parent_prefix_path/arduino_pck
+/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/ament_prefix_path.sh
+/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/ament_prefix_path.dsv
+/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/path.sh
+/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/path.dsv
+/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.bash
+/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.sh
+/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.zsh
+/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.dsv
+/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.dsv
+/home/theo/ros2_workspace/install/arduino_pck/share/ament_index/resource_index/packages/arduino_pck
+/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/cmake/arduino_pckConfig.cmake
+/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/cmake/arduino_pckConfig-version.cmake
+/home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.xml

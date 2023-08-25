@@ -1,0 +1,10 @@
+[0.046s] Invoking command in '/home/theo/ros2_workspace/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/my_package -- -j12 -l12
+[0.100s] [ 50%] [32mBuilding CXX object CMakeFiles/arduino_publisher.dir/src/arduino_publisher.cpp.o[0m
+[0.126s] [01m[K/home/theo/ros2_workspace/src/my_package/src/arduino_publisher.cpp:1:10:[m[K [01;31m[Kfatal error: [m[KSerialPort.h: No such file or directory
+[0.126s]     1 | #include [01;31m[K"SerialPort.h"[m[K
+[0.127s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.129s] compilation terminated.
+[0.129s] make[2]: *** [CMakeFiles/arduino_publisher.dir/build.make:63: CMakeFiles/arduino_publisher.dir/src/arduino_publisher.cpp.o] Error 1
+[0.130s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/arduino_publisher.dir/all] Error 2
+[0.130s] make: *** [Makefile:141: all] Error 2
+[0.145s] Invoked command in '/home/theo/ros2_workspace/build/my_package' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/ros2_workspace/build/my_package -- -j12 -l12

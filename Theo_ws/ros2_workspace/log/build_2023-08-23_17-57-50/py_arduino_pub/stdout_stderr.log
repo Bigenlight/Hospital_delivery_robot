@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating py_arduino_pub.egg-info
+writing py_arduino_pub.egg-info/PKG-INFO
+writing dependency_links to py_arduino_pub.egg-info/dependency_links.txt
+writing entry points to py_arduino_pub.egg-info/entry_points.txt
+writing requirements to py_arduino_pub.egg-info/requires.txt
+writing top-level names to py_arduino_pub.egg-info/top_level.txt
+writing manifest file 'py_arduino_pub.egg-info/SOURCES.txt'
+reading manifest file 'py_arduino_pub.egg-info/SOURCES.txt'
+writing manifest file 'py_arduino_pub.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/theo/ros2_workspace/install/py_arduino_pub/lib/python3.8/site-packages/site.py
+Creating /home/theo/ros2_workspace/install/py_arduino_pub/lib/python3.8/site-packages/py-arduino-pub.egg-link (link to .)
+Installing Sending_py_order script to /home/theo/ros2_workspace/install/py_arduino_pub/lib/py_arduino_pub
+
+Installed /home/theo/ros2_workspace/build/py_arduino_pub
+running install_data
+creating /home/theo/ros2_workspace/install/py_arduino_pub/share/ament_index
+creating /home/theo/ros2_workspace/install/py_arduino_pub/share/ament_index/resource_index
+creating /home/theo/ros2_workspace/install/py_arduino_pub/share/ament_index/resource_index/packages
+copying resource/py_arduino_pub -> /home/theo/ros2_workspace/install/py_arduino_pub/share/ament_index/resource_index/packages
+copying package.xml -> /home/theo/ros2_workspace/install/py_arduino_pub/share/py_arduino_pub
