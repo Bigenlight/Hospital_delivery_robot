@@ -1,10 +1,13 @@
 import rclpy
 from rclpy.node import Node
 
-from std_msgs.msg import String
+from std_msgs.msg import Int32
 
 import serial
 import time
+
+
+import struct
 
 # serial 설치 필요
 
@@ -14,8 +17,7 @@ import time
 # ros2 run py_arduino_pub Sending_py_order
 
 # 아두이노와 연결
-# /bin/python3 /home/theo/python_ws/ros2_arduino_communication.py
-
+# /bin/python3 /home/theo/23_HF110/Theo_ws/python_ws/ros2_arduino_communication.py
 
 
 class MinimalSubscriber(Node):
@@ -23,7 +25,7 @@ class MinimalSubscriber(Node):
     def __init__(self):
         super().__init__('minimal_subscriber')
         self.subscription = self.create_subscription(
-            String,
+            Int32,
             'topic',
             self.listener_callback,
             10)
@@ -31,13 +33,19 @@ class MinimalSubscriber(Node):
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        self.get_logger().info('Sending Arduino: "%s"' % msg.data)
+        self.get_logger().info('Sending Arduino: %d' % msg.data)
         
         commend = msg.data
         
-        py_serial.write(commend.encode())
         
-        #추가
+        #py_serial.write(commend.encode())
+        #py_serial.write(commend)
+        
+        
+        data = struct.pack('>i', commend)
+        py_serial.write(data)
+        
+        # #추가
         py_serial.reset_output_buffer()
         
         
@@ -45,19 +53,26 @@ class MinimalSubscriber(Node):
             # response = py_serial.readline()
             # print(response[:len(response)-1].decode())
             
-            response = py_serial.readline()
+            #response = py_serial.read_until(" ")
+            
+            response = py_serial.read()
             print("Arduino Response:", response)  # Print raw bytes
             # Process the response as needed, without attempting UTF-8 decoding
             # For example, you can convert the bytes to a hex representation
             #hex_response = " ".join([format(byte, '02x') for byte in response])
             #print("Hex Response:", hex_response)
-            
-        time.sleep(0.001)
+
+        
+        # # #추가
+        py_serial.reset_input_buffer()
+        
+        time.sleep(0.01)
     
 
 
 py_serial = serial.Serial(
     
+    # Window
     #port='/dev/ttyUSB0',
     #port='/dev/ttyACM0',
     port='/dev/ttyACM1',
