@@ -8,7 +8,7 @@ int pos = 0;
 #define dtime 1000
 //
 #define rest 0
-int order = 5;
+int32_t order = 5;
 int state = 0;
 //
 int i = 0;
