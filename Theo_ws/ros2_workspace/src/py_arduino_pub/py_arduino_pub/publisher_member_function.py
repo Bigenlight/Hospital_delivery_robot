@@ -38,8 +38,8 @@ class MinimalPublisher(Node):
         
         #
         self.i += 1
-        if(self.i % 3000 < 1000): self.order = "push "
-        elif(self.i % 3000 < 2000): self.order = "pull "
+        if(self.i % 5000 < 1000): self.order = "push "
+        elif(self.i % 5000 > 2000 and self.i % 5000 < 3000): self.order = "pull "
         else : self.order = "rest "
         
 

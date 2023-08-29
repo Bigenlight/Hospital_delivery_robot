@@ -1,0 +1,18 @@
+CMake Error: The current CMakeCache.txt directory /home/theo/23_HF110/Theo_ws/ros2_workspace/build/my_arduino_pkg/CMakeCache.txt is different than the directory /home/theo/ros2_workspace/build/my_arduino_pkg where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/ament_index/resource_index/package_run_dependencies/my_arduino_pkg
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/ament_index/resource_index/parent_prefix_path/my_arduino_pkg
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/environment/path.sh
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/environment/path.dsv
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/local_setup.bash
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/local_setup.sh
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/local_setup.zsh
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/local_setup.dsv
+-- Symlinking: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.dsv
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/ament_index/resource_index/packages/my_arduino_pkg
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/cmake/my_arduino_pkgConfig.cmake
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/cmake/my_arduino_pkgConfig-version.cmake
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/my_arduino_pkg/share/my_arduino_pkg/package.xml

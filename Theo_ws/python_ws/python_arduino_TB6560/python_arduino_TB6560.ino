@@ -1,5 +1,5 @@
 
-int rev = 3;
+int rev = 1;
 //
 int pos = 0;
 #define dirPin 2
@@ -15,7 +15,7 @@ unsigned long past = 0; // 과거 시간 저장 변수
 //
 
 void setup() {
-  Serial.begin(1000000);
+  Serial.begin(9600);
   Serial.flush();
 
   // Declare pins as output:
@@ -23,6 +23,7 @@ void setup() {
   pinMode(dirPin, OUTPUT);
 }
 
+// Pulling
 void clockwise(int lap) 
 {
   // Spin the stepper motor 1 revolution slowly:
@@ -35,6 +36,7 @@ void clockwise(int lap)
   }
 }
 
+// Pushing
 void counter_clockwise(int lap) 
 {
   // Spin the stepper motor 1 revolution quickly:
@@ -92,20 +94,38 @@ void loop() {
   // 명령 
   if (order == "push" && state == "pulled")
   {
-    // Set the spinning direction clockwise:
-    digitalWrite(dirPin, HIGH);
-    Serial.println("Moving Clockwise");
-    clockwise(rev);
+    // Set the spinning direction counterclockwise:
+    digitalWrite(dirPin, LOW);
+    Serial.println("Moving Counter Clockwise");
+    counter_clockwise(rev);
+    state = "pushed";
+    delay(100);
+  }
+  else if (order == "ush" && state == "pulled")
+  {
+    // Set the spinning direction counterclockwise:
+    digitalWrite(dirPin, LOW);
+    Serial.println("Moving Counter Clockwise");
+    counter_clockwise(rev);
     state = "pushed";
     delay(100);
   }
 
   else if (order == "pull" && state == "pushed")
   {
-    // Set the spinning direction counterclockwise:
-    digitalWrite(dirPin, LOW);
-    Serial.println("Moving Counter Clockwise");
-    counter_clockwise(rev);
+    // Set the spinning direction clockwise:
+    digitalWrite(dirPin, HIGH);
+    Serial.println("Moving Clockwise");
+    clockwise(rev);
+    state = "pulled";
+    delay(100);
+  }
+  else if (order == "ull" && state == "pushed")
+  {
+    // Set the spinning direction clockwise:
+    digitalWrite(dirPin, HIGH);
+    Serial.println("Moving Clockwise");
+    clockwise(rev);
     state = "pulled";
     delay(100);
   }

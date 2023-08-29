@@ -1,0 +1,23 @@
+[1.327s] Invoking command in '/home/theo/23_HF110/Theo_ws/ros2_workspace/build/ros2_serial_interface': AMENT_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/theo/23_HF110/Theo_ws/ros2_workspace/install/serial:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/test_package:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/my_arduino_pkg:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/diffdrive_arduino:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/my_package:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/my_arduino_Cmakeversion:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/articubot_one:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/arduino_pck LD_LIBRARY_PATH=/home/theo/ros2_workspace/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/theo/23_HF110/Theo_ws/ros2_workspace/build/ros2_serial_interface/prefix_override:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/23_HF110/Theo_ws/ros2_workspace/build/ros2_serial_interface/build --no-deps install_data
+[1.553s] running develop
+[1.705s] running egg_info
+[1.705s] writing ros2_serial_interface.egg-info/PKG-INFO
+[1.705s] writing dependency_links to ros2_serial_interface.egg-info/dependency_links.txt
+[1.705s] writing entry points to ros2_serial_interface.egg-info/entry_points.txt
+[1.706s] writing requirements to ros2_serial_interface.egg-info/requires.txt
+[1.724s] writing top-level names to ros2_serial_interface.egg-info/top_level.txt
+[1.756s] reading manifest file 'ros2_serial_interface.egg-info/SOURCES.txt'
+[1.757s] writing manifest file 'ros2_serial_interface.egg-info/SOURCES.txt'
+[1.788s] running build_ext
+[1.797s] Creating /home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface/lib/python3.8/site-packages/ros2-serial-interface.egg-link (link to .)
+[1.797s] Installing predef_timed_pub script to /home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.798s] Installing pynput_key_pub script to /home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.798s] Installing serial_server script to /home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.799s] Installing terminal_key_pub script to /home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.799s] Installing virtual_serial_client script to /home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.799s] Installing virtual_serial_server script to /home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.799s] Installing virtual_serial_setup script to /home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface/lib/ros2_serial_interface
+[1.799s] 
+[1.799s] Installed /home/theo/23_HF110/Theo_ws/ros2_workspace/build/ros2_serial_interface
+[1.800s] running install_data
+[1.839s] Invoked command in '/home/theo/23_HF110/Theo_ws/ros2_workspace/build/ros2_serial_interface' returned '0': AMENT_PREFIX_PATH=/home/theo/ros2_workspace/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/theo/23_HF110/Theo_ws/ros2_workspace/install/serial:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/test_package:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/my_arduino_pkg:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/diffdrive_arduino:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/my_package:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/my_arduino_Cmakeversion:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/articubot_one:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/arduino_pck LD_LIBRARY_PATH=/home/theo/ros2_workspace/install/serial/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/theo/23_HF110/Theo_ws/ros2_workspace/build/ros2_serial_interface/prefix_override:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/23_HF110/Theo_ws/ros2_workspace/build/ros2_serial_interface/build --no-deps install_data

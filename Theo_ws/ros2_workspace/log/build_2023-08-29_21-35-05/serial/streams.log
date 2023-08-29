@@ -1,0 +1,35 @@
+[0.161s] Invoking command in '/home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/py_pubsub:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/py_arduino_pub:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/pubsub_py:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial -- -j12 -l12
+[0.955s] [ 14%] Built target gtest
+[0.955s] [ 28%] Built target gtest_main
+[0.955s] [ 57%] Built target serial
+[0.956s] [ 85%] Built target serial-test-timer
+[0.956s] [ 85%] Built target serial-test
+[0.956s] [100%] Built target serial_example
+[0.958s] CMake Error: The current CMakeCache.txt directory /home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial/CMakeCache.txt is different than the directory /home/theo/ros2_workspace/build/serial where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[0.959s] Invoked command in '/home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/py_pubsub:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/py_arduino_pub:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/pubsub_py:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --build /home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial -- -j12 -l12
+[1.005s] Invoking command in '/home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/py_pubsub:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/py_arduino_pub:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/pubsub_py:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial
+[1.016s] -- Install configuration: ""
+[1.016s] -- Execute custom install script
+[1.016s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/lib/libserial.a
+[1.017s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/include/serial/serial.h
+[1.017s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/include/serial/v8stdint.h
+[1.017s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/environment/library_path.sh
+[1.019s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/environment/library_path.dsv
+[1.020s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[1.021s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[1.021s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/environment/ament_prefix_path.sh
+[1.022s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/environment/ament_prefix_path.dsv
+[1.022s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/environment/path.sh
+[1.022s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/environment/path.dsv
+[1.022s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/local_setup.bash
+[1.022s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/local_setup.sh
+[1.023s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/local_setup.zsh
+[1.023s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/local_setup.dsv
+[1.023s] -- Symlinking: /home/theo/ros2_workspace/install/serial/share/serial/package.dsv
+[1.028s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/ament_index/resource_index/packages/serial
+[1.029s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.029s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[1.030s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/cmake/serialConfig.cmake
+[1.030s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/cmake/serialConfig-version.cmake
+[1.030s] -- Up-to-date symlink: /home/theo/ros2_workspace/install/serial/share/serial/package.xml
+[1.037s] Invoked command in '/home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/serial_arduino_python_pkg:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/ros2_serial_interface:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/py_pubsub:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/py_arduino_pub:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/pubsub_py:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/my_arduino:/home/theo/colcon_ws/install/autonomous_tb3:/opt/ros/foxy /usr/bin/cmake --install /home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial

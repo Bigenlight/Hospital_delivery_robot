@@ -1,0 +1,16 @@
+[2.456s] Invoking command in '/home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial_arduino_python_pkg': PYTHONPATH=/home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial_arduino_python_pkg/prefix_override:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/serial_arduino_python_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial_arduino_python_pkg/build --no-deps install_data
+[2.684s] running develop
+[2.845s] running egg_info
+[2.845s] writing serial_arduino_python_pkg.egg-info/PKG-INFO
+[2.845s] writing dependency_links to serial_arduino_python_pkg.egg-info/dependency_links.txt
+[2.845s] writing entry points to serial_arduino_python_pkg.egg-info/entry_points.txt
+[2.864s] writing requirements to serial_arduino_python_pkg.egg-info/requires.txt
+[2.866s] writing top-level names to serial_arduino_python_pkg.egg-info/top_level.txt
+[2.897s] reading manifest file 'serial_arduino_python_pkg.egg-info/SOURCES.txt'
+[2.899s] writing manifest file 'serial_arduino_python_pkg.egg-info/SOURCES.txt'
+[2.930s] running build_ext
+[2.936s] Creating /home/theo/23_HF110/Theo_ws/ros2_workspace/install/serial_arduino_python_pkg/lib/python3.8/site-packages/serial-arduino-python-pkg.egg-link (link to .)
+[2.937s] 
+[2.937s] Installed /home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial_arduino_python_pkg
+[2.938s] running install_data
+[3.010s] Invoked command in '/home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial_arduino_python_pkg' returned '0': PYTHONPATH=/home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial_arduino_python_pkg/prefix_override:/home/theo/23_HF110/Theo_ws/ros2_workspace/install/serial_arduino_python_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/theo/23_HF110/Theo_ws/ros2_workspace/build/serial_arduino_python_pkg/build --no-deps install_data

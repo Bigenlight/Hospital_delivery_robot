@@ -1,0 +1,18 @@
+CMake Error: The current CMakeCache.txt directory /home/theo/23_HF110/Theo_ws/ros2_workspace/build/arduino_pck/CMakeCache.txt is different than the directory /home/theo/ros2_workspace/build/arduino_pck where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/ament_index/resource_index/package_run_dependencies/arduino_pck
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/ament_index/resource_index/parent_prefix_path/arduino_pck
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/path.sh
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/environment/path.dsv
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.bash
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.sh
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.zsh
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/local_setup.dsv
+-- Symlinking: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.dsv
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/ament_index/resource_index/packages/arduino_pck
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/cmake/arduino_pckConfig.cmake
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/cmake/arduino_pckConfig-version.cmake
+-- Up-to-date symlink: /home/theo/ros2_workspace/install/arduino_pck/share/arduino_pck/package.xml
