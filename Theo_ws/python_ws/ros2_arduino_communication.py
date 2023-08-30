@@ -59,8 +59,8 @@ class MinimalSubscriber(Node):
 py_serial = serial.Serial(
     
     #port='/dev/ttyUSB0',
-    port='/dev/ttyUSB1',
-    #port='/dev/ttyACM0',
+    #port='/dev/ttyUSB1',
+    port='/dev/ttyACM0',
     #port='/dev/ttyACM1',
     
     # 보드 레이트 (통신 속도)

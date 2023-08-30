@@ -1,17 +1,3 @@
-# Copyright 2016 Open Source Robotics Foundation, Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 import rclpy
 from rclpy.node import Node
 
@@ -37,9 +23,16 @@ class MinimalPublisher(Node):
         self.get_logger().info('Sending order to Python: "%s"' % msg.data)
         
         #
+        # self.i += 1
+        # if(self.i % 5000 < 1000): self.order = "push "
+        # elif(self.i % 5000 > 2000 and self.i % 5000 < 3000): self.order = "pull "
+        # else : self.order = "rest "
+        
         self.i += 1
-        if(self.i % 5000 < 1000): self.order = "push "
-        elif(self.i % 5000 > 2000 and self.i % 5000 < 3000): self.order = "pull "
+        if(self.i % 6000 > 1000 and self.i % 6000 < 2000): self.order = "lo "
+        elif(self.i % 6000 > 4000 and self.i % 6000 < 5000): self.order = "un "  
+        elif(self.i % 3000 < 100): self.order = "push "
+        #elif(self.i % 5000 > 2000 and self.i % 5000 < 3000): self.order = "pull "
         else : self.order = "rest "
         
 
