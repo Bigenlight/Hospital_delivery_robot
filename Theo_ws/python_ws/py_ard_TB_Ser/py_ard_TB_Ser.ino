@@ -20,7 +20,7 @@ unsigned long past = 0; // 과거 시간 저장 변수
 unsigned long breaktime = 0;
 //
 
-void setup() 
+void setup()
 {
   //
   Serial.begin(9600);
@@ -38,7 +38,7 @@ void setup()
 }
 
 // Pulling
-void clockwise(int lap) 
+void clockwise(int lap)
 {
   // Spin the stepper motor 1 revolution slowly:
   for (int i = 0; i < lap * stepsPerRevolution; i++) {
@@ -50,11 +50,11 @@ void clockwise(int lap)
   }
   state = "pulled";
   righthand.write(0);
-  lefthand.write(180);  
+  lefthand.write(180);
 }
 
 // Pushing
-void counter_clockwise(int lap) 
+void counter_clockwise(int lap)
 {
   righthand.write(90);
   lefthand.write(90);
@@ -68,16 +68,18 @@ void counter_clockwise(int lap)
   }
   close_servo();
   state = "pushed";
-  
+
   //pull
+  Serial.println("Moving Clockwise");
+  digitalWrite(dirPin, HIGH);
   clockwise(rev);
 }
 
-void close_servo(){
-  if(arm_mode == "loading"){
-      Serial.print("loading: ");
-      righthand.write(0);
-      lefthand.write(180);
+void close_servo() {
+  if (arm_mode == "loading") {
+    Serial.print("loading: ");
+    righthand.write(0);
+    lefthand.write(180);
   }
   else Serial.print("unloading: ");
 }
@@ -85,8 +87,8 @@ void close_servo(){
 void loop() {
   unsigned long now = millis();
 
- // Serial.read();
-//  delay(100);
+  // Serial.read();
+  //  delay(100);
 
 
   if (Serial.available())
@@ -96,10 +98,10 @@ void loop() {
     // Convert the string to an integer
     //order = input.toInt();
 
-//    while (Serial.available())
-//    {
-//      Serial.read(); // Clear any remaining characters in the serial buffer
-//    }
+    //    while (Serial.available())
+    //    {
+    //      Serial.read(); // Clear any remaining characters in the serial buffer
+    //    }
     Serial.read();
 
     past = now;
@@ -111,8 +113,18 @@ void loop() {
     order = "nomsg";
   }
 
-  // 시리얼 메시지 전송 
-  Serial.print("receive: ");
+
+  if (order == "lo") arm_mode = "loading";
+  else if (order == "o") arm_mode = "loading";
+  else if (order == " o") arm_mode = "loading";
+  else if (order == "olo") arm_mode = "loading";
+  else if (order == "un") arm_mode = "unloading";
+  else if (order == "n") arm_mode = "unloading";
+  else if (order == " n") arm_mode = "unloading";
+  else if (order == "nun") arm_mode = "unloading";
+
+  // 시리얼 메시지 전송
+  Serial.print(" /Receive: ");
   Serial.print(order);
   Serial.print(", past: ");
   Serial.print(past);
@@ -129,16 +141,8 @@ void loop() {
   if (now - breaktime <= 10000)
   {
     order = "rest";
-    Serial.print("break time");
+    Serial.print("break time ");
   }
-  
-
-  if(order == "lo") arm_mode = "loading";
-  if(order == "o") arm_mode = "loading";
-  if(order == "olo") arm_mode = "loading";
-  if(order == "un") arm_mode = "unloading";
-  if(order == "n") arm_mode = "unloading";
-  if(order == "nun") arm_mode = "unloading";
 
 
   // 명령
@@ -146,7 +150,7 @@ void loop() {
   {
     order = "rest";
     Serial.print("break time");
-  } 
+  }
   else if (order == "push" && state == "pulled")
   {
     // Set the spinning direction counterclockwise:
@@ -166,27 +170,27 @@ void loop() {
     delay(100);
   }
 
-//  else if (order == "pull" && state == "pushed")
-//  {
-//    // Set the spinning direction clockwise:
-//    digitalWrite(dirPin, HIGH);
-//    Serial.println("Moving Clockwise");
-//    clockwise(rev);
-//    state = "pulled";
-//    delay(100);
-//  }
-//  else if (order == "ull" && state == "pushed")
-//  {
-//    // Set the spinning direction clockwise:
-//    digitalWrite(dirPin, HIGH);
-//    Serial.println("Moving Clockwise");
-//    clockwise(rev);
-//    state = "pulled";
-//    delay(100);
-//  }
+  //  else if (order == "pull" && state == "pushed")
+  //  {
+  //    // Set the spinning direction clockwise:
+  //    digitalWrite(dirPin, HIGH);
+  //    Serial.println("Moving Clockwise");
+  //    clockwise(rev);
+  //    state = "pulled";
+  //    delay(100);
+  //  }
+  //  else if (order == "ull" && state == "pushed")
+  //  {
+  //    // Set the spinning direction clockwise:
+  //    digitalWrite(dirPin, HIGH);
+  //    Serial.println("Moving Clockwise");
+  //    clockwise(rev);
+  //    state = "pulled";
+  //    delay(100);
+  //  }
 
   else
   {
-    Serial.println("resting");
+    Serial.println("resting ");
   }
 }
