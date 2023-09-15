@@ -140,11 +140,11 @@ void loop() {
 
 
   // 부저알람
-  if (order == "1"){
+  if (order == "per"){
     alarm(20);
   }
-  else if (order == "erson") alarm(20);
-  else if (order == " rson") alarm(20);
+  else if (order == "er") alarm(20);
+  else if (order == " r") alarm(20);
 
   
   // 이전 명령이 현재와 일정 시간 초과시 명령 무효화
