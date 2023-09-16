@@ -107,7 +107,8 @@ void alarm(int y)
     tone(speakerPin, 500);
     delay(500);
     noTone(speakerPin);
-    Serial.println("emergency");
+    Serial.print("emergency ");
+    Serial.println(j);
     j = j + 1;
   }
   
