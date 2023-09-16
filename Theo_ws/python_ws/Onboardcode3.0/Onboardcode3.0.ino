@@ -94,16 +94,23 @@ void close_servo() {
   else Serial.print("unloading: ");
 }
 
-void alarm() {
-  i = 0;
-  while (i < 20) {
+void alarm(int y) 
+{
+  int j = 0;
+  
+  Serial.println("emergency");
+  
+  while (j < y) 
+  {
     tone(speakerPin, 800);
     delay(500);
     tone(speakerPin, 500);
     delay(500);
     noTone(speakerPin);
-    i += 1;
+    Serial.println("emergency");
+    j = j + 1;
   }
+  
   state = "alarm";
 }
 
@@ -131,6 +138,15 @@ void loop() {
     past = now;
   }
 
+
+  // 부저알람
+  if (order == "1"){
+    alarm(20);
+  }
+  else if (order == "erson") alarm(20);
+  else if (order == " rson") alarm(20);
+
+  
   // 이전 명령이 현재와 일정 시간 초과시 명령 무효화
   if (now - past >= 3000)
   {
@@ -146,11 +162,6 @@ void loop() {
   else if (order == "n") arm_mode = "unloading";
   else if (order == " n") arm_mode = "unloading";
   else if (order == "nun") arm_mode = "unloading";
-
-  // 부저알람
-  if (order == "person") alarm();
-  else if (order == "erson") alarm();
-  else if (order == " rson") alarm();
 
 
 
