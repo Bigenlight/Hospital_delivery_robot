@@ -14,7 +14,7 @@ class WebcamPublisher(Node):
 
         self.capture = cv2.VideoCapture(2)                                  # OpenCV를 사용하여 웹캠을 연결하고, 2번 웹캠을 사용하도록 설정.
 
-    def publish_frame(self):
+    def publish_frame(self):    
         ret, frame = self.capture.read()                                    # 웹캠으로부터 프레임을 읽어옴. ret은 성공 여부를 나타내는 불리언 값, frame은 읽어온 이미지 데이터.
         if ret:
             img_msg = self.bridge.cv2_to_imgmsg(frame, encoding="bgr8")     # OpenCV 이미지를 ROS Image 메시지로 변환. bgr8 인코딩을 사용하여 BGR 컬러 형식의 이미지를 표현.
