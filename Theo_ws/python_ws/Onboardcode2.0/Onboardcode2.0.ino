@@ -3,6 +3,11 @@
 Servo lefthand;
 Servo righthand;
 
+#define rclose 25
+#define lclose 170
+#define ropen 130
+#define lopen 70
+
 int rev = 1;
 //
 int pos = 0;
@@ -33,8 +38,8 @@ void setup()
   righthand.attach(8);
   lefthand.attach(9);
 
-  righthand.write(30);
-  lefthand.write(170);
+  righthand.write(rclose);
+  lefthand.write(lclose);
 }
 
 // Pulling
@@ -49,16 +54,16 @@ void clockwise(int lap)
     delayMicroseconds(dtime);
   }
   state = "pulled";
-  righthand.write(30);
-  lefthand.write(170);
+  righthand.write(rclose);
+  lefthand.write(lclose);
 }
 
 // Pushing
 void counter_clockwise(int lap)
 {
   // open servo
-  righthand.write(130);
-  lefthand.write(70);
+  righthand.write(ropen);
+  lefthand.write(lopen);
   delay(500);
   // Spin the stepper motor 1 revolution quickly:
   for (int i = 0; i < lap * stepsPerRevolution; i++) {
@@ -80,8 +85,8 @@ void counter_clockwise(int lap)
 void close_servo() {
   if (arm_mode == "loading") {
     Serial.print("loading: ");
-    righthand.write(30);
-    lefthand.write(170);
+    righthand.write(rclose);
+    lefthand.write(lclose);
     delay(1000);
   }
   else Serial.print("unloading: ");
