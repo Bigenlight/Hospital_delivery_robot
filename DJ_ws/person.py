@@ -1,3 +1,5 @@
+import socket
+
 import time
 import cv2
 import torch
@@ -17,7 +19,13 @@ from rclpy.node import Node
 from sensor_msgs.msg import Image
 from std_msgs.msg import Int32MultiArray, String
 
-WEIGHTS = 'weights/yolov7.pt'
+server_ip = socket.gethostbyname('192.168.0.33') # 위에서 설정한 서버 ip
+server_port = 3333 # 위에서 설정한 서버 포트번호
+
+socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+socket.connect((server_ip, server_port))
+
+WEIGHTS = 'weights/card_0904_200.pt'
 IMG_SIZE = 640
 DEVICE = ''
 AUGMENT = False
@@ -27,7 +35,7 @@ CLASSES = None
 AGNOSTIC_NMS = False
 
 QUEUE_SIZE = 13
-CLASS_MAP = ['human']
+CLASS_MAP = ['person']
 
 # Initialize
 device = select_device(DEVICE)
@@ -52,10 +60,10 @@ if device.type != 'cpu':
 class YOLOv7(Node):
     def __init__(self):
 
-        super().__init__('human')
+        super().__init__('person')                                                                                                             
 
-        self.detected_pub = self.create_publisher(Image, "/human_detected_image", 10)
-        self.human_pub = self.create_publisher(String, "/human", 10)
+        self.detected_pub = self.create_publisher(Image, "/person_detected_image", 10)       
+        self.human_pub = self.create_publisher(String, "/person", 10)
         self.image_sub = self.create_subscription(Image, "/image_raw", self.image_cb, 10)
 
         self.mode = 'global'
@@ -63,6 +71,8 @@ class YOLOv7(Node):
         self.queue_list = [-1 for _ in range(QUEUE_SIZE)]
 
         self.timer = self.create_timer(0.1, self.yolo_pub)
+
+        self.testCount = 0
 
     def mode_cb(self, msg):
         self.mode = msg.data
@@ -148,7 +158,7 @@ class YOLOv7(Node):
 
 
     # CLASS ==========================================================================
-    # 0 : human ...
+    # 0 : person ...
     # ================================================================================
     def hard_vote(self, queue):
         return statistics.mode(queue)
@@ -168,6 +178,16 @@ class YOLOv7(Node):
             final_check.data = 'None'
         else:
             final_check.data = CLASS_MAP[final_id]
+
+            TCP_msg = "person is detected" + str(self.testCount)
+            self.testCount += 1
+
+            socket.sendall(TCP_msg.encode(encoding='utf-8'))
+
+            # 서버가 에코로 되돌려 보낸 메시지를 클라이언트가 받음
+            # data = socket.recv(100)
+            # TCP_msg = data.decode() # 읽은 데이터 디코딩
+            # print('echo TCP_msg:', TCP_msg)
 
         self.human_pub.publish(final_check)
 
