@@ -6,16 +6,8 @@ from std_msgs.msg import String
 import serial
 import time
 
-# serial 설치 필요
-# 아래 py_serial에서 포트 설정 필요 (아두이노 들아가면 쉽게 볼 수 있음, 그거 쓰면 됨)
-
-# 명령
-# cd 23_HF110/Theo_ws/ros2_workspace/
-# source install/setup.bash
-# ros2 run py_arduino_pub Sending_py_order
-
 # 아두이노와 연결 (home 뒤 theo는 바꿔야함)
-# /bin/python3 /home/theo/23_HF110/Theo_ws/python_ws/ros2_arduino_communication.py
+# /bin/python3 /home/theo/23_HF110/Theo_ws/python_ws/person_py_arduino_communication.py
 
 
 class MinimalSubscriber(Node):
