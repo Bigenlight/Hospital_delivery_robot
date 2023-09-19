@@ -1,0 +1,8 @@
+source;share/getpo/hook/cmake_prefix_path.ps1
+source;share/getpo/hook/cmake_prefix_path.dsv
+source;share/getpo/hook/cmake_prefix_path.sh
+source;share/getpo/local_setup.bash
+source;share/getpo/local_setup.dsv
+source;share/getpo/local_setup.ps1
+source;share/getpo/local_setup.sh
+source;share/getpo/local_setup.zsh
