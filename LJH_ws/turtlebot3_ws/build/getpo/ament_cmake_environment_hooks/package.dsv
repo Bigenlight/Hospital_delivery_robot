@@ -1,0 +1,4 @@
+source;share/getpo/local_setup.bash
+source;share/getpo/local_setup.dsv
+source;share/getpo/local_setup.sh
+source;share/getpo/local_setup.zsh
