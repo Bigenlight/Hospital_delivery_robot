@@ -1,0 +1,24 @@
+[2.542s] Invoking command in '/home/imjunhyung/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/turtlebot3_teleop/prefix_override:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/imjunhyung/turtlebot3_ws/build/turtlebot3_teleop/build install --record /home/imjunhyung/turtlebot3_ws/build/turtlebot3_teleop/install.log --single-version-externally-managed
+[3.121s] running egg_info
+[3.123s] writing ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/PKG-INFO
+[3.123s] writing dependency_links to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/dependency_links.txt
+[3.124s] writing entry points to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/entry_points.txt
+[3.124s] writing requirements to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/requires.txt
+[3.124s] writing top-level names to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/top_level.txt
+[3.181s] reading manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[3.182s] writing manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[3.183s] running build
+[3.183s] running build_py
+[3.183s] copying turtlebot3_teleop/script/teleop_keyboard.py -> /home/imjunhyung/turtlebot3_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[3.184s] running install
+[3.185s] running install_lib
+[3.188s] copying /home/imjunhyung/turtlebot3_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script/teleop_keyboard.py -> /home/imjunhyung/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3_teleop/script
+[3.188s] byte-compiling /home/imjunhyung/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3_teleop/script/teleop_keyboard.py to teleop_keyboard.cpython-38.pyc
+[3.192s] running install_data
+[3.193s] running install_egg_info
+[3.196s] removing '/home/imjunhyung/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3_teleop-2.1.4-py3.8.egg-info' (and everything under it)
+[3.196s] Copying ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info to /home/imjunhyung/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages/turtlebot3_teleop-2.1.4-py3.8.egg-info
+[3.197s] running install_scripts
+[3.227s] Installing teleop_keyboard script to /home/imjunhyung/turtlebot3_ws/install/turtlebot3_teleop/lib/turtlebot3_teleop
+[3.227s] writing list of installed files to '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_teleop/install.log'
+[3.550s] Invoked command in '/home/imjunhyung/turtlebot3_ws/src/turtlebot3/turtlebot3_teleop' returned '0': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/turtlebot3_teleop/prefix_override:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/imjunhyung/turtlebot3_ws/build/turtlebot3_teleop/build install --record /home/imjunhyung/turtlebot3_ws/build/turtlebot3_teleop/install.log --single-version-externally-managed

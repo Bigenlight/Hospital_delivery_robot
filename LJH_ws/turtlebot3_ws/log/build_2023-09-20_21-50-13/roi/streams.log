@@ -1,0 +1,21 @@
+[1.941s] Invoking command in '/home/imjunhyung/turtlebot3_ws/src/roi': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/roi/prefix_override:/home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/roi build --build-base /home/imjunhyung/turtlebot3_ws/build/roi/build install --record /home/imjunhyung/turtlebot3_ws/build/roi/install.log --install-scripts $base/lib/roi --single-version-externally-managed
+[2.408s] running egg_info
+[2.409s] writing ../../build/roi/roi.egg-info/PKG-INFO
+[2.409s] writing dependency_links to ../../build/roi/roi.egg-info/dependency_links.txt
+[2.409s] writing entry points to ../../build/roi/roi.egg-info/entry_points.txt
+[2.410s] writing requirements to ../../build/roi/roi.egg-info/requires.txt
+[2.410s] writing top-level names to ../../build/roi/roi.egg-info/top_level.txt
+[2.455s] reading manifest file '../../build/roi/roi.egg-info/SOURCES.txt'
+[2.456s] writing manifest file '../../build/roi/roi.egg-info/SOURCES.txt'
+[2.456s] running build
+[2.456s] running build_py
+[2.456s] running install
+[2.458s] running install_lib
+[2.460s] running install_data
+[2.460s] running install_egg_info
+[2.463s] removing '/home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages/roi-0.0.0-py3.8.egg-info' (and everything under it)
+[2.463s] Copying ../../build/roi/roi.egg-info to /home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages/roi-0.0.0-py3.8.egg-info
+[2.465s] running install_scripts
+[2.487s] Installing roi script to /home/imjunhyung/turtlebot3_ws/install/roi/lib/roi
+[2.487s] writing list of installed files to '/home/imjunhyung/turtlebot3_ws/build/roi/install.log'
+[2.519s] Invoked command in '/home/imjunhyung/turtlebot3_ws/src/roi' returned '0': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/roi/prefix_override:/home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/roi build --build-base /home/imjunhyung/turtlebot3_ws/build/roi/build install --record /home/imjunhyung/turtlebot3_ws/build/roi/install.log --install-scripts $base/lib/roi --single-version-externally-managed
