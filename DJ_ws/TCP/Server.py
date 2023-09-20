@@ -1,7 +1,8 @@
 # 서버 프로그램 (TCP)
 import socket, time
 
-host = socket.gethostbyname('192.168.0.22') # 서버 컴퓨터의 ip(여기선 내 컴퓨터를 서버 컴퓨터로 사용) 
+host = socket.gethostbyname('10.50.39.254') # seoultech_dream
+#host = socket.gethostbyname('192.168.0.22') # 서버 컴퓨터의 ip(여기선 내 컴퓨터를 서버 컴퓨터로 사용) # espers_1
                    # 본인의 ip주소 넣어도 됨(확인방법: cmd -> ipconfig)
 port = 3333  # 서버 포트번호(다른 프로그램이 사용하지 않는 포트번호로 지정해야 함)
 

@@ -18,7 +18,7 @@ int pos = 0;
 //
 String order = "rest";
 String state = "pulled";
-String arm_mode = "loading";
+String arm_mode = "unloading";
 //
 int i = 0;
 unsigned long past = 0; // 과거 시간 저장 변수
@@ -156,9 +156,9 @@ void loop() {
 
 
   if (order == "lo") arm_mode = "loading";
-  else if (order == "o") arm_mode = "loading";
-  else if (order == " o") arm_mode = "loading";
-  else if (order == "olo") arm_mode = "loading";
+  //else if (order == "o") arm_mode = "loading";
+  //else if (order == " o") arm_mode = "loading";
+  //else if (order == "olo") arm_mode = "loading";
   else if (order == "un") arm_mode = "unloading";
   else if (order == "n") arm_mode = "unloading";
   else if (order == " n") arm_mode = "unloading";
