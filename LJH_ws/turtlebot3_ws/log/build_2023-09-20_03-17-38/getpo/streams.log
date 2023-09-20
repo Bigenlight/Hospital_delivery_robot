@@ -1,0 +1,72 @@
+[0.093s] Invoking command in '/home/imjunhyung/turtlebot3_ws/build/getpo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake /home/imjunhyung/turtlebot3_ws/src/getpo -DCMAKE_INSTALL_PREFIX=/home/imjunhyung/turtlebot3_ws/install/getpo
+[0.266s] -- The C compiler identification is GNU 9.4.0
+[0.385s] -- The CXX compiler identification is GNU 9.4.0
+[0.404s] -- Detecting C compiler ABI info
+[0.521s] -- Detecting C compiler ABI info - done
+[0.552s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.553s] -- Detecting C compile features
+[0.553s] -- Detecting C compile features - done
+[0.563s] -- Detecting CXX compiler ABI info
+[0.733s] -- Detecting CXX compiler ABI info - done
+[0.764s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.764s] -- Detecting CXX compile features
+[0.766s] -- Detecting CXX compile features - done
+[0.770s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.815s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.819s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.347s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.428s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.440s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.567s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.619s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.748s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.877s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.879s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.881s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.001s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.002s] -- Looking for pthread_create in pthreads
+[2.085s] -- Looking for pthread_create in pthreads - not found
+[2.086s] -- Looking for pthread_create in pthread
+[3.079s] -- Looking for pthread_create in pthread - found
+[3.083s] -- Found Threads: TRUE  
+[3.984s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[4.485s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[4.857s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.860s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.861s] -- Configured cppcheck include dirs: 
+[4.861s] -- Configured cppcheck exclude dirs and/or files: 
+[4.863s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.863s] -- Configured cpplint exclude dirs and/or files: 
+[4.868s] -- Added test 'lint_cmake' to check CMake code style
+[4.879s] -- Added test 'uncrustify' to check C / C++ code style
+[4.879s] -- Configured uncrustify additional arguments: 
+[4.880s] -- Added test 'xmllint' to check XML markup files
+[4.883s] -- Configuring done (4.7s)
+[4.934s] -- Generating done (0.0s)
+[4.934s] -- Build files have been written to: /home/imjunhyung/turtlebot3_ws/build/getpo
+[4.986s] Invoked command in '/home/imjunhyung/turtlebot3_ws/build/getpo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake /home/imjunhyung/turtlebot3_ws/src/getpo -DCMAKE_INSTALL_PREFIX=/home/imjunhyung/turtlebot3_ws/install/getpo
+[4.991s] Invoking command in '/home/imjunhyung/turtlebot3_ws/build/getpo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --build /home/imjunhyung/turtlebot3_ws/build/getpo -- -j8 -l8
+[5.344s] [ 50%] [32mBuilding CXX object CMakeFiles/getpo.dir/src/getpo.cpp.o[0m
+[21.249s] [100%] [32m[1mLinking CXX executable getpo[0m
+[22.177s] [100%] Built target getpo
+[22.213s] Invoked command in '/home/imjunhyung/turtlebot3_ws/build/getpo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --build /home/imjunhyung/turtlebot3_ws/build/getpo -- -j8 -l8
+[22.472s] Invoking command in '/home/imjunhyung/turtlebot3_ws/build/getpo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --install /home/imjunhyung/turtlebot3_ws/build/getpo
+[22.602s] -- Install configuration: ""
+[22.605s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/lib/getpo/getpo
+[22.625s] -- Set runtime path of "/home/imjunhyung/turtlebot3_ws/install/getpo/lib/getpo/getpo" to ""
+[22.625s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/ament_index/resource_index/package_run_dependencies/getpo
+[22.625s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/ament_index/resource_index/parent_prefix_path/getpo
+[22.626s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/getpo/environment/ament_prefix_path.sh
+[22.626s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/getpo/environment/ament_prefix_path.dsv
+[22.626s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/getpo/environment/path.sh
+[22.627s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/getpo/environment/path.dsv
+[22.627s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/getpo/local_setup.bash
+[22.627s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/getpo/local_setup.sh
+[22.627s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/getpo/local_setup.zsh
+[22.628s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/getpo/local_setup.dsv
+[22.628s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/getpo/package.dsv
+[22.628s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/ament_index/resource_index/packages/getpo
+[22.629s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/getpo/cmake/getpoConfig.cmake
+[22.629s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/getpo/cmake/getpoConfig-version.cmake
+[22.629s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/getpo/share/getpo/package.xml
+[22.648s] Invoked command in '/home/imjunhyung/turtlebot3_ws/build/getpo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --install /home/imjunhyung/turtlebot3_ws/build/getpo

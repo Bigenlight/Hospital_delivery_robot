@@ -1,0 +1,37 @@
+[2.294s] Invoking command in '/home/imjunhyung/turtlebot3_ws/src/vel_send': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/vel_send/prefix_override:/home/imjunhyung/turtlebot3_ws/install/vel_send/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vel_send build --build-base /home/imjunhyung/turtlebot3_ws/build/vel_send/build install --record /home/imjunhyung/turtlebot3_ws/build/vel_send/install.log --install-scripts $base/lib/vel_send --single-version-externally-managed
+[3.632s] running egg_info
+[3.633s] creating ../../build/vel_send/vel_send.egg-info
+[3.634s] writing ../../build/vel_send/vel_send.egg-info/PKG-INFO
+[3.634s] writing dependency_links to ../../build/vel_send/vel_send.egg-info/dependency_links.txt
+[3.635s] writing entry points to ../../build/vel_send/vel_send.egg-info/entry_points.txt
+[3.635s] writing requirements to ../../build/vel_send/vel_send.egg-info/requires.txt
+[3.635s] writing top-level names to ../../build/vel_send/vel_send.egg-info/top_level.txt
+[3.655s] writing manifest file '../../build/vel_send/vel_send.egg-info/SOURCES.txt'
+[3.832s] reading manifest file '../../build/vel_send/vel_send.egg-info/SOURCES.txt'
+[3.833s] writing manifest file '../../build/vel_send/vel_send.egg-info/SOURCES.txt'
+[3.833s] running build
+[3.833s] running build_py
+[3.834s] creating /home/imjunhyung/turtlebot3_ws/build/vel_send/build
+[3.834s] creating /home/imjunhyung/turtlebot3_ws/build/vel_send/build/lib
+[3.835s] creating /home/imjunhyung/turtlebot3_ws/build/vel_send/build/lib/vel_send
+[3.835s] copying vel_send/vel_send.py -> /home/imjunhyung/turtlebot3_ws/build/vel_send/build/lib/vel_send
+[3.835s] copying vel_send/__init__.py -> /home/imjunhyung/turtlebot3_ws/build/vel_send/build/lib/vel_send
+[3.836s] running install
+[3.836s] running install_lib
+[3.843s] creating /home/imjunhyung/turtlebot3_ws/install/vel_send/lib/python3.8/site-packages/vel_send
+[3.843s] copying /home/imjunhyung/turtlebot3_ws/build/vel_send/build/lib/vel_send/vel_send.py -> /home/imjunhyung/turtlebot3_ws/install/vel_send/lib/python3.8/site-packages/vel_send
+[3.844s] copying /home/imjunhyung/turtlebot3_ws/build/vel_send/build/lib/vel_send/__init__.py -> /home/imjunhyung/turtlebot3_ws/install/vel_send/lib/python3.8/site-packages/vel_send
+[3.844s] byte-compiling /home/imjunhyung/turtlebot3_ws/install/vel_send/lib/python3.8/site-packages/vel_send/vel_send.py to vel_send.cpython-38.pyc
+[3.847s] byte-compiling /home/imjunhyung/turtlebot3_ws/install/vel_send/lib/python3.8/site-packages/vel_send/__init__.py to __init__.cpython-38.pyc
+[3.847s] running install_data
+[3.848s] creating /home/imjunhyung/turtlebot3_ws/install/vel_send/share/ament_index
+[3.848s] creating /home/imjunhyung/turtlebot3_ws/install/vel_send/share/ament_index/resource_index
+[3.848s] creating /home/imjunhyung/turtlebot3_ws/install/vel_send/share/ament_index/resource_index/packages
+[3.849s] copying resource/vel_send -> /home/imjunhyung/turtlebot3_ws/install/vel_send/share/ament_index/resource_index/packages
+[3.850s] copying package.xml -> /home/imjunhyung/turtlebot3_ws/install/vel_send/share/vel_send
+[3.850s] running install_egg_info
+[3.867s] Copying ../../build/vel_send/vel_send.egg-info to /home/imjunhyung/turtlebot3_ws/install/vel_send/lib/python3.8/site-packages/vel_send-0.0.0-py3.8.egg-info
+[3.869s] running install_scripts
+[3.934s] Installing vel_send script to /home/imjunhyung/turtlebot3_ws/install/vel_send/lib/vel_send
+[3.951s] writing list of installed files to '/home/imjunhyung/turtlebot3_ws/build/vel_send/install.log'
+[4.054s] Invoked command in '/home/imjunhyung/turtlebot3_ws/src/vel_send' returned '0': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/vel_send/prefix_override:/home/imjunhyung/turtlebot3_ws/install/vel_send/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vel_send build --build-base /home/imjunhyung/turtlebot3_ws/build/vel_send/build install --record /home/imjunhyung/turtlebot3_ws/build/vel_send/install.log --install-scripts $base/lib/vel_send --single-version-externally-managed

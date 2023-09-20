@@ -1,3 +1,0 @@
-[console_scripts]
-vel_send = vel_send.vel_send:main
-

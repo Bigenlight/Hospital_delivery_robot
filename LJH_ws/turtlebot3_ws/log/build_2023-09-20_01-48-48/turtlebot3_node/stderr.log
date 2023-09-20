@@ -1,4 +1,0 @@
-[01m[K/home/imjunhyung/turtlebot3_ws/src/turtlebot3/turtlebot3_node/src/sensors/joint_state.cpp:[m[K In member function ‘[01m[Kvirtual void robotis::turtlebot3::sensors::JointState::publish(const rclcpp::Time&, std::shared_ptr<robotis::turtlebot3::DynamixelSDKWrapper>&)[m[K’:
-[01m[K/home/imjunhyung/turtlebot3_ws/src/turtlebot3/turtlebot3_node/src/sensors/joint_state.cpp:60:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdxl_sdk_wrapper[m[K’ [[01;35m[K-Wunused-parameter[m[K]
-   60 |   [01;35m[Kstd::shared_ptr<DynamixelSDKWrapper> & dxl_sdk_wrapper[m[K)
-      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
