@@ -18,7 +18,7 @@ import Hospital as Hos
 
 
 
-form_class = uic.loadUiType("/home/junha/23_HF110/junha_ws/Hospital_gui.ui")[0]
+form_class = uic.loadUiType("/home/junha/23_HF110/junha_ws/HClient/Hospital_client.ui")[0]
 # .ui 파일이 있는 경로로 설정 하면 됨.
 # "/home/[이름]/23_HF110/junha_ws/Hospital_gui.ui"
 
@@ -32,15 +32,22 @@ class Recognition(QThread):
     def run(self):
 
         if self.service == 'meal':
+            self.parent.lblSpeechRec.setText("")
             self.parent.lblResult.setText("양식과 한식 중 원하시는 메뉴를 말씀해주세요")
             self.text_to_speech("양식과 한식 중 원하시는 메뉴를 말씀해주세요")
-            self.parent.lblSpeechRec.setText("Listening...")
+
+        self.parent.lblSpeechRec.setText("Listening...")
+
 
 
         rec = sr.Recognizer()
 
         with sr.Microphone() as source:
-            audio = rec.listen(source)
+            audio = rec.listen(source, None, 5)
+            # rec.listen(source, timeout, phrase_time_limit)
+            #
+            # timeout = None            >> 음성인식 시간제한은 없음
+            # phrase_time_limit = 5     >> 말하기 시작하고 5초 뒤의 문장은 짤림
 
         try:
             text = rec.recognize_google(audio, language='ko')
@@ -61,12 +68,20 @@ class Recognition(QThread):
             self.parent.btnService.setEnabled(True)
             self.parent.btnMeal.setEnabled(True)
 
-        except sr.UnknownValueError:
+        except sr.UnknownValueError :
             self.parent.lblSpeechRec.setText("")
             self.parent.lblResult.setText("다시한번 말씀해 주세요")
             self.text_to_speech("다시한번 말씀해 주세요")
 
-            self.run()
+
+
+            # 말을 못 알아들으면 계속 물어보게 되므로, 다시 run() 을 호출하는게 아닌, 초기 상태로 되돌림.
+            self.parent.btnLocation.setEnabled(True)
+            self.parent.btnMeal.setEnabled(True)
+            self.parent.btnService.setEnabled(True)
+
+            self.parent.lblSpeechRec.setText("원하시는 단어를 말씀해주세요")
+            self.parent.lblResult.setText("")
 
         except sr.RequestError:
             self.parent.lblSpeechRec.setText("")
@@ -97,44 +112,21 @@ class WindowClass(QMainWindow, form_class) :
         self.lblSpeechRec.setText("원하시는 단어를 말씀해주세요")
         self.lblResult.setText("")
 
-        self.btnLocation.clicked.connect(self.location_srv)
-        self.btnService.clicked.connect(self.administration_srv)
-        self.btnMeal.clicked.connect(self.meal_srv)
+        self.btnLocation.clicked.connect(lambda: self.start_service("location"))
+        self.btnService.clicked.connect(lambda: self.start_service("administration"))
+        self.btnMeal.clicked.connect(lambda: self.start_service("meal"))
 
 
 
-
-    def location_srv(self):
-
-        self.btnLocation.setEnabled(False)
-        self.btnService.setEnabled(False)
-        self.btnMeal.setEnabled(False)
-
-        self.recognition = Recognition(self, "location")
-
-        self.lblSpeechRec.setText("Listening...")
-        self.recognition.start()
-
-    def administration_srv(self):
+    # 위치, 행정, 식사 안내를 하나의 함수로 처리할 수 있게 만듬.
+    # srv: 서비스의 종류 (location, administration, meal)
+    def start_service(self, srv):
 
         self.btnLocation.setEnabled(False)
         self.btnService.setEnabled(False)
         self.btnMeal.setEnabled(False)
 
-        self.recognition = Recognition(self, "administration")
-
-        self.lblSpeechRec.setText("Listening...")
-        self.recognition.start()
-
-    def meal_srv(self):
-
-        self.btnLocation.setEnabled(False)
-        self.btnService.setEnabled(False)
-        self.btnMeal.setEnabled(False)
-
-        self.recognition = Recognition(self, "meal")
-
-        self.lblSpeechRec.setText("")
+        self.recognition = Recognition(self, srv)
 
         self.recognition.start()
 

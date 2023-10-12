@@ -1,3 +1,4 @@
+# Hospital.py 는 추후 병원 데이터베이스 모듈로 설계 예정
 import datetime
 
 
@@ -39,9 +40,12 @@ class Hospital_pkg():
 
         self.now = datetime.datetime.now()
 
+        '''
         file_name = "/home/junha/23_HF110/junha_ws/Meal_list/Meal_list_" + self.now.strftime("%Y%m%d") + ".txt"
         # 식사 리스트 저장경로 역시 각자의 컴퓨터에 맞게 지정해야 함.
         # "/home/[이름]/23_HF110/junha_ws/Meal_list/Meal_list_" + self.now.strftime("%Y%m%d") + ".txt"
 
         with open(file_name, 'a') as file:
             file.write(self.now.strftime("%H시 %M분 %S초") + " : " + meal + "\n")
+        '''
+
