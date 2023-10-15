@@ -1,0 +1,21 @@
+[1.676s] Invoking command in '/home/imjunhyung/turtlebot3_ws/src/vel_send': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/vel_send/prefix_override:/home/imjunhyung/turtlebot3_ws/install/vel_send/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vel_send build --build-base /home/imjunhyung/turtlebot3_ws/build/vel_send/build install --record /home/imjunhyung/turtlebot3_ws/build/vel_send/install.log --install-scripts $base/lib/vel_send --single-version-externally-managed
+[2.020s] running egg_info
+[2.021s] writing ../../build/vel_send/vel_send.egg-info/PKG-INFO
+[2.022s] writing dependency_links to ../../build/vel_send/vel_send.egg-info/dependency_links.txt
+[2.022s] writing entry points to ../../build/vel_send/vel_send.egg-info/entry_points.txt
+[2.022s] writing requirements to ../../build/vel_send/vel_send.egg-info/requires.txt
+[2.022s] writing top-level names to ../../build/vel_send/vel_send.egg-info/top_level.txt
+[2.064s] reading manifest file '../../build/vel_send/vel_send.egg-info/SOURCES.txt'
+[2.065s] writing manifest file '../../build/vel_send/vel_send.egg-info/SOURCES.txt'
+[2.066s] running build
+[2.066s] running build_py
+[2.066s] running install
+[2.067s] running install_lib
+[2.069s] running install_data
+[2.069s] running install_egg_info
+[2.071s] removing '/home/imjunhyung/turtlebot3_ws/install/vel_send/lib/python3.8/site-packages/vel_send-0.0.0-py3.8.egg-info' (and everything under it)
+[2.072s] Copying ../../build/vel_send/vel_send.egg-info to /home/imjunhyung/turtlebot3_ws/install/vel_send/lib/python3.8/site-packages/vel_send-0.0.0-py3.8.egg-info
+[2.073s] running install_scripts
+[2.095s] Installing vel_send script to /home/imjunhyung/turtlebot3_ws/install/vel_send/lib/vel_send
+[2.095s] writing list of installed files to '/home/imjunhyung/turtlebot3_ws/build/vel_send/install.log'
+[2.125s] Invoked command in '/home/imjunhyung/turtlebot3_ws/src/vel_send' returned '0': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/vel_send/prefix_override:/home/imjunhyung/turtlebot3_ws/install/vel_send/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vel_send build --build-base /home/imjunhyung/turtlebot3_ws/build/vel_send/build install --record /home/imjunhyung/turtlebot3_ws/build/vel_send/install.log --install-scripts $base/lib/vel_send --single-version-externally-managed
