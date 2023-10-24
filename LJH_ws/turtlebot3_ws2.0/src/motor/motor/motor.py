@@ -46,8 +46,11 @@ class Motor(Node):
             self.odrv0.axis0.controller.input_vel = 0
         else:
             self.get_logger().info("Twist: Linear: %f Angular velocity: %f" % (msg.linear.x, msg.angular.z))
-            self.odrv0.axis1.controller.input_vel = (msg.linear.x + msg.angular.z * 0.54/2) / 0.1 * 10
-            self.odrv0.axis0.controller.input_vel = (msg.linear.x - msg.angular.z * 0.54/2) / 0.1 * -10
+            #self.odrv0.axis1.controller.input_vel = (msg.linear.x + msg.angular.z * 0.54/2) / 0.1 * 10
+            #self.odrv0.axis0.controller.input_vel = (msg.linear.x - msg.angular.z * 0.54/2) / 0.1 * -10
+            self.odrv0.axis1.controller.input_vel = (msg.linear.x + msg.angular.z * 0.54/2) / 0.1 * -10
+            self.odrv0.axis0.controller.input_vel = (msg.linear.x - msg.angular.z * 0.54/2) / 0.1 * 10
+
 
     def getEncoderData(self, command):
         self.ser.write(command.encode())
@@ -63,10 +66,15 @@ class Motor(Node):
                 return
 
         msg = Float32MultiArray()
-        self.rightWheelPos = self.getEncoderData("r axis0.encoder.pos_estimate\n") * -0.5
-        self.leftWheelPos = self.getEncoderData("r axis1.encoder.pos_estimate\n") * 0.5
-        self.rightWheelVel = self.getEncoderData("r axis0.encoder.vel_estimate\n") * -0.05 * 0.03 
-        self.leftWheelVel = self.getEncoderData("r axis1.encoder.vel_estimate\n") * 0.05 * 0.03 
+        #self.rightWheelPos = self.getEncoderData("r axis0.encoder.pos_estimate\n") * -0.5
+        #self.leftWheelPos = self.getEncoderData("r axis1.encoder.pos_estimate\n") * 0.5
+        #self.rightWheelVel = self.getEncoderData("r axis0.encoder.vel_estimate\n") * -0.05 * 0.03 
+        #self.leftWheelVel = self.getEncoderData("r axis1.encoder.vel_estimate\n") * 0.05 * 0.03 
+        
+        self.rightWheelPos = self.getEncoderData("r axis1.encoder.pos_estimate\n") * -0.5
+        self.leftWheelPos = self.getEncoderData("r axis0.encoder.pos_estimate\n") * 0.5
+        self.rightWheelVel = self.getEncoderData("r axis1.encoder.vel_estimate\n") * -0.05 * 0.03 
+        self.leftWheelVel = self.getEncoderData("r axis0.encoder.vel_estimate\n") * 0.05 * 0.03
 
         wheel_r_pos = self.rightWheelPos
         wheel_l_pos = self.leftWheelPos
