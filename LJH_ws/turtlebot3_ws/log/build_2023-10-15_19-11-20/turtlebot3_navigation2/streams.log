@@ -1,0 +1,31 @@
+[0.427s] Invoking command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imjunhyung/turtlebot3_ws/install/vel_send:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_teleop:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_example:/home/imjunhyung/turtlebot3_ws/install/roi:/home/imjunhyung/turtlebot3_ws/install/motor:/home/imjunhyung/turtlebot3_ws/install/detection:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --build /home/imjunhyung/turtlebot3_ws/build/turtlebot3_navigation2 -- -j8 -l8
+[1.079s] Invoked command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imjunhyung/turtlebot3_ws/install/vel_send:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_teleop:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_example:/home/imjunhyung/turtlebot3_ws/install/roi:/home/imjunhyung/turtlebot3_ws/install/motor:/home/imjunhyung/turtlebot3_ws/install/detection:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --build /home/imjunhyung/turtlebot3_ws/build/turtlebot3_navigation2 -- -j8 -l8
+[1.272s] Invoking command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imjunhyung/turtlebot3_ws/install/vel_send:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_teleop:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_example:/home/imjunhyung/turtlebot3_ws/install/roi:/home/imjunhyung/turtlebot3_ws/install/motor:/home/imjunhyung/turtlebot3_ws/install/detection:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --install /home/imjunhyung/turtlebot3_ws/build/turtlebot3_navigation2
+[1.380s] -- Install configuration: ""
+[1.383s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/launch
+[1.384s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/launch/navigation2.launch.py
+[1.385s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map
+[1.385s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/turtlebot3_world.yaml
+[1.386s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/turtlebot3_world.pgm
+[1.387s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param
+[1.388s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle_pi.yaml
+[1.397s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/burger.yaml
+[1.398s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle.yaml
+[1.398s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/rviz
+[1.399s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/rviz/tb3_navigation2.rviz
+[1.399s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/ament_index/resource_index/package_run_dependencies/turtlebot3_navigation2
+[1.400s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/ament_index/resource_index/parent_prefix_path/turtlebot3_navigation2
+[1.400s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.sh
+[1.400s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.dsv
+[1.401s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.sh
+[1.401s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.dsv
+[1.401s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.bash
+[1.401s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.sh
+[1.402s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.zsh
+[1.402s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.dsv
+[1.403s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv
+[1.403s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/ament_index/resource_index/packages/turtlebot3_navigation2
+[1.403s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config.cmake
+[1.404s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config-version.cmake
+[1.404s] -- Up-to-date: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.xml
+[1.501s] Invoked command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imjunhyung/turtlebot3_ws/install/vel_send:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_teleop:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_example:/home/imjunhyung/turtlebot3_ws/install/roi:/home/imjunhyung/turtlebot3_ws/install/motor:/home/imjunhyung/turtlebot3_ws/install/detection:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --install /home/imjunhyung/turtlebot3_ws/build/turtlebot3_navigation2

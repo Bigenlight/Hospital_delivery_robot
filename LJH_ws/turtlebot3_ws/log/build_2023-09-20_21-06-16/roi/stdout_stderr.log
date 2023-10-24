@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/roi/roi.egg-info/PKG-INFO
+writing dependency_links to ../../build/roi/roi.egg-info/dependency_links.txt
+writing entry points to ../../build/roi/roi.egg-info/entry_points.txt
+writing requirements to ../../build/roi/roi.egg-info/requires.txt
+writing top-level names to ../../build/roi/roi.egg-info/top_level.txt
+reading manifest file '../../build/roi/roi.egg-info/SOURCES.txt'
+writing manifest file '../../build/roi/roi.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages/roi-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/roi/roi.egg-info to /home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages/roi-0.0.0-py3.8.egg-info
+running install_scripts
+Installing roi script to /home/imjunhyung/turtlebot3_ws/install/roi/lib/roi
+writing list of installed files to '/home/imjunhyung/turtlebot3_ws/build/roi/install.log'
