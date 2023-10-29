@@ -34,7 +34,9 @@ class Recognition(QThread):
         if self.service == 'meal':
             self.parent.lblSpeechRec.setText("")
             self.parent.lblResult.setText("양식과 한식 중 원하시는 메뉴를 말씀해주세요")
-            self.text_to_speech("양식과 한식 중 원하시는 메뉴를 말씀해주세요")
+            time.sleep(2)
+
+            # self.text_to_speech("양식과 한식 중 원하시는 메뉴를 말씀해주세요")
 
         self.parent.lblSpeechRec.setText("Listening...")
 
@@ -57,7 +59,10 @@ class Recognition(QThread):
             result = H.text_analysis(self.service)
 
             self.parent.lblResult.setText(result)
-            self.text_to_speech(result)
+            time.sleep(5)
+
+            # self.text_to_speech(result)
+            # 오류떠서 주석처리
 
 
 
@@ -71,7 +76,8 @@ class Recognition(QThread):
         except sr.UnknownValueError :
             self.parent.lblSpeechRec.setText("")
             self.parent.lblResult.setText("다시한번 말씀해 주세요")
-            self.text_to_speech("다시한번 말씀해 주세요")
+            time.sleep(2)
+            # self.text_to_speech("다시한번 말씀해 주세요")
 
 
 
@@ -86,7 +92,7 @@ class Recognition(QThread):
         except sr.RequestError:
             self.parent.lblSpeechRec.setText("")
             self.parent.lblResult.setText("오류가 발생하였습니다. 관리자에게 문의하세요.")
-            self.text_to_speech("오류가 발생하였습니다. 관리자에게 문의하세요.")
+            # self.text_to_speech("오류가 발생하였습니다. 관리자에게 문의하세요.")
 
 
     def text_to_speech(self,input_text):
