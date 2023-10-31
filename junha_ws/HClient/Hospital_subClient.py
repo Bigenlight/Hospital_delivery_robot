@@ -9,7 +9,7 @@ import keyboard
 cap = cv2.VideoCapture(0)
 
 
-server_ip = socket.gethostbyname('192.168.0.6')
+server_ip = socket.gethostbyname('192.168.0.33')
 
 server_port1 = 3333 # 위에서 설정한 서버 포트번호
 server_port2 = 4444 # 위에서 설정한 서버 포트번호

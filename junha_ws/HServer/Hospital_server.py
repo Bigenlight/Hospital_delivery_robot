@@ -21,7 +21,7 @@ import datetime                                #
 
 
 
-Main_ui = uic.loadUiType("/home/junha/23_HF110/junha_ws/HServer/Hospital_server.ui")[0]
+Main_ui = uic.loadUiType("/home/daejung/23_HF110/junha_ws/HServer/Hospital_server.ui")[0]
 
 
 
@@ -47,7 +47,7 @@ class WindowClass(QMainWindow, Main_ui) :
     def open_server_socket1(self):
 
 
-        HOST = '192.168.0.6'
+        HOST = '192.168.0.33'
         PORT1 = 3333
 
 
@@ -104,7 +104,7 @@ class WindowClass(QMainWindow, Main_ui) :
 
 
 
-        HOST = '192.168.0.6'
+        HOST = '192.168.0.33'
         PORT2 = 4444
 
         socket2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
