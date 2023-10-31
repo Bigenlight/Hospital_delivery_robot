@@ -1,0 +1,21 @@
+[2.537s] Invoking command in '/home/imjunhyung/turtlebot3_ws/src/detection': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/detection/prefix_override:/home/imjunhyung/turtlebot3_ws/install/detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/detection build --build-base /home/imjunhyung/turtlebot3_ws/build/detection/build install --record /home/imjunhyung/turtlebot3_ws/build/detection/install.log --install-scripts $base/lib/detection --single-version-externally-managed
+[3.149s] running egg_info
+[3.150s] writing ../../build/detection/detection.egg-info/PKG-INFO
+[3.151s] writing dependency_links to ../../build/detection/detection.egg-info/dependency_links.txt
+[3.151s] writing entry points to ../../build/detection/detection.egg-info/entry_points.txt
+[3.151s] writing requirements to ../../build/detection/detection.egg-info/requires.txt
+[3.152s] writing top-level names to ../../build/detection/detection.egg-info/top_level.txt
+[3.237s] reading manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+[3.239s] writing manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+[3.239s] running build
+[3.239s] running build_py
+[3.239s] running install
+[3.241s] running install_lib
+[3.243s] running install_data
+[3.244s] running install_egg_info
+[3.248s] removing '/home/imjunhyung/turtlebot3_ws/install/detection/lib/python3.8/site-packages/detection-0.0.0-py3.8.egg-info' (and everything under it)
+[3.248s] Copying ../../build/detection/detection.egg-info to /home/imjunhyung/turtlebot3_ws/install/detection/lib/python3.8/site-packages/detection-0.0.0-py3.8.egg-info
+[3.250s] running install_scripts
+[3.286s] Installing detection script to /home/imjunhyung/turtlebot3_ws/install/detection/lib/detection
+[3.287s] writing list of installed files to '/home/imjunhyung/turtlebot3_ws/build/detection/install.log'
+[3.460s] Invoked command in '/home/imjunhyung/turtlebot3_ws/src/detection' returned '0': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/detection/prefix_override:/home/imjunhyung/turtlebot3_ws/install/detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/detection build --build-base /home/imjunhyung/turtlebot3_ws/build/detection/build install --record /home/imjunhyung/turtlebot3_ws/build/detection/install.log --install-scripts $base/lib/detection --single-version-externally-managed

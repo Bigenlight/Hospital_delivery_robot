@@ -1,0 +1,51 @@
+[0.017s] Invoking command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_bringup': AMENT_PREFIX_PATH=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_description:/home/imjunhyung/ros2_ws/install/rplidar_ros:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake /home/imjunhyung/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup -DCMAKE_INSTALL_PREFIX=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup
+[0.111s] -- The C compiler identification is GNU 9.4.0
+[0.190s] -- The CXX compiler identification is GNU 9.4.0
+[0.201s] -- Detecting C compiler ABI info
+[0.274s] -- Detecting C compiler ABI info - done
+[0.290s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.290s] -- Detecting C compile features
+[0.291s] -- Detecting C compile features - done
+[0.295s] -- Detecting CXX compiler ABI info
+[0.373s] -- Detecting CXX compiler ABI info - done
+[0.386s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.386s] -- Detecting CXX compile features
+[0.387s] -- Detecting CXX compile features - done
+[0.390s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.422s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.422s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.874s] -- Configuring done (0.8s)
+[0.879s] -- Generating done (0.0s)
+[0.881s] -- Build files have been written to: /home/imjunhyung/turtlebot3_ws/build/turtlebot3_bringup
+[0.894s] Invoked command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_bringup' returned '0': AMENT_PREFIX_PATH=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_description:/home/imjunhyung/ros2_ws/install/rplidar_ros:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake /home/imjunhyung/turtlebot3_ws/src/turtlebot3/turtlebot3_bringup -DCMAKE_INSTALL_PREFIX=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup
+[0.896s] Invoking command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_bringup': AMENT_PREFIX_PATH=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_description:/home/imjunhyung/ros2_ws/install/rplidar_ros:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --build /home/imjunhyung/turtlebot3_ws/build/turtlebot3_bringup -- -j8 -l8
+[0.968s] Invoked command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_bringup' returned '0': AMENT_PREFIX_PATH=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_description:/home/imjunhyung/ros2_ws/install/rplidar_ros:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --build /home/imjunhyung/turtlebot3_ws/build/turtlebot3_bringup -- -j8 -l8
+[1.028s] Invoking command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_bringup': AMENT_PREFIX_PATH=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_description:/home/imjunhyung/ros2_ws/install/rplidar_ros:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --install /home/imjunhyung/turtlebot3_ws/build/turtlebot3_bringup
+[1.069s] -- Install configuration: ""
+[1.070s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/launch
+[1.070s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/launch/turtlebot3_state_publisher.launch.py
+[1.070s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/launch/rviz2.launch.py
+[1.071s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/launch/robot.launch.py
+[1.071s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/param
+[1.071s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/param/waffle_pi.yaml
+[1.072s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/param/burger.yaml
+[1.072s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/param/waffle.yaml
+[1.072s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/script
+[1.072s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/script/99-turtlebot3-cdc.rules
+[1.072s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/script/create_udev_rules
+[1.073s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/ament_index/resource_index/package_run_dependencies/turtlebot3_bringup
+[1.073s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/ament_index/resource_index/parent_prefix_path/turtlebot3_bringup
+[1.073s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/environment/ament_prefix_path.sh
+[1.074s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/environment/ament_prefix_path.dsv
+[1.074s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/environment/path.sh
+[1.074s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/environment/path.dsv
+[1.075s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/local_setup.bash
+[1.075s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/local_setup.sh
+[1.076s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/local_setup.zsh
+[1.076s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/local_setup.dsv
+[1.077s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.dsv
+[1.078s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/ament_index/resource_index/packages/turtlebot3_bringup
+[1.078s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/cmake/turtlebot3_bringupConfig.cmake
+[1.078s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/cmake/turtlebot3_bringupConfig-version.cmake
+[1.078s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_bringup/share/turtlebot3_bringup/package.xml
+[1.088s] Invoked command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_bringup' returned '0': AMENT_PREFIX_PATH=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node:/home/imjunhyung/turtlebot3_ws/install/turtlebot3_description:/home/imjunhyung/ros2_ws/install/rplidar_ros:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --install /home/imjunhyung/turtlebot3_ws/build/turtlebot3_bringup

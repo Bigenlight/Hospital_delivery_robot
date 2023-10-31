@@ -1,0 +1,21 @@
+[1.845s] Invoking command in '/home/imjunhyung/turtlebot3_ws/src/motor': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/motor/prefix_override:/home/imjunhyung/turtlebot3_ws/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/imjunhyung/turtlebot3_ws/build/motor/build install --record /home/imjunhyung/turtlebot3_ws/build/motor/install.log --install-scripts $base/lib/motor --single-version-externally-managed
+[2.296s] running egg_info
+[2.296s] writing ../../build/motor/motor.egg-info/PKG-INFO
+[2.624s] writing dependency_links to ../../build/motor/motor.egg-info/dependency_links.txt
+[2.625s] writing entry points to ../../build/motor/motor.egg-info/entry_points.txt
+[2.635s] writing requirements to ../../build/motor/motor.egg-info/requires.txt
+[2.637s] writing top-level names to ../../build/motor/motor.egg-info/top_level.txt
+[2.705s] reading manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[2.706s] writing manifest file '../../build/motor/motor.egg-info/SOURCES.txt'
+[2.773s] running build
+[2.774s] running build_py
+[2.774s] running install
+[2.775s] running install_lib
+[2.781s] running install_data
+[2.783s] running install_egg_info
+[2.791s] removing '/home/imjunhyung/turtlebot3_ws/install/motor/lib/python3.8/site-packages/motor-0.0.0-py3.8.egg-info' (and everything under it)
+[2.792s] Copying ../../build/motor/motor.egg-info to /home/imjunhyung/turtlebot3_ws/install/motor/lib/python3.8/site-packages/motor-0.0.0-py3.8.egg-info
+[2.796s] running install_scripts
+[2.822s] Installing motor script to /home/imjunhyung/turtlebot3_ws/install/motor/lib/motor
+[2.987s] writing list of installed files to '/home/imjunhyung/turtlebot3_ws/build/motor/install.log'
+[4.144s] Invoked command in '/home/imjunhyung/turtlebot3_ws/src/motor' returned '0': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/motor/prefix_override:/home/imjunhyung/turtlebot3_ws/install/motor/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor build --build-base /home/imjunhyung/turtlebot3_ws/build/motor/build install --record /home/imjunhyung/turtlebot3_ws/build/motor/install.log --install-scripts $base/lib/motor --single-version-externally-managed
