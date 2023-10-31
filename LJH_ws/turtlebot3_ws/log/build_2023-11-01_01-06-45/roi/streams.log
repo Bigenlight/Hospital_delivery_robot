@@ -1,0 +1,37 @@
+[2.633s] Invoking command in '/home/imjunhyung/turtlebot3_ws/src/roi': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/roi/prefix_override:/home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/roi build --build-base /home/imjunhyung/turtlebot3_ws/build/roi/build install --record /home/imjunhyung/turtlebot3_ws/build/roi/install.log --install-scripts $base/lib/roi --single-version-externally-managed
+[3.477s] running egg_info
+[3.479s] creating ../../build/roi/roi.egg-info
+[3.480s] writing ../../build/roi/roi.egg-info/PKG-INFO
+[3.481s] writing dependency_links to ../../build/roi/roi.egg-info/dependency_links.txt
+[3.481s] writing entry points to ../../build/roi/roi.egg-info/entry_points.txt
+[3.482s] writing requirements to ../../build/roi/roi.egg-info/requires.txt
+[3.482s] writing top-level names to ../../build/roi/roi.egg-info/top_level.txt
+[3.486s] writing manifest file '../../build/roi/roi.egg-info/SOURCES.txt'
+[3.612s] reading manifest file '../../build/roi/roi.egg-info/SOURCES.txt'
+[3.618s] writing manifest file '../../build/roi/roi.egg-info/SOURCES.txt'
+[3.619s] running build
+[3.619s] running build_py
+[3.633s] creating /home/imjunhyung/turtlebot3_ws/build/roi/build
+[3.634s] creating /home/imjunhyung/turtlebot3_ws/build/roi/build/lib
+[3.634s] creating /home/imjunhyung/turtlebot3_ws/build/roi/build/lib/roi
+[3.635s] copying roi/__init__.py -> /home/imjunhyung/turtlebot3_ws/build/roi/build/lib/roi
+[3.635s] copying roi/roi.py -> /home/imjunhyung/turtlebot3_ws/build/roi/build/lib/roi
+[3.636s] running install
+[3.638s] running install_lib
+[3.641s] creating /home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages/roi
+[3.641s] copying /home/imjunhyung/turtlebot3_ws/build/roi/build/lib/roi/__init__.py -> /home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages/roi
+[3.642s] copying /home/imjunhyung/turtlebot3_ws/build/roi/build/lib/roi/roi.py -> /home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages/roi
+[3.644s] byte-compiling /home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages/roi/__init__.py to __init__.cpython-38.pyc
+[3.647s] byte-compiling /home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages/roi/roi.py to roi.cpython-38.pyc
+[3.648s] running install_data
+[3.649s] creating /home/imjunhyung/turtlebot3_ws/install/roi/share/ament_index
+[3.650s] creating /home/imjunhyung/turtlebot3_ws/install/roi/share/ament_index/resource_index
+[3.650s] creating /home/imjunhyung/turtlebot3_ws/install/roi/share/ament_index/resource_index/packages
+[3.651s] copying resource/roi -> /home/imjunhyung/turtlebot3_ws/install/roi/share/ament_index/resource_index/packages
+[3.651s] copying package.xml -> /home/imjunhyung/turtlebot3_ws/install/roi/share/roi
+[3.652s] running install_egg_info
+[3.669s] Copying ../../build/roi/roi.egg-info to /home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages/roi-0.0.0-py3.8.egg-info
+[3.671s] running install_scripts
+[3.744s] Installing roi script to /home/imjunhyung/turtlebot3_ws/install/roi/lib/roi
+[3.746s] writing list of installed files to '/home/imjunhyung/turtlebot3_ws/build/roi/install.log'
+[3.814s] Invoked command in '/home/imjunhyung/turtlebot3_ws/src/roi' returned '0': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/roi/prefix_override:/home/imjunhyung/turtlebot3_ws/install/roi/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/roi build --build-base /home/imjunhyung/turtlebot3_ws/build/roi/build install --record /home/imjunhyung/turtlebot3_ws/build/roi/install.log --install-scripts $base/lib/roi --single-version-externally-managed

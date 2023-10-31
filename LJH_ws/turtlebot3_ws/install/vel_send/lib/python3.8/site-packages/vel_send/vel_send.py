@@ -21,8 +21,8 @@ class vel_send(Node):
 
     def pub_velocity(self):
         msg = Float32MultiArray()
-        wheel_r=self.getEncoderData("r axis1.encoder.vel_estimate\n")* -0.05 * 0.03 * 0.1
-        wheel_l=self.getEncoderData("r axis0.encoder.vel_estimate\n")* 0.05 * 0.03 * 0.1
+        wheel_r=self.getEncoderData("r axis0.encoder.vel_estimate\n")* -0.05 * 0.03 * 0.1
+        wheel_l=self.getEncoderData("r axis1.encoder.vel_estimate\n")* 0.05 * 0.03 * 0.1
         msg.data =[wheel_r/0.1,wheel_l/0.1]
         self.position_publisher.publish(msg)
         

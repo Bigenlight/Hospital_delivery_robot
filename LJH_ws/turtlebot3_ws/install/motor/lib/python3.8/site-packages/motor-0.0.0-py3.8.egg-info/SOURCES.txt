@@ -10,7 +10,6 @@ setup.py
 ../../build/motor/motor.egg-info/zip-safe
 motor/__init__.py
 motor/motor.py
-motor/motor1.py
 resource/motor
 test/test_copyright.py
 test/test_flake8.py
