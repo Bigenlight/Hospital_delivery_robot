@@ -13,10 +13,10 @@ import numpy as np
 class Motor(Node):
     SERIAL_PORT = '/dev/ttyACM1'
     odrv0 = odrive.find_any()
-    flag=0.
+    emergency=0.
     def __init__(self):
         super().__init__("motor")
-        self.flag = 0
+        self.emergency = 0
         self.odrv0 = None
         self.count = 0.0
         self.wheelDiameter = 0.0702 # m unit
@@ -27,23 +27,22 @@ class Motor(Node):
             rclpy.shutdown()
 
         self.ser = serial.Serial(self.SERIAL_PORT, 115200)
-        self.flag_sub = self.create_subscription(Int32MultiArray, "/flag", self.check_flag, 10)
+        self.emergency_sub = self.create_subscription(Int32MultiArray, "/emergency", self.emergency, 10)
         self.twist_subscriber = self.create_subscription(Twist, "/cmd_vel", self.send_cmd_vel, 10)
         self.get_logger().info("motor has started")
         self.position_publisher = self.create_publisher(Float32MultiArray, "/position", 10)
         self.timer_ = self.create_timer(0.02, self.pub_velocity)
 
 
-    def check_flag(self, msg):
-        self.flag = msg.data[0]
-        if self.flag == 1:
-            self.get_logger().info("Static object detected")
+    def check_emergency(self, msg):
+        self.emergency = msg.data[0]
+        if self.emergency == 1:
    
     def send_cmd_vel(self, msg):
-        if self.flag == 2:
-            self.get_logger().info("Moving object detected")
-            self.odrv0.axis1.controller.input_vel = 0
+        if self.emergency == 1:
+            self.get_logger().info("emergency!! robot stopped.")
             self.odrv0.axis0.controller.input_vel = 0
+            self.odrv0.axis1.controller.input_vel = 0
         else:
             self.get_logger().info("Twist: Linear: %f Angular velocity: %f" % (msg.linear.x, msg.angular.z))
             self.odrv0.axis0.controller.input_vel = -(msg.linear.x + msg.angular.z * self.wheelSeperation/2) / (self.wheelDiameter * 3.1415)
