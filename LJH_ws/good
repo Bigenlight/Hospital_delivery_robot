@@ -136,8 +136,8 @@ alias turtlebotmap6='ros2 run nav2_map_server map_saver_cli -f ~/map7'
 alias turtlebotmap7='ros2 run nav2_map_server map_saver_cli -f ~/map8'
 alias turtlebotmap8='ros2 run nav2_map_server map_saver_cli -f ~/map9'
 
-alias pose0='ros2 topic pub --once /goal_pose geometry_msgs/msg/PoseStamped "{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {position: {x: 0.567, y: 36.03, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: 0.115, w: 0.99}}}" '
-alias pose2='ros2 topic pub --once /goal_pose geometry_msgs/msg/PoseStamped "{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {position: {x: 17.63, y: 1.67, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: -0.62, w: 0.78}}}" '
+alias pose0='ros2 topic pub /goal_pose geometry_msgs/msg/PoseStamped "{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {position: {x: 1.27, y: 39.36, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: -0.998, w: 0.056}}}" '
+alias pose2='ros2 topic pub --once /goal_pose geometry_msgs/msg/PoseStamped "{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {position: {x: 14.66, y: 4.23, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: -0.687, w: 0.72}}}" '
 source /opt/ros/foxy/setup.bash
 source ~/turtlebot3_ws/install/setup.bash
 source ~/ros2_ws/install/setup.bash

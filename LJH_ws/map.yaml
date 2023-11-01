@@ -1,4 +1,4 @@
-image: /home/imjunhyung/map3.pgm
+image: /home/imjunhyung/map6.pgm
 mode: trinary
 resolution: 0.05
 origin: [-2.5, -3.37, 0]
