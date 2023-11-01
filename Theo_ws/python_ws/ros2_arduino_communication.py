@@ -24,7 +24,7 @@ class MinimalSubscriber(Node):
         super().__init__('minimal_subscriber')
         self.subscription = self.create_subscription(
             String,
-            'topic',
+            'detected_object',
             self.listener_callback,
             10)
         
@@ -58,9 +58,9 @@ class MinimalSubscriber(Node):
 
 py_serial = serial.Serial(
     
-    #port='/dev/ttyUSB0',
+    port='/dev/ttyUSB0',
     #port='/dev/ttyUSB1',
-    port='/dev/ttyACM0',
+    #port='/dev/ttyACM0',
     #port='/dev/ttyACM1',
     
     # 보드 레이트 (통신 속도)

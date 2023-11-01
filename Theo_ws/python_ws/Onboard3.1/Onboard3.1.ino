@@ -1,4 +1,6 @@
 #include <Servo.h>
+//#include <toneAC.h>
+
 
 Servo lefthand;
 Servo righthand;
@@ -18,7 +20,8 @@ int pos = 0;
 //
 String order = "rest";
 String state = "pulled";
-String arm_mode = "loading";
+String arm_mode = "unloading"; // 기본이 배송으로
+String mission = "uncomplete";// 미션수행 여
 //
 int i = 0;
 unsigned long past = 0; // 과거 시간 저장 변수
@@ -86,7 +89,7 @@ void counter_clockwise(int lap)
 }
 
 void close_servo() {
-  if (arm_mode == "loading") {
+  if (arm_mode == "loading") { // 모드 
     Serial.print("loading: ");
     righthand.write(rclose);
     lefthand.write(lclose);
@@ -100,7 +103,7 @@ void alarm(int y)
   int j = 0;
   Serial.println("emergency");
 
-  if(bpast > millis() - 15000 && bpast != 0 ) return 0;
+  if(bpast > millis() - 15000 && bpast != 0) return;
 
   while (j < y) 
   {
@@ -143,11 +146,18 @@ void loop() {
     past = now;
   }
 
+  //복귀 감지 
+  if(mission == "completed"){
+    for(int k =0 ;k < 10; k++){
+      Serial.print("return ");
+      delay(100);
+      }
+      mission = "uncompleted";
+      return;
+    }
 
   // 부저알람
-  if (order == "per"){
-    alarm(10);
-  }
+  if (order == "per")alarm(10);
   else if (order == "er") alarm(10);
   else if (order == " r") alarm(10);
 
