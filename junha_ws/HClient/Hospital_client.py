@@ -13,7 +13,7 @@ import os.path
 from os import path
 import time
 
-import Hospital as Hos
+import junha_ws.HClient.Hospital_module as Hos
 
 
 
