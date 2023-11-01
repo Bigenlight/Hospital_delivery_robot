@@ -9,7 +9,7 @@ import time
 import subprocess
 
 #pos0
-terminal_command = """ros2 topic pub --once /goal_pose geometry_msgs/msg/PoseStamped '{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {position: {x: 0.567, y: 36.03, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: 0.115, w: 0.99}}}' """
+terminal_command = """ros2 topic pub /goal_pose geometry_msgs/msg/PoseStamped "{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {position: {x: 1.14, y: 39.51, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: -0.999, w: 0.00}}}" """
 
 # serial 설치 필요
 # 아래 py_serial에서 포트 설정 필요 (아두이노 들아가면 쉽게 볼 수 있음, 그거 쓰면 됨)
