@@ -17,13 +17,8 @@ import datetime                                #
 # -------------------------------------------- #
 
 
-# 코드 시작 전 IP ADDRESS 수정하기
 
-
-
-Main_ui = uic.loadUiType("/home/daejung/23_HF110/junha_ws/HServer/Hospital_server.ui")[0]
-
-
+Main_ui = uic.loadUiType("/home/junha/23_HF110/junha_ws/HServer/Hospital_server.ui")[0]
 
 class WindowClass(QMainWindow, Main_ui) :
 
@@ -39,15 +34,18 @@ class WindowClass(QMainWindow, Main_ui) :
 
         thr_openserver_socket1 = threading.Thread(target=self.open_server_socket1)
         thr_openserver_socket2 = threading.Thread(target=self.open_server_socket2)
+        thr_openserver_socket3 = threading.Thread(target=self.open_server_socket3)
 
         thr_openserver_socket1.start()
         thr_openserver_socket2.start()
+        thr_openserver_socket3.start()
+
 
 
     def open_server_socket1(self):
 
 
-        HOST = '192.168.0.33'
+        HOST = '192.168.0.6'
         PORT1 = 3333
 
 
@@ -88,7 +86,7 @@ class WindowClass(QMainWindow, Main_ui) :
             bytesPerLine = 3 * width
             qImg = QImage(frame.data, width, height, bytesPerLine, QImage.Format_RGB888)
 
-            qPix = QPixmap.fromImage(qImg.scaled(1280, 720))
+            qPix = QPixmap.fromImage(qImg.scaled(1440, 810))
             self.lblPixmap.setPixmap(qPix)
 
 
@@ -104,7 +102,7 @@ class WindowClass(QMainWindow, Main_ui) :
 
 
 
-        HOST = '192.168.0.33'
+        HOST = '192.168.0.6'
         PORT2 = 4444
 
         socket2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -131,7 +129,7 @@ class WindowClass(QMainWindow, Main_ui) :
 
             if prev_len != len(data_buffer):
 
-                print("emergency!!!!!!!!!!")
+                # print("emergency!!!!!!!!!!")
 
                 self.now = datetime.datetime.now()
                 self.str_status = "Emergency at " + self.now.strftime("%H시 %M분 %S초")
@@ -142,6 +140,46 @@ class WindowClass(QMainWindow, Main_ui) :
                 # subWindow_Log.listEmergency.addItem(self.temp)
 
             prev_len = len(data_buffer)
+
+
+    def open_server_socket3(self):
+
+        HOST = '192.168.0.6'
+        PORT3 = 5555
+
+        socket3 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+        socket3.bind((HOST, PORT3))
+        socket3.listen()
+
+        self.lblConn3_Status.setText("Waiting for connection...")
+
+        conn3, addr3 = socket3.accept()
+
+        self.lblConn3_Status.setText("Meal Listing System Connected " + "[" + str(addr3)[2:13] + "]")
+
+
+        while True:
+            data = conn3.recv(100)
+            msg = data.decode()
+
+            self.lblStatus.setText(msg)
+            self.save_meal_str(msg)
+
+
+
+    def save_meal_str(self, meal_str):
+
+        self.now = datetime.datetime.now()
+
+        file_name = "/home/junha/23_HF110/junha_ws/Meal_list/Meal_list_" + self.now.strftime("%Y년_%m월_%d일") + ".txt"
+        # 식사 리스트 저장경로 역시 각자의 컴퓨터에 맞게 지정해야 함.
+        # "/home/[이름]/23_HF110/junha_ws/Meal_list/Meal_list_" + self.now.strftime("%Y%m%d") + ".txt"
+
+        with open(file_name, 'a') as file:
+            file.write(meal_str)
+
+
 
 
 #     def open_EmergencyLog(self):

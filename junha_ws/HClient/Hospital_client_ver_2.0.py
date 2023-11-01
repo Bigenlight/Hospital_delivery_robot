@@ -14,18 +14,21 @@ import os.path
 from os import path
 import time
 
-from Hospital import Hospital_pkg as Hospital
+from Hospital_module import Hospital
 
 import threading
 
 from queue import Queue
 
 
+IP_ADDR = '192.168.0.6'
+PORT = 5555
+
 
 
 form_class = uic.loadUiType("/home/junha/23_HF110/junha_ws/HClient/Hospital_client.ui")[0]
 # .ui 파일이 있는 경로로 설정 하면 됨.
-# "/home/[이름]/23_HF110/junha_ws/Hospital_client.ui"
+# "/home/[이름]/23_HF110/junha_ws/Hospital_gui.ui"
 
 
 
@@ -66,6 +69,11 @@ class WindowClass(QMainWindow, form_class) :
         super().__init__()
         self.setupUi(self)
 
+        self.hospital_class = Hospital()
+        # self.hospital_class.TCP_start(IP_ADDR, PORT)
+        self.thr_TCP_start = threading.Thread(target=self.hospital_class.TCP_start, args=(IP_ADDR, PORT))
+        self.thr_TCP_start.start()
+
         # 버튼 정의
         self.btnLocation.setEnabled(True)
         self.btnMeal.setEnabled(True)
@@ -88,19 +96,17 @@ class WindowClass(QMainWindow, form_class) :
 
 
 
+
     # 위치, 행정, 식사 안내를 하나의 함수로 처리할 수 있게 만듬.
     # srv: 서비스의 종류 (location, administration, meal)
     def start_service(self, srv):
 
         self.service_type = srv
-        self.hospital_class = Hospital(srv)
 
-        if srv == "meal":
+        if self.service_type == "meal":
             self.lblSpeechRec.setText("양식과 한식 중 원하시는 메뉴를 선택해주세요.\n\nListening...")
         else:
             self.lblSpeechRec.setText("Listening...")
-
-
 
 
         self.btnLocation.setEnabled(False)
@@ -108,7 +114,7 @@ class WindowClass(QMainWindow, form_class) :
         self.btnMeal.setEnabled(False)
 
         QSound.play("/home/junha/23_HF110/junha_ws/sample_sound/start_listening_1.wav")
-        # 역시 각자에 맞게 파일 경로 수정 해야 함
+
 
 
         self.speech_recognizer = Thr_SpeechRecognizer()
@@ -135,7 +141,9 @@ class WindowClass(QMainWindow, form_class) :
             self.lblSpeechRec.setText(self.result_data)
             QSound.play("/home/junha/23_HF110/junha_ws/sample_sound/stop_listening_1.wav")
 
-            self.hos_output = self.hospital_class.text_analysis(self.result_data)
+            self.hos_output = self.hospital_class.text_analysis(self.result_data, self.service_type)
+
+
             time.sleep(1) # 스레드간 충돌을 막기 위해 1초 쉬게 함
             self.lblResult.setText(self.hos_output)
 
