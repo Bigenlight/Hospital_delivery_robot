@@ -1,0 +1,37 @@
+[3.993s] Invoking command in '/home/imjunhyung/turtlebot3_ws/src/detection': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/detection/prefix_override:/home/imjunhyung/turtlebot3_ws/install/detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/detection build --build-base /home/imjunhyung/turtlebot3_ws/build/detection/build install --record /home/imjunhyung/turtlebot3_ws/build/detection/install.log --install-scripts $base/lib/detection --single-version-externally-managed
+[4.903s] running egg_info
+[4.903s] creating ../../build/detection/detection.egg-info
+[4.903s] writing ../../build/detection/detection.egg-info/PKG-INFO
+[4.904s] writing dependency_links to ../../build/detection/detection.egg-info/dependency_links.txt
+[4.904s] writing entry points to ../../build/detection/detection.egg-info/entry_points.txt
+[4.904s] writing requirements to ../../build/detection/detection.egg-info/requires.txt
+[4.904s] writing top-level names to ../../build/detection/detection.egg-info/top_level.txt
+[4.904s] writing manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+[4.904s] reading manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+[4.905s] writing manifest file '../../build/detection/detection.egg-info/SOURCES.txt'
+[4.905s] running build
+[4.905s] running build_py
+[4.905s] creating /home/imjunhyung/turtlebot3_ws/build/detection/build
+[4.905s] creating /home/imjunhyung/turtlebot3_ws/build/detection/build/lib
+[4.906s] creating /home/imjunhyung/turtlebot3_ws/build/detection/build/lib/detection
+[4.906s] copying detection/__init__.py -> /home/imjunhyung/turtlebot3_ws/build/detection/build/lib/detection
+[4.906s] copying detection/detection.py -> /home/imjunhyung/turtlebot3_ws/build/detection/build/lib/detection
+[4.906s] running install
+[4.906s] running install_lib
+[4.906s] creating /home/imjunhyung/turtlebot3_ws/install/detection/lib/python3.8/site-packages/detection
+[4.907s] copying /home/imjunhyung/turtlebot3_ws/build/detection/build/lib/detection/__init__.py -> /home/imjunhyung/turtlebot3_ws/install/detection/lib/python3.8/site-packages/detection
+[4.907s] copying /home/imjunhyung/turtlebot3_ws/build/detection/build/lib/detection/detection.py -> /home/imjunhyung/turtlebot3_ws/install/detection/lib/python3.8/site-packages/detection
+[4.907s] byte-compiling /home/imjunhyung/turtlebot3_ws/install/detection/lib/python3.8/site-packages/detection/__init__.py to __init__.cpython-38.pyc
+[4.907s] byte-compiling /home/imjunhyung/turtlebot3_ws/install/detection/lib/python3.8/site-packages/detection/detection.py to detection.cpython-38.pyc
+[4.907s] running install_data
+[4.907s] creating /home/imjunhyung/turtlebot3_ws/install/detection/share/ament_index
+[4.908s] creating /home/imjunhyung/turtlebot3_ws/install/detection/share/ament_index/resource_index
+[4.908s] creating /home/imjunhyung/turtlebot3_ws/install/detection/share/ament_index/resource_index/packages
+[4.908s] copying resource/detection -> /home/imjunhyung/turtlebot3_ws/install/detection/share/ament_index/resource_index/packages
+[4.908s] copying package.xml -> /home/imjunhyung/turtlebot3_ws/install/detection/share/detection
+[4.909s] running install_egg_info
+[4.909s] Copying ../../build/detection/detection.egg-info to /home/imjunhyung/turtlebot3_ws/install/detection/lib/python3.8/site-packages/detection-0.0.0-py3.8.egg-info
+[4.909s] running install_scripts
+[4.909s] Installing detection script to /home/imjunhyung/turtlebot3_ws/install/detection/lib/detection
+[4.909s] writing list of installed files to '/home/imjunhyung/turtlebot3_ws/build/detection/install.log'
+[5.142s] Invoked command in '/home/imjunhyung/turtlebot3_ws/src/detection' returned '0': PYTHONPATH=/home/imjunhyung/turtlebot3_ws/build/detection/prefix_override:/home/imjunhyung/turtlebot3_ws/install/detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/detection build --build-base /home/imjunhyung/turtlebot3_ws/build/detection/build install --record /home/imjunhyung/turtlebot3_ws/build/detection/install.log --install-scripts $base/lib/detection --single-version-externally-managed
