@@ -25,7 +25,7 @@ bool mission = false;// 미션수행 여부(false는 안한)
 //
 int i = 0;
 unsigned long past = 0; // 과거 시간 저장 변수
-long breaktime = -10000;
+long breaktime = -15000;
 // 부
 int speakerPin = 13;
 long bpast = 0;
