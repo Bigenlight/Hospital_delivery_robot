@@ -122,7 +122,8 @@ py_serial = serial.Serial(
     #port='/dev/ttyACM1',
     
     # 보드 레이트 (통신 속도)
-    baudrate=9600,
+    #baudrate=9600,
+    baudrate=300,
 )
 
 while True:

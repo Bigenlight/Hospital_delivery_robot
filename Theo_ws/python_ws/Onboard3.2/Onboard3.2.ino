@@ -34,7 +34,7 @@ long bpast = 0;
 void setup()
 {
   //
-  Serial.begin(9600);
+  Serial.begin(300);
   Serial.flush();
 
   // Declare pins as output:
