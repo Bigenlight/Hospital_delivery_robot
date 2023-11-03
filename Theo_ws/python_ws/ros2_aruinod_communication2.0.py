@@ -44,6 +44,8 @@ class MinimalSubscriber(Node):
         command = msg.data
         py_serial.write(command.encode())
         py_serial.reset_output_buffer()
+
+        #받기
         if py_serial.readable():
             response = py_serial.readline()
             print("Arduino Response:", response)
@@ -105,7 +107,7 @@ class MinimalSubscriber(Node):
     #             #         print(result.stderr)
                 
                        
-        time.sleep(0.001)
+        time.sleep(0.0005)
         
         
 

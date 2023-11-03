@@ -183,7 +183,7 @@ void loop() {
   if (now - breaktime <= 10000)
   {
     order = "justdone";
-    Serial.print("break time ");
+    Serial.println("break time ");
   }
 
 
@@ -227,5 +227,5 @@ void loop() {
   Serial.print(arm_mode);
   Serial.println(", behave: ");
 
-  //order="";
+  order="NoNewOrder";
 }
