@@ -106,7 +106,7 @@ class MinimalSubscriber(Node):
     #             #         print("명령어 실행 실패:")
     #             #         print(result.stderr)
                 
-                       
+                       #
         time.sleep(0.0005)
         
         

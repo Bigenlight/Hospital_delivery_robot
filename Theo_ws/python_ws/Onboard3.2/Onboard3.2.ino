@@ -125,13 +125,12 @@ void alarm(int y)
 }
 
 
+//////////////////////////////////////////////////////////////////////////////////
 void loop() {
   unsigned long now = millis();
 
   // Serial.read();
   //  delay(100);
-
-
   if (Serial.available())
   {
     order = Serial.readStringUntil(' '); // Read a string until a newline character
@@ -147,13 +146,14 @@ void loop() {
 
     past = now;
   }
+ // else {Serial.print("NNO");return;}
 
   //복귀 감지 
   if(mission == true){
-    for(int k =0 ;k < 20; k++){
+    //for(int k =0 ;k < 20; k++){
       Serial.println("return ");
       delay(100);
-      }
+      //}
       mission = false;
       return;
     }
