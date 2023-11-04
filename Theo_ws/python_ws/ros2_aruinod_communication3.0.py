@@ -5,8 +5,8 @@ import serial
 import subprocess
 
 brate = 9600
-#port_name = '/dev/ttyUSB0'
-port_name = '/dev/ttyUSB1'
+port_name = '/dev/ttyUSB0'
+#port_name = '/dev/ttyUSB1'
 #port_name = '/dev/ttyUSB0'
 
 #/bin/python3 /home/theo/23_HF110/Theo_ws/python_ws/ros2_aruinod_communication3.0.py
