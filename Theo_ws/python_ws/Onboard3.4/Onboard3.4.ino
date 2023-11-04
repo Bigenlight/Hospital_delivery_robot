@@ -169,6 +169,10 @@ void loop() {
     if (order.indexOf("push") >= 0) {
       order = "push";
     }
+    if (order.indexOf("per") >= 0) {
+      order = "per";
+    }
+
 
   //복귀 감지 
   if(mission == true){
