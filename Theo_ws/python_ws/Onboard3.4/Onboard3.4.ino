@@ -29,7 +29,7 @@ bool mission = false;// 미션수행 여부(false는 안한)
 //
 int i = 0;
 unsigned long past = 0; // 과거 시간 저장 변수
-long breaktime = -15000;
+long breaktime = -50000;
 // 부
 int speakerPin = 13;
 long bpast = 0;
@@ -38,8 +38,8 @@ long bpast = 0;
 void setup()
 {
   //
-  Serial.begin(300);
-  Serial.flush();
+  Serial.begin(9600);
+  //Serial.flush();
 
   // Declare pins as output:
   pinMode(stepPin, OUTPUT);
@@ -69,6 +69,7 @@ void clockwise(int lap)
   closing_arm();
 
   mission= true;
+  Serial.println("return ");
 }
 void closing_arm(){
 
@@ -155,21 +156,25 @@ void loop() {
     // Convert the string to an integer
     //order = input.toInt();
 
-    //    while (Serial.available())
-    //    {
-    //      Serial.read(); // Clear any remaining characters in the serial buffer
-    //    }
-    Serial.read();
+        while (Serial.available())
+        {
+          Serial.read(); // Clear any remaining characters in the serial buffer
+        }
+    //Serial.read();
 
     past = now;
   }
  // else {Serial.print("NNO");return;}
 
+    if (order.indexOf("push") >= 0) {
+      order = "push";
+    }
+
   //복귀 감지 
   if(mission == true){
     //for(int k =0 ;k < 20; k++){
-      Serial.println("return ");
-      delay(100);
+      //Serial.println("return ");
+      //delay(100);
       //}
       mission = false;
       return;
@@ -197,11 +202,7 @@ void loop() {
   else if (order == " n") arm_mode = "unloading";
   else if (order == "nun") arm_mode = "unloading";
 
-  if (now - breaktime <= 30000)
-  {
-    order = "justdone";
-    Serial.println("break time ");
-  }
+
   if(half_closed == true && now - breaktime >= 20000){
       half_closed == false;
       close_servo();
@@ -211,6 +212,12 @@ void loop() {
   // 명령
  if (order == "push" || order == " push" ||order == "ush" || order == "push " || order == " push " )
   {
+     if (now - breaktime <= 30000)
+    {
+      order = "justdone";
+      Serial.println(" break time ");
+      return;
+    }
     // Set the spinning direction counterclockwise:
     digitalWrite(dirPin, LOW);
     Serial.println("Moving Counter Clockwise");
@@ -230,12 +237,12 @@ void loop() {
   
   else
   {
-    Serial.println("resting ");
+    //Serial.println("resting ");
   }
   
   // 시리얼 메시지 전송
   Serial.print(" /Receive: ");
-  //Serial.print(order);
+  Serial.println(order);
   //Serial.print(", past: ");
   //Serial.print(past);
   //Serial.print(", now: ");
