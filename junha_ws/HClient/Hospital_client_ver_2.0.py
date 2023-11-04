@@ -26,7 +26,7 @@ PORT = 5555
 
 
 
-form_class = uic.loadUiType("/home/daejung/23_HF110/junha_ws/HClient/Hospital_client.ui")[0]
+form_class = uic.loadUiType("/home/junha/23_HF110/junha_ws/HClient/Hospital_client.ui")[0]
 # .ui 파일이 있는 경로로 설정 하면 됨.
 # "/home/[이름]/23_HF110/junha_ws/Hospital_gui.ui"
 
@@ -80,8 +80,9 @@ class WindowClass(QMainWindow, form_class) :
         self.btnService.setEnabled(True)
 
         # 초기 창 상태
-        self.lblSpeechRec.setText("원하시는 단어를 말씀해주세요")
+        self.lblSpeechRec.setText("무엇을 도와드릴까요?")
         self.lblResult.setText("")
+        self.lblSpeechRec.setWordWrap(True)
 
         # 클릭 이벤트 발생 시 함수
         self.btnLocation.clicked.connect(lambda: self.start_service("location"))
@@ -161,7 +162,7 @@ class WindowClass(QMainWindow, form_class) :
         self.btnService.setEnabled(True)
 
         # 초기 창 상태
-        self.lblSpeechRec.setText("원하시는 단어를 말씀해주세요")
+        self.lblSpeechRec.setText("무엇을 도와드릴까요?")
         self.lblResult.setText("")
 
 

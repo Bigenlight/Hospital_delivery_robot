@@ -6,36 +6,44 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1850</width>
-    <height>1044</height>
+    <width>1024</width>
+    <height>768</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>18</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="lblSpeechRec">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>20</x>
       <y>40</y>
-      <width>1141</width>
-      <height>661</height>
+      <width>681</width>
+      <height>491</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>36</pointsize>
+      <pointsize>29</pointsize>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">background-color: rgb(209, 209, 209);</string>
     </property>
     <property name="frameShape">
-     <enum>QFrame::Box</enum>
+     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
+     <enum>QFrame::Plain</enum>
     </property>
     <property name="lineWidth">
      <number>3</number>
@@ -44,31 +52,31 @@
      <number>1</number>
     </property>
     <property name="text">
-     <string/>
+     <string>무엇을 도와드릴까요?</string>
     </property>
    </widget>
    <widget class="QLabel" name="lblResult">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>770</y>
-      <width>1781</width>
-      <height>201</height>
+      <x>20</x>
+      <y>580</y>
+      <width>981</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>36</pointsize>
+      <pointsize>25</pointsize>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">background-color: rgb(209, 209, 209);</string>
     </property>
     <property name="frameShape">
-     <enum>QFrame::Box</enum>
+     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
+     <enum>QFrame::Plain</enum>
     </property>
     <property name="lineWidth">
      <number>3</number>
@@ -83,17 +91,20 @@
    <widget class="QPushButton" name="btnLocation">
     <property name="geometry">
      <rect>
-      <x>1220</x>
+      <x>730</x>
       <y>40</y>
-      <width>591</width>
-      <height>161</height>
+      <width>271</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>45</pointsize>
+      <pointsize>33</pointsize>
       <weight>75</weight>
+      <italic>false</italic>
       <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
      </font>
     </property>
     <property name="cursor">
@@ -101,6 +112,9 @@
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>위치</string>
@@ -109,17 +123,20 @@
    <widget class="QPushButton" name="btnMeal">
     <property name="geometry">
      <rect>
-      <x>1220</x>
-      <y>540</y>
-      <width>591</width>
-      <height>161</height>
+      <x>730</x>
+      <y>400</y>
+      <width>271</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>45</pointsize>
+      <pointsize>33</pointsize>
       <weight>75</weight>
+      <italic>false</italic>
       <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
      </font>
     </property>
     <property name="cursor">
@@ -127,6 +144,9 @@
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>식사 등록</string>
@@ -135,17 +155,20 @@
    <widget class="QPushButton" name="btnService">
     <property name="geometry">
      <rect>
-      <x>1220</x>
-      <y>290</y>
-      <width>591</width>
-      <height>161</height>
+      <x>730</x>
+      <y>220</y>
+      <width>271</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>45</pointsize>
+      <pointsize>33</pointsize>
       <weight>75</weight>
+      <italic>false</italic>
       <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
      </font>
     </property>
     <property name="cursor">
@@ -153,6 +176,9 @@
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>행정 안내</string>
@@ -164,7 +190,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1850</width>
+     <width>1024</width>
      <height>22</height>
     </rect>
    </property>
