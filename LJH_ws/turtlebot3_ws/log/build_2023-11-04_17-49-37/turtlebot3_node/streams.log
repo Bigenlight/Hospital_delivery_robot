@@ -1,0 +1,91 @@
+[0.217s] Invoking command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake /home/imjunhyung/turtlebot3_ws/src/turtlebot3/turtlebot3_node -DCMAKE_INSTALL_PREFIX=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node
+[3.336s] -- The C compiler identification is GNU 9.4.0
+[5.365s] -- The CXX compiler identification is GNU 9.4.0
+[5.549s] -- Detecting C compiler ABI info
+[6.019s] -- Detecting C compiler ABI info - done
+[6.050s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.052s] -- Detecting C compile features
+[6.061s] -- Detecting C compile features - done
+[6.072s] -- Detecting CXX compiler ABI info
+[6.179s] -- Detecting CXX compiler ABI info - done
+[6.205s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.206s] -- Detecting CXX compile features
+[6.207s] -- Detecting CXX compile features - done
+[6.295s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[6.528s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[6.528s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.397s] -- Found dynamixel_sdk: 3.7.40 (/opt/ros/foxy/share/dynamixel_sdk/cmake)
+[7.431s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[7.816s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.881s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[8.834s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[8.914s] -- Found FastRTPS: /opt/ros/foxy/include  
+[9.581s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.258s] -- Found message_filters: 3.2.7 (/opt/ros/foxy/share/message_filters/cmake)
+[10.275s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[10.401s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[10.485s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[10.487s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.488s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.585s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[10.585s] -- Looking for pthread_create in pthreads
+[10.660s] -- Looking for pthread_create in pthreads - not found
+[10.660s] -- Looking for pthread_create in pthread
+[10.747s] -- Looking for pthread_create in pthread - found
+[10.749s] -- Found Threads: TRUE  
+[11.099s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[11.338s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[11.540s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[11.609s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[12.901s] -- Found turtlebot3_msgs: 2.2.1 (/opt/ros/foxy/share/turtlebot3_msgs/cmake)
+[13.107s] -- Configuring done (12.3s)
+[13.199s] -- Generating done (0.0s)
+[13.202s] -- Build files have been written to: /home/imjunhyung/turtlebot3_ws/build/turtlebot3_node
+[13.219s] Invoked command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake /home/imjunhyung/turtlebot3_ws/src/turtlebot3/turtlebot3_node -DCMAKE_INSTALL_PREFIX=/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node
+[13.223s] Invoking command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --build /home/imjunhyung/turtlebot3_ws/build/turtlebot3_node -- -j8 -l8
+[13.285s] [ 14%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/motor_power.cpp.o[0m
+[13.285s] [ 14%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/sound.cpp.o[0m
+[13.285s] [ 21%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/reset.cpp.o[0m
+[13.286s] [ 28%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/diff_drive_controller.cpp.o[0m
+[13.286s] [ 35%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/dynamixel_sdk_wrapper.cpp.o[0m
+[13.286s] [ 42%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/odometry.cpp.o[0m
+[13.287s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/turtlebot3.cpp.o[0m
+[13.287s] [ 57%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/battery_state.cpp.o[0m
+[14.911s] [ 64%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/imu.cpp.o[0m
+[21.381s] [ 71%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/joint_state.cpp.o[0m
+[22.546s] [ 78%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/sensor_state.cpp.o[0m
+[24.973s] [01m[K/home/imjunhyung/turtlebot3_ws/src/turtlebot3/turtlebot3_node/src/sensors/joint_state.cpp:[m[K In member function ‘[01m[Kvirtual void robotis::turtlebot3::sensors::JointState::publish(const rclcpp::Time&, std::shared_ptr<robotis::turtlebot3::DynamixelSDKWrapper>&)[m[K’:
+[24.974s] [01m[K/home/imjunhyung/turtlebot3_ws/src/turtlebot3/turtlebot3_node/src/sensors/joint_state.cpp:60:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdxl_sdk_wrapper[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[24.974s]    60 |   [01;35m[Kstd::shared_ptr<DynamixelSDKWrapper> & dxl_sdk_wrapper[m[K)
+[24.974s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[36.921s] [ 85%] [32m[1mLinking CXX static library libturtlebot3_node_lib.a[0m
+[39.894s] [ 85%] Built target turtlebot3_node_lib
+[39.930s] [ 92%] [32mBuilding CXX object CMakeFiles/turtlebot3_ros.dir/src/node_main.cpp.o[0m
+[43.243s] [100%] [32m[1mLinking CXX executable turtlebot3_ros[0m
+[45.235s] [100%] Built target turtlebot3_ros
+[45.251s] Invoked command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --build /home/imjunhyung/turtlebot3_ws/build/turtlebot3_node -- -j8 -l8
+[45.353s] Invoking command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --install /home/imjunhyung/turtlebot3_ws/build/turtlebot3_node
+[45.396s] -- Install configuration: ""
+[45.396s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/param
+[45.410s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/param/waffle_pi.yaml
+[45.411s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/param/burger.yaml
+[45.412s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/param/waffle.yaml
+[45.412s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/lib/turtlebot3_node/turtlebot3_ros
+[45.425s] -- Set runtime path of "/home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/lib/turtlebot3_node/turtlebot3_ros" to ""
+[45.425s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_node
+[45.426s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_node
+[45.426s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.sh
+[45.426s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.dsv
+[45.427s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/environment/path.sh
+[45.427s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/environment/path.dsv
+[45.427s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.bash
+[45.427s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.sh
+[45.428s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.zsh
+[45.428s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.dsv
+[45.428s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.dsv
+[45.428s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/ament_index/resource_index/packages/turtlebot3_node
+[45.429s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[45.429s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig.cmake
+[45.429s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig-version.cmake
+[45.430s] -- Installing: /home/imjunhyung/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.xml
+[45.445s] Invoked command in '/home/imjunhyung/turtlebot3_ws/build/turtlebot3_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/imjunhyung/.local/bin/cmake --install /home/imjunhyung/turtlebot3_ws/build/turtlebot3_node
