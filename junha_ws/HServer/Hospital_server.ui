@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1850</width>
+    <width>1849</width>
     <height>1044</height>
    </rect>
   </property>
@@ -19,8 +19,8 @@
      <rect>
       <x>30</x>
       <y>70</y>
-      <width>1440</width>
-      <height>810</height>
+      <width>1280</width>
+      <height>720</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -42,8 +42,8 @@
    <widget class="QPushButton" name="btnConnect">
     <property name="geometry">
      <rect>
-      <x>1500</x>
-      <y>70</y>
+      <x>1460</x>
+      <y>30</y>
       <width>321</width>
       <height>81</height>
      </rect>
@@ -61,8 +61,8 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>910</y>
-      <width>1441</width>
+      <y>890</y>
+      <width>1281</width>
       <height>71</height>
      </rect>
     </property>
@@ -90,8 +90,8 @@
    <widget class="QLabel" name="lblConn1_Status">
     <property name="geometry">
      <rect>
-      <x>1500</x>
-      <y>170</y>
+      <x>1460</x>
+      <y>130</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -112,7 +112,29 @@
    <widget class="QLabel" name="lblConn2_Status">
     <property name="geometry">
      <rect>
-      <x>1500</x>
+      <x>1460</x>
+      <y>170</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(218, 218, 218);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblConn3_Status">
+    <property name="geometry">
+     <rect>
+      <x>1460</x>
       <y>210</y>
       <width>321</width>
       <height>31</height>
@@ -131,38 +153,52 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnLog">
+   <widget class="QListWidget" name="listMeal">
     <property name="geometry">
      <rect>
-      <x>1500</x>
-      <y>910</y>
+      <x>1460</x>
+      <y>310</y>
       <width>321</width>
-      <height>71</height>
+      <height>311</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-     </font>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
     </property>
-    <property name="text">
-     <string>See Log</string>
+    <property name="lineWidth">
+     <number>5</number>
     </property>
    </widget>
-   <widget class="QLabel" name="lblConn3_Status">
+   <widget class="QListWidget" name="listEmergency">
     <property name="geometry">
      <rect>
-      <x>1500</x>
-      <y>250</y>
+      <x>1460</x>
+      <y>660</y>
       <width>321</width>
-      <height>31</height>
+      <height>311</height>
      </rect>
     </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1380</x>
+      <y>-10</y>
+      <width>491</width>
+      <height>1091</height>
+     </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(218, 218, 218);</string>
+     <string notr="true">background-color: rgb(0, 0, 0);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -171,18 +207,198 @@
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>800</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>17</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Front Camera</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>970</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>17</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Current Status</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>411</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>19</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Hanium-Hospital Control Server</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>800</y>
+      <width>1101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>970</y>
+      <width>1091</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>1690</x>
+      <y>990</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Hanium Hospital.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>1460</x>
+      <y>290</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Meal Log</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>1460</x>
+      <y>640</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeSans</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Emergency Log</string>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>lblPixmap</zorder>
+   <zorder>btnConnect</zorder>
+   <zorder>lblStatus</zorder>
+   <zorder>lblConn1_Status</zorder>
+   <zorder>lblConn2_Status</zorder>
+   <zorder>lblConn3_Status</zorder>
+   <zorder>listMeal</zorder>
+   <zorder>listEmergency</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>line</zorder>
+   <zorder>line_2</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1850</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

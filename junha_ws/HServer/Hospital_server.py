@@ -17,6 +17,12 @@ import datetime                                #
 # -------------------------------------------- #
 
 
+HOST = '192.168.0.84'
+PORT1 = 3333
+PORT2 = 4444
+PORT3 = 5555
+
+
 
 Main_ui = uic.loadUiType("/home/junha/23_HF110/junha_ws/HServer/Hospital_server.ui")[0]
 
@@ -28,7 +34,6 @@ class WindowClass(QMainWindow, Main_ui) :
 
         self.btnConnect.clicked.connect(self.thr_start)
 
-        # self.btnLog.clicked.connect(self.open_EmergencyLog)
 
     def thr_start(self):
 
@@ -45,8 +50,7 @@ class WindowClass(QMainWindow, Main_ui) :
     def open_server_socket1(self):
 
 
-        HOST = '192.168.0.6'
-        PORT1 = 3333
+
 
 
 
@@ -86,7 +90,7 @@ class WindowClass(QMainWindow, Main_ui) :
             bytesPerLine = 3 * width
             qImg = QImage(frame.data, width, height, bytesPerLine, QImage.Format_RGB888)
 
-            qPix = QPixmap.fromImage(qImg.scaled(1440, 810))
+            qPix = QPixmap.fromImage(qImg.scaled(1280, 720))
             self.lblPixmap.setPixmap(qPix)
 
 
@@ -102,8 +106,7 @@ class WindowClass(QMainWindow, Main_ui) :
 
 
 
-        HOST = '192.168.0.6'
-        PORT2 = 4444
+
 
         socket2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -129,23 +132,19 @@ class WindowClass(QMainWindow, Main_ui) :
 
             if prev_len != len(data_buffer):
 
-                # print("emergency!!!!!!!!!!")
-
                 self.now = datetime.datetime.now()
                 self.str_status = "Emergency at " + self.now.strftime("%H시 %M분 %S초")
 
                 self.lblStatus.setText(self.str_status)
+                self.listEmergency.addItem(self.str_status)
 
-                # self.temp = QListWidgetItem(self.str_status)
-                # subWindow_Log.listEmergency.addItem(self.temp)
 
             prev_len = len(data_buffer)
 
 
     def open_server_socket3(self):
 
-        HOST = '192.168.0.6'
-        PORT3 = 5555
+
 
         socket3 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -166,6 +165,10 @@ class WindowClass(QMainWindow, Main_ui) :
             self.lblStatus.setText(msg)
             self.save_meal_str(msg)
 
+            msg = msg.rstrip("\n")
+            self.listMeal.addItem(msg)
+
+
 
 
     def save_meal_str(self, meal_str):
@@ -179,20 +182,6 @@ class WindowClass(QMainWindow, Main_ui) :
         with open(file_name, 'a') as file:
             file.write(meal_str)
 
-
-
-
-#     def open_EmergencyLog(self):
-#         second_window = second()
-#         second_window.exec()
-
-
-# class second(QDialog):
-
-#     def __init__(self):
-#         super().__init__()
-#         self.ui = uic.loadUi("/home/junha/Desktop/Pixmap_study/Hospital_sub_Emergency.ui", self)
-#         self.show()
 
 
 
