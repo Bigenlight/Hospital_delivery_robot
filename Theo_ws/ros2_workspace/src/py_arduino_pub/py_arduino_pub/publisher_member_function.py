@@ -9,7 +9,8 @@ class MinimalPublisher(Node):
     def __init__(self):
         super().__init__('minimal_publisher')
         self.publisher_ = self.create_publisher(String, 'detected_object', 10)
-        timer_period = 0.0005  # seconds
+        #timer_period = 0.005  # seconds
+        timer_period = 0.3  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.order = "rest "
         
@@ -28,13 +29,19 @@ class MinimalPublisher(Node):
         # elif(self.i % 5000 > 2000 and self.i % 5000 < 3000): self.order = "pull "
         # else : self.order = "rest "
         
-        self.i += 1
-        if(self.i % 6000 > 1000 and self.i % 6000 < 2000): self.order = "lo "
-        elif(self.i % 6000 > 4000 and self.i % 6000 < 5000): self.order = "un "  
-        elif(self.i % 3000 < 100): self.order = "push "
-        #elif(self.i % 5000 > 2000 and self.i % 5000 < 3000): self.order = "pull "
-        else : self.order = "rest "
+        # self.i += 1
+        # if(self.i % 6000 > 1000 and self.i % 6000 < 2000): self.order = "lo "
+        # elif(self.i % 6000 > 4000 and self.i % 6000 < 5000): self.order = "un "  
+        # elif(self.i % 3000 < 100): self.order = "push "
+        # #elif(self.i % 5000 > 2000 and self.i % 5000 < 3000): self.order = "pull "
+        # else : self.order = "rest "
         
+        self.i += 1
+        if(self.i % 60> 10 and self.i % 60 < 20): self.order = "lo "
+        elif(self.i % 60 > 40 and self.i % 60 < 50): self.order = "un "  
+        elif(self.i % 30 == 10): self.order = "push "
+        elif(self.i % 50 > 20 and self.i % 50 < 30): self.order = "pull "
+        else : self.order = "rest "
 
 
 def main(args=None):
