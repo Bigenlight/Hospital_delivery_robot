@@ -39,7 +39,7 @@ class MinimalPublisher(Node):
         self.i += 1
         if(self.i % 60> 10 and self.i % 60 < 20): self.order = "lo "
         elif(self.i % 60 > 40 and self.i % 60 < 50): self.order = "un "  
-        elif(self.i % 30 == 10): self.order = "push "
+        elif(self.i % 30 == 10): self.order = "per "
         elif(self.i % 50 > 20 and self.i % 50 < 30): self.order = "pull "
         else : self.order = "rest "
 

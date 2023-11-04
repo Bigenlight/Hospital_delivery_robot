@@ -5,7 +5,12 @@ import serial
 import subprocess
 
 brate = 9600
+#port_name = '/dev/ttyUSB0'
+port_name = '/dev/ttyUSB1'
+#port_name = '/dev/ttyUSB0'
+
 #/bin/python3 /home/theo/23_HF110/Theo_ws/python_ws/ros2_aruinod_communication3.0.py
+
 terminal_command = """ros2 topic pub --once /goal_pose geometry_msgs/msg/PoseStamped "{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {position: {x: 1.14, y: 39.51, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: -0.999, w: 0.00}}}" """
 
 class MinimalSubscriber(Node):
@@ -57,7 +62,7 @@ class MinimalSubscriber(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    py_serial = serial.Serial(port='/dev/ttyUSB0', baudrate=brate)  # Adjust the baud rate as needed
+    py_serial = serial.Serial(port=port_name, baudrate=brate)  # Adjust the baud rate as needed
     minimal_subscriber = MinimalSubscriber(py_serial)
 
     try:
