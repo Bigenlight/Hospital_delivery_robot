@@ -17,14 +17,14 @@ import datetime                                #
 # -------------------------------------------- #
 
 
-HOST = '192.168.0.84'
+HOST = '10.50.39.187'
 PORT1 = 3333
 PORT2 = 4444
 PORT3 = 5555
 
 
 
-Main_ui = uic.loadUiType("/home/junha/23_HF110/junha_ws/HServer/Hospital_server.ui")[0]
+Main_ui = uic.loadUiType("/home/daejung/23_HF110/junha_ws/HServer/Hospital_server.ui")[0]
 
 class WindowClass(QMainWindow, Main_ui) :
 
@@ -175,7 +175,7 @@ class WindowClass(QMainWindow, Main_ui) :
 
         self.now = datetime.datetime.now()
 
-        file_name = "/home/junha/23_HF110/junha_ws/Meal_list/Meal_list_" + self.now.strftime("%Y년_%m월_%d일") + ".txt"
+        file_name = "/home/daejung/23_HF110/junha_ws/Meal_list/Meal_list_" + self.now.strftime("%Y년_%m월_%d일") + ".txt"
         # 식사 리스트 저장경로 역시 각자의 컴퓨터에 맞게 지정해야 함.
         # "/home/[이름]/23_HF110/junha_ws/Meal_list/Meal_list_" + self.now.strftime("%Y%m%d") + ".txt"
 

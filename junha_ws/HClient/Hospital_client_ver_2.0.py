@@ -21,12 +21,12 @@ import threading
 from queue import Queue
 
 
-IP_ADDR = '192.168.0.6'
+IP_ADDR = '10.50.39.187'
 PORT = 5555
 
 
 
-form_class = uic.loadUiType("/home/junha/23_HF110/junha_ws/HClient/Hospital_client.ui")[0]
+form_class = uic.loadUiType("/home/daejung/23_HF110/junha_ws/HClient/Hospital_client.ui")[0]
 # .ui 파일이 있는 경로로 설정 하면 됨.
 # "/home/[이름]/23_HF110/junha_ws/Hospital_gui.ui"
 
