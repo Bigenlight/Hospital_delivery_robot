@@ -21,6 +21,7 @@ class Motor(Node):
         self.count = 0.0
         self.wheelDiameter = 0.0702 # m unit
         self.wheelSeperation = 0.465  # m unit
+        self.emergency_count = 0
 
         if not os.path.exists(self.SERIAL_PORT):
             self.get_logger().error("Serial Port not found")
@@ -42,6 +43,8 @@ class Motor(Node):
             self.get_logger().info("emergency!! robot stopped.")
             self.odrv0.axis0.controller.input_vel = 0
             self.odrv0.axis1.controller.input_vel = 0
+            print(self.emergency_count)
+            self.emergency_count += 1
             time.sleep(3)
         else:
             self.get_logger().info("Twist: Linear: %f Angular velocity: %f" % (msg.linear.x, msg.angular.z))
