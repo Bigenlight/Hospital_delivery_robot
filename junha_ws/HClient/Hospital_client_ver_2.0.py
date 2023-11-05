@@ -8,6 +8,7 @@ from PyQt5.QtMultimedia import QSound
 
 from gtts import gTTS
 import speech_recognition as sr
+from playsound import playsound
 
 import datetime
 import os.path
@@ -106,8 +107,10 @@ class WindowClass(QMainWindow, form_class) :
 
         if self.service_type == "meal":
             self.lblSpeechRec.setText("양식과 한식 중 원하시는 메뉴를 선택해주세요.\n\nListening...")
-        else:
-            self.lblSpeechRec.setText("Listening...")
+        elif self.service_type == "location":
+            self.lblSpeechRec.setText("원하시는 위치를 말씀해주세요.\n\nListening...")
+        elif self.service_type == "administration":
+            self.lblSpeechRec.setText("원하시는 업무를 말씀해주세요.\n\nListening...")
 
 
         self.btnLocation.setEnabled(False)
@@ -130,13 +133,19 @@ class WindowClass(QMainWindow, form_class) :
 
         if(self.result_data == sr.UnknownValueError):
             self.lblSpeechRec.setText("")
-            self.lblResult.setText("다시 한번 말씀해 주세요")
+            self.lblResult.setText("다시 한번 말씀해 주세요.")
             QSound.play("/home/junha/23_HF110/junha_ws/sample_sound/error_1.wav")
+
+            self.TTS = Thr_TextToSpeech("다시 한번 말씀해 주세요.")
+            self.TTS.start()
 
         elif(self.result_data == sr.RequestError):
             self.lblSpeechRec.setText("")
             self.lblResult.setText("오류가 발생하였습니다. 관리자에게 문의하세요.")
             QSound.play("/home/junha/23_HF110/junha_ws/sample_sound/error_1.wav")
+
+            self.TTS = Thr_TextToSpeech("오류가 발생하였습니다. 관리자에게 문의하세요.")
+            self.TTS.start()
 
         else:
             self.lblSpeechRec.setText(self.result_data)
@@ -147,6 +156,9 @@ class WindowClass(QMainWindow, form_class) :
 
             time.sleep(1) # 스레드간 충돌을 막기 위해 1초 쉬게 함
             self.lblResult.setText(self.hos_output)
+
+            self.TTS = Thr_TextToSpeech(self.hos_output)
+            self.TTS.start()
 
         self.thr_setDefault = Thr_QWindow_setDefault()
         self.thr_setDefault.start()
@@ -198,7 +210,7 @@ class Thr_SpeechRecognizer(QThread):
         rec = sr.Recognizer()
 
         with sr.Microphone() as source:
-            audio = rec.listen(source, None, 5)
+            audio = rec.listen(source, None, 3)
             # audio >> <speech_recognition.audio.AudioData object at 0x7f8b81780a00>
             # 즉 audio는 AudioData 객체
 
@@ -223,7 +235,22 @@ class Thr_SpeechRecognizer(QThread):
             sig_analyzing_speech.run()
 
 
+class Thr_TextToSpeech(QThread):
 
+    def __init__(self, input_text):
+
+        super().__init__()
+        self.input_text = input_text
+
+    def run(self):
+
+        file_name = "/home/junha/23_HF110/junha_ws/sample_sound/tts_result.mp3"
+        tts_ko = gTTS(text=self.input_text, lang='ko')
+        tts_ko.save(file_name)
+
+        playsound(file_name)
+
+        self.quit()
 
 
 
