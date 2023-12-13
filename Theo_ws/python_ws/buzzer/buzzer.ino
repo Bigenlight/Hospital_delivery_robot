@@ -4,7 +4,7 @@
 // By : Kit Plus
 //*******************************************************************************/
 // Define Pins
-#define BUZZER 5
+#define BUZZER 13
 #define BUTTON 4
 #define NOTE_C5  523
 #define NOTE_CS5 554
