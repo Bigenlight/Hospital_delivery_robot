@@ -20,8 +20,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import Image
 from std_msgs.msg import Int32MultiArray, String
 
-server_ip = socket.gethostbyname('10.50.38.193') # 위에서 설정한 서버 ip
-# server_ip = socket.gethostbyname('10.50.39.187') # 위에서 설정한 서버 ip
+server_ip = socket.gethostbyname('192.168.0.33') # 위에서 설정한 서버 ip
 server_port1 = 3333 # 위에서 설정한 서버 포트번호
 server_port2 = 4444 # 위에서 설정한 서버 포트번호
 
@@ -33,7 +32,6 @@ socket2.connect((server_ip, server_port2))
 
 WEIGHTS_PERSON = 'weights/person_0911_200.pt'
 WEIGHTS_CARD = 'weights/card_0904_200.pt'
-WEIGHTS_CARD_AND_PERSON = 'weights/card_and_person_1102_200.pt'
 IMG_SIZE = 640
 DEVICE = ''
 AUGMENT = False
@@ -42,8 +40,8 @@ IOU_THRES = 0.45
 CLASSES = None
 AGNOSTIC_NMS = False
 
-QUEUE_SIZE = 100
-CLASS_MAP = ['push ', 'per ']
+QUEUE_SIZE = 13
+CLASS_MAP = ['per ', 'push ']
 
 # Initialize
 device = select_device(DEVICE)
@@ -59,7 +57,11 @@ def load_model(weights_path):
     if half:
         model.half()  # to FP16
 
-load_model(WEIGHTS_CARD_AND_PERSON)
+def change_weights(new_weights_path):
+    load_model(new_weights_path)
+
+
+load_model(WEIGHTS_CARD)
 
 # Get names and colors
 names = model.module.names if hasattr(model, 'module') else model.names
@@ -77,12 +79,18 @@ class YOLOv7(Node):
         self.detected_pub = self.create_publisher(Image, "/detected_image", 10)       
         self.object_pub = self.create_publisher(String, "/detected_object", 10)
         self.image_sub = self.create_subscription(Image, "/image_raw", self.image_cb, 10)
+        self.flag_sub = self.create_subscription(Int32MultiArray, "/flag", self.check_flag, 10)
         self.publisher_ = self.create_publisher(Image, '/image_raw', 10)    # 이미지 데이터를 게시하는 ROS 퍼블리셔를 생성. /image_raw 토픽으로 Image 메시지를 게시.
         self.bridge = CvBridge()                                            # CvBridge 인스턴스를 생성하여 OpenCV 이미지와 ROS Image 메시지 간의 변환을 수행.
 
-        self.capture = cv2.VideoCapture(2)                                  # OpenCV를 사용하여 웹캠을 연결하고, 2번 웹캠을 사용하도록 설정.
-        self.final_id = -1
+        self.capture = cv2.VideoCapture(0)                                  # OpenCV를 사용하여 웹캠을 연결하고, 2번 웹캠을 사용하도록 설정.
+
+        self.queue_list = [-1 for _ in range(QUEUE_SIZE)]
+
         self.timer = self.create_timer(0.1, self.yolo_pub)
+
+        self.currentWeights = WEIGHTS_CARD
+        self.mode = 'card_mode'
     
     def image_cb(self, img):
         check_requirements(exclude=('pycocotools', 'thop'))
@@ -95,6 +103,19 @@ class YOLOv7(Node):
 
             image_message.header.stamp = self.get_clock().now().to_msg()
             self.detected_pub.publish(image_message)
+
+    def check_flag(self, flag):
+        if flag == 1:
+            self.queue_list = [-1 for _ in range(QUEUE_SIZE)]
+            if self.currentWeights == WEIGHTS_CARD:
+                change_weights(WEIGHTS_PERSON)
+                self.currentWeights = WEIGHTS_PERSON
+                self.mode = "person_mode"
+            elif self.currentWeights == WEIGHTS_PERSON:
+                change_weights(WEIGHTS_CARD)
+                self.currentWeights = WEIGHTS_CARD
+                self.mode = "card_mode"
+
 
     # Detect function
     def detect(self, frame):
@@ -148,41 +169,62 @@ class YOLOv7(Node):
                 ymean = (ymin + ymax) / 2
 
                 if ymean < IMG_SIZE / 2:
-                    self.final_id = id
+                    self.queue_list.append(id)
                 else:
-                    self.final_id = -1
+                    self.queue_list.append(-1)
 
         else:
-            self.final_id = -1
+            self.queue_list.append(-1)
 
         # return results
         return img0
 
 
     # CLASS ==========================================================================
-    # 0 : card 1 : person
+    # 0 : person 1 : card
     # ================================================================================
+    def hard_vote(self, queue):
+        return statistics.mode(queue)
 
 
     def yolo_pub(self):
         ret, frame = self.capture.read()                                    # 웹캠으로부터 프레임을 읽어옴. ret은 성공 여부를 나타내는 불리언 값, frame은 읽어온 이미지 데이터.
-        img_msg = self.bridge.cv2_to_imgmsg(frame, encoding="bgr8")     # OpenCV 이미지를 ROS Image 메시지로 변환. bgr8 인코딩을 사용하여 BGR 컬러 형식의 이미지를 표현.
-        self.publisher_.publish(img_msg)                                # 변환된 이미지 메시지를 /image_raw 토픽으로 게시합니다.
+        if ret:
+            img_msg = self.bridge.cv2_to_imgmsg(frame, encoding="bgr8")     # OpenCV 이미지를 ROS Image 메시지로 변환. bgr8 인코딩을 사용하여 BGR 컬러 형식의 이미지를 표현.
+            self.publisher_.publish(img_msg)                                # 변환된 이미지 메시지를 /image_raw 토픽으로 게시합니다.
 
-        result, frame = cv2.imencode('.jpg', frame)
-        data = np.array(frame)
-        stringData = data.tostring()
-        socket1.sendall((str(len(stringData))).encode().ljust(16) + stringData)
+            # 프레임 직렬화하여 전송준비
+            data = pickle.dumps(frame)
+            # 메시지 길이 측정
+            message_size = struct.pack("L", len(data))
+            # 데이터 전송
+            socket1.sendall(message_size + data)
 
         final_check = String()
 
-        if self.final_id != -1:
-            final_check.data = CLASS_MAP[self.final_id]
-            self.object_pub.publish(final_check)
-            if self.final_id == 1:
-                emergency = "1"
-                socket2.sendall(emergency.encode(encoding='utf-8'))
+        while len(self.queue_list) != QUEUE_SIZE: # delete first element
+            del self.queue_list[0]
 
+        queue_list = self.queue_list
+
+        # queue voting
+        final_id = self.hard_vote(queue_list)
+        if final_id == -1:
+            final_check.data = 'None'
+        else:
+            if self.mode == 'person_mode':
+                # final_check.data = CLASS_MAP[final_id]
+                final_check.data = CLASS_MAP[0]
+            elif self.mode == 'card_mode':
+                final_check.data = CLASS_MAP[1]
+
+            if self.mode == 'card_mode':
+                TCP_msg = "1"
+                socket2.sendall(TCP_msg.encode(encoding='utf-8'))
+
+        print(self.currentWeights)
+
+        self.object_pub.publish(final_check)
 
 
 def main(args=None):
