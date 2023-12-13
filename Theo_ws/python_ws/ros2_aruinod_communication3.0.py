@@ -46,7 +46,6 @@ class MinimalSubscriber(Node):
 
     def execute_terminal_command(self):
 
-        # for _ in range(5):
         print("Sending to return")
         print("command:", terminal_command)
                 # 실행할 명령어
@@ -62,8 +61,6 @@ class MinimalSubscriber(Node):
             print("명령어 실행 실패:")
             print(result.stderr)
             
-            # time.sleep(1)
-
 
 def main(args=None):
     rclpy.init(args=args)
