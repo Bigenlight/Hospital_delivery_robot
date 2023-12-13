@@ -12,7 +12,7 @@ port_name = '/dev/ttyUSB1'
 
 #/bin/python3 /home/theo/23_HF110/Theo_ws/python_ws/ros2_aruinod_communication3.0.py
 
-terminal_command = """ros2 topic pub /goal_pose geometry_msgs/msg/PoseStamped "{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {position: {x: 18.55, y: 40.17, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: 0.0575, w: 0.998}}}" """
+terminal_command = """ros2 topic pub --once /goal_pose geometry_msgs/msg/PoseStamped "{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {position: {x: 18.55, y: 40.17, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: 0.0575, w: 0.998}}}" """
 
 class MinimalSubscriber(Node):
     def __init__(self, py_serial):
