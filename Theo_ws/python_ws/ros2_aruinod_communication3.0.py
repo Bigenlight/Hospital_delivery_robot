@@ -3,6 +3,7 @@ from rclpy.node import Node
 from std_msgs.msg import String
 import serial
 import subprocess
+import time
 
 brate = 9600
 #port_name = '/dev/ttyUSB0'
@@ -44,20 +45,24 @@ class MinimalSubscriber(Node):
 
 
     def execute_terminal_command(self):
-        print("Sending to return")
-        print("command:", terminal_command)
-                # 실행할 명령어
 
-                # 명령어 실행 및 결과 출력
-        result = subprocess.run(terminal_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        for _ in range(5):
+            print("Sending to return")
+            print("command:", terminal_command)
+                    # 실행할 명령어
 
-                # 명령어 실행 결과 출력
-        if result.returncode == 0:
-            print("명령어 실행 성공:")
-            print(result.stdout)
-        else:
-            print("명령어 실행 실패:")
-            print(result.stderr)
+                    # 명령어 실행 및 결과 출력
+            result = subprocess.run(terminal_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+
+                    # 명령어 실행 결과 출력
+            if result.returncode == 0:
+                print("명령어 실행 성공:")
+                print(result.stdout)
+            else:
+                print("명령어 실행 실패:")
+                print(result.stderr)
+            
+            time.sleep(1)
 
 
 def main(args=None):
