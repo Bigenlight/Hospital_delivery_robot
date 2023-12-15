@@ -1,0 +1,16 @@
+1. 먼저 odrivetool을 설치해야 한다.
+
+2. Odrive를 PC와 USB로 연결하고 ODrive에 전원을 공급한다.(24V)
+
+3. 터미널에서 odrivetool을 실행한다.
+    하늘색 글씨로 "Connected to Odrive 어쩌구..." 가 뜨면 잘 연결된 것
+
+4. odrv0.vbus_voltage 명령어로 전압이 잘 찍히는지 확인한다.(꼭 확인 안해도 됨.)
+
+5. 내가 준 파일의 명령어들을 차례로 실행하여 Odrive 초기세팅을 한다.(파일이 2개인데 각각의 축(모터)에 대해서 세팅하는 것)
+
+참고 링크
+https://www.youtube.com/watch?v=9UxTPxgvOAA	
+-> 오드라이브로 모터 돌려보는 영상
+https://docs.odriverobotics.com/v/latest/interfaces/odrivetool.html
+-> odrivetool 설치하는 방법 알려주는 공식 사이트

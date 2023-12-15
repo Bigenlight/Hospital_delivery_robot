@@ -1,0 +1,59 @@
+odrv0.config.enable_brake_resistor = True
+odrv0.save_configuration()
+
+odrv0.reboot()
+
+odrv0.axis0.motor.config.pole_pairs = 10
+odrv0.axis0.motor.config.resistance_calib_max_voltage = 4
+odrv0.axis0.motor.config.requested_current_range = 25
+odrv0.save_configuration()
+
+odrv0.reboot()
+
+odrv0.axis0.motor.config.current_control_bandwidth = 100
+odrv0.axis0.motor.config.torque_constant = 8.27 / 55
+odrv0.axis0.encoder.config.mode = ENCODER_MODE_HALL
+odrv0.axis0.encoder.config.cpr = 60
+odrv0.axis0.encoder.config.calib_scan_distance = 150
+odrv0.axis0.encoder.config.bandwidth = 100
+odrv0.axis0.controller.config.vel_gain = 0.02 * odrv0.axis0.motor.config.torque_constant * odrv0.axis0.encoder.config.cpr
+odrv0.axis0.controller.config.vel_integrator_gain = 0.1 * odrv0.axis0.motor.config.torque_constant * odrv0.axis0.encoder.config.cpr
+odrv0.axis0.controller.config.vel_limit = 100
+odrv0.axis0.controller.config.control_mode = CONTROL_MODE_VELOCITY_CONTROL
+odrv0.axis0.motor.config.calibration_current = 5
+odrv0.save_configuration()
+
+odrv0.reboot()
+
+# 모터 캘리브레이션 : 아래 명령어를 실행하면 모터가 움찔하고 삐- 소리가 난다.
+# 그 밑의 명령어들은 오류가 있는지 확인하는 명령어
+odrv0.axis0.requested_state = AXIS_STATE_MOTOR_CALIBRATION
+dump_errors(odrv0)
+odrv0.axis0.motor
+odrv0.axis0.motor.config.pre_calibrated = True
+
+
+# 홀 센서 캘리브레이션 : 아래 명령어를 실행하면 모터가 움직인다.
+odrv0.axis0.requested_state = AXIS_STATE_ENCODER_HALL_POLARITY_CALIBRATION
+dump_errors(odrv0)
+odrv0.axis0.encoder
+
+# 엔코더 오프셋 캘리브레이션 : 아래 명령어를 실행하면 모터가 움직인다.
+odrv0.axis0.requested_state = AXIS_STATE_ENCODER_OFFSET_CALIBRATION
+dump_errors(odrv0)
+odrv0.axis0.encoder
+odrv0.axis0.encoder.config.pre_calibrated = True
+
+# 밑의 명령어는 축 상태를 closed loop controll 상태로 바꾸는 명령어(이래야 모터가 작동함)
+# 그 아래 명령어는 속도 명령어
+# 그 아래아래 명령어는 축 상태를 다시 되돌리는 명령어(이래야 설정 저장이 가능) 
+odrv0.axis0.requested_state = AXIS_STATE_CLOSED_LOOP_CONTROL
+odrv0.axis0.controller.input_vel = 5
+odrv0.axis0.controller.input_vel = 0
+odrv0.axis0.requested_state = AXIS_STATE_IDLE
+odrv0.save_configuration()
+
+# 주의!!!! 밑의 명령어는 설정 초기화 명령어임.
+# 하다가 오류떠서 잘 안 되면 그냥 초기화 하고 다시 설정하는 게 좋음
+odrv0.erase_configuration()
+odrv0.reboot()
