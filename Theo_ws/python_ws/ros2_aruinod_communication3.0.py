@@ -24,8 +24,10 @@ class MinimalSubscriber(Node):
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
+        self.flag = False
 
     def listener_callback(self, msg):
+      
         self.get_logger().info('Sending Arduino: "%s"' % msg.data)
         command = msg.data
         self.py_serial.write(command.encode())
@@ -34,7 +36,7 @@ class MinimalSubscriber(Node):
         if self.py_serial.readable():
             response = self.py_serial.readline()
             print("Arduino Response:", response)
-            if b"return" in response:
+            if b"return" in response or self.flag == True:
                 self.execute_terminal_command()
         #if self.py_serial.in_waiting > 0:  # Check if data is available
         #    response = self.py_serial.readline().decode().strip()
@@ -45,6 +47,8 @@ class MinimalSubscriber(Node):
 
 
     def execute_terminal_command(self):
+
+        self.flag = True
 
         print("Sending to return")
         print("command:", terminal_command)
