@@ -215,14 +215,19 @@ void loop() {
 
 
   // 명령
- if (order == "push" || order == " push" ||order == "ush" || order == "push " || order == " push " )
-  {
-     if (now - breaktime <= 100000)
+  if (now - breaktime <= 100000)
     {
       order = "justdone";
       Serial.println(" break time ");
-      return;
     }
+ else if (order == "push" || order == " push" ||order == "ush" || order == "push " || order == " push " )
+  {
+    //  if (now - breaktime <= 100000)
+    // {
+    //   order = "justdone";
+    //   Serial.println(" break time ");
+    //   return;
+    // }
     // Set the spinning direction counterclockwise:
     digitalWrite(dirPin, LOW);
     Serial.println("Moving Counter Clockwise");

@@ -2,6 +2,11 @@
 #include <Servo.h>
 //#include <toneAC.h>
 
+int Photo = A0;
+int val = 1;
+int Photo1 = A1;
+int val1 = 1;
+
 
 Servo lefthand;
 Servo righthand;
@@ -29,7 +34,7 @@ bool mission = false;// 미션수행 여부(false는 안한)
 //
 int i = 0;
 unsigned long past = 0; // 과거 시간 저장 변수
-long breaktime = -100000;
+long breaktime = -50000;
 // 부
 int speakerPin = 13;
 long bpast = 0;
@@ -50,18 +55,30 @@ void setup()
 
   righthand.write(rclose);
   lefthand.write(lclose);
+
+
+  pinMode(Photo, INPUT);
 }
 
 // Pulling
 void clockwise(int lap)
 {
+  
   // Spin the stepper motor 1 revolution slowly:
   for (int i = 0; i < lap * stepsPerRevolution; i++) {
+    val1 = digitalRead(Photo1);
+
+    if( val1 != 1 ) //물체가 감지 안되면 led off
+      Serial.println("val1");
+      break;
+
+
     // These four lines result in 1 step:
     digitalWrite(stepPin, HIGH);
     delayMicroseconds(dtime);
     digitalWrite(stepPin, LOW);
     delayMicroseconds(dtime);
+    Serial.println("Pulling");
   }
   state = "pulled";
   //righthand.write(rclose);
@@ -87,23 +104,35 @@ void closing_arm(){
 // Pushing
 void counter_clockwise(int lap)
 {
+  
   // open servo
   righthand.write(ropen);
   lefthand.write(lopen);
   delay(500);
   // Spin the stepper motor 1 revolution quickly:
   for (int i = 0; i < lap * stepsPerRevolution; i++) {
+    val = digitalRead(Photo);
+
+    if( val != 1 ) //물체가 감지 안되면 led off
+      Serial.println("val");
+      break;
+
     // These four lines result in 1 step:
     digitalWrite(stepPin, HIGH);
     delayMicroseconds(dtime);
     digitalWrite(stepPin, LOW);
     delayMicroseconds(dtime);
+    Serial.println("Pushing");
   }
   close_servo();
   state = "pushed";
   delay(100);
+
+
+  //delay(1000);
+
   //pull
-  Serial.println("Moving Clockwise");
+  Serial.println("Moving Counter Clockwise");
   digitalWrite(dirPin, HIGH);
   clockwise(rev);
 }
@@ -217,7 +246,7 @@ void loop() {
   // 명령
  if (order == "push" || order == " push" ||order == "ush" || order == "push " || order == " push " )
   {
-     if (now - breaktime <= 100000)
+     if (now - breaktime <= 30000)
     {
       order = "justdone";
       Serial.println(" break time ");

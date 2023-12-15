@@ -3,6 +3,7 @@ from rclpy.node import Node
 from std_msgs.msg import String
 import serial
 import subprocess
+import time
 
 brate = 9600
 #port_name = '/dev/ttyUSB0'
@@ -11,7 +12,11 @@ port_name = '/dev/ttyUSB1'
 
 #/bin/python3 /home/theo/23_HF110/Theo_ws/python_ws/ros2_aruinod_communication3.0.py
 
+<<<<<<< HEAD
 terminal_command = """ros2 topic pub /goal_pose geometry_msgs/msg/PoseStamped "{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {position: {x: 14.84, y: 4.90, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: -0.998, w: 0.0582}}}" """
+=======
+terminal_command = """ros2 topic pub --once /goal_pose geometry_msgs/msg/PoseStamped "{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {position: {x: 18.55, y: 40.17, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: 0.0575, w: 0.998}}}" """
+>>>>>>> 9f53ae978e44496fc208cc677e875457466cec03
 
 class MinimalSubscriber(Node):
     def __init__(self, py_serial):
@@ -44,6 +49,7 @@ class MinimalSubscriber(Node):
 
 
     def execute_terminal_command(self):
+
         print("Sending to return")
         print("command:", terminal_command)
                 # 실행할 명령어
@@ -58,7 +64,7 @@ class MinimalSubscriber(Node):
         else:
             print("명령어 실행 실패:")
             print(result.stderr)
-
+            
 
 def main(args=None):
     rclpy.init(args=args)
