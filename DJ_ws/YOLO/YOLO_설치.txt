@@ -1,0 +1,22 @@
+1. nvidia driver 설치
+2. cuda 설치
+3. cudnn 설치
+4. YOLOv7 설치
+
+nvidia 버전 확인
+apt --installed list | grep nvidia-driver
+
+cuda 버전 : 11.2.2
+cudnn 버전 : 8.1.1
+https://dohyeon.tistory.com/14 : cuda, cudnn 설치는 해당 블로그 글 참조(cuda, cudnn 버전에 따라 명령어를 바꿔주어야 한다.)
+
+YOLOv7 설치
+git clone https://github.com/WongKinYiu/yolov7.git       # clone
+cd yolov7
+pip install -r requirements.txt      # install modules
+wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt # download pretrained weight
+
+잘 깔렸는지 확인하는 방법
+다음 명령어 yolov7 폴더 안에서 실행
+python3 detect.py --weights runs/train/yolov7/weights/yolov7.pt --source inference/images/horses.jpg
+터미널에 오류 없이 Done 뜨면 runs/detect/exp 안의 horses.jpg 확인

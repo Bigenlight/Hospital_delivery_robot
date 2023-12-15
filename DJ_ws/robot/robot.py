@@ -42,7 +42,7 @@ IOU_THRES = 0.45
 CLASSES = None
 AGNOSTIC_NMS = False
 
-QUEUE_SIZE = 100
+QUEUE_SIZE = 30
 CLASS_MAP = ['push ', 'per ']
 
 # Initialize
@@ -82,6 +82,7 @@ class YOLOv7(Node):
 
         self.capture = cv2.VideoCapture(2)                                  # OpenCV를 사용하여 웹캠을 연결하고, 2번 웹캠을 사용하도록 설정.
         self.final_id = -1
+        self.queue_list = [-1 for _ in range(QUEUE_SIZE)]
         self.timer = self.create_timer(0.1, self.yolo_pub)
     
     def image_cb(self, img):
@@ -148,21 +149,22 @@ class YOLOv7(Node):
                 ymean = (ymin + ymax) / 2
 
                 if ymean < IMG_SIZE / 2:
-                    self.final_id = id
+                    self.queue_list.append(id)
                 else:
-                    self.final_id = -1
+                    self.queue_list.append(-1)
 
         else:
-            self.final_id = -1
+            self.queue_list.append(-1)
 
         # return results
         return img0
-
 
     # CLASS ==========================================================================
     # 0 : card 1 : person
     # ================================================================================
 
+    def hard_vote(self, queue):
+        return statistics.mode(queue)
 
     def yolo_pub(self):
         ret, frame = self.capture.read()                                    # 웹캠으로부터 프레임을 읽어옴. ret은 성공 여부를 나타내는 불리언 값, frame은 읽어온 이미지 데이터.
@@ -176,12 +178,28 @@ class YOLOv7(Node):
 
         final_check = String()
 
-        if self.final_id != -1:
-            final_check.data = CLASS_MAP[self.final_id]
+        # if self.final_id != -1:
+        #     final_check.data = CLASS_MAP[self.final_id]
+        #     self.object_pub.publish(final_check)
+        #     if self.final_id == 1:
+        #         emergency = "1"
+        #         socket2.sendall(emergency.encode(encoding='utf-8'))
+
+        while len(self.queue_list) != QUEUE_SIZE: # delete first element
+            del self.queue_list[0]
+
+        queue_list = self.queue_list
+
+        # queue voting
+        final_id = self.hard_vote(queue_list)
+        if final_id == -1:
+            final_check.data = 'None'
+        else:
+            final_check.data = CLASS_MAP[final_id]
+        
+        if final_check.data != 'None':
             self.object_pub.publish(final_check)
-            if self.final_id == 1:
-                emergency = "1"
-                socket2.sendall(emergency.encode(encoding='utf-8'))
+            # self.queue_list = [-1 for _ in range(30)]        
 
 
 
